@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import L from 'leaflet'
-import monuments from './Data/Monuments'
+import literaryObjects from './Data/literaryObjects'
+import { fetchOsmLiteraryObjectsByBbox } from './api/fetchOsmLiteraryObjects'
 
-export const personColors = {
+const personColors = {
   'Тарас Шевченко': '#2563eb',
   'Леся Українка': '#facc15',
   'Іван Франко': '#f97316',
@@ -20,83 +21,232 @@ export const personColors = {
   default: '#334155'
 }
 
-function createCustomIcon(color) {
+const objectTypes = {
+  monument: 'Пам’ятник',
+  memorial: 'Меморіал',
+  plaque: 'Меморіальна дошка',
+  museum: 'Музей',
+  university: 'Університет',
+  grave: 'Могила',
+  park: 'Парк',
+  building: 'Будівля',
+  composition: 'Композиція',
+  object: 'Об’єкт'
+}
+
+const controlStyle = {
+  width: '100%',
+  marginTop: '4px',
+  boxSizing: 'border-box'
+}
+
+function getMarkerShape(type, color) {
+  const base = `
+  background: ${color};
+  border: 3px solid white;
+  box-shadow: 0 0 7px rgba(0,0,0,0.45);
+  `
+
+  switch (type) {
+    case 'university':
+      return `<div style="width:20px;height:20px;${base}border-radius:4px;"></div>`
+
+    case 'plaque':
+      return `<div style="width:26px;height:16px;${base}border-radius:4px;"></div>`
+
+    case 'museum':
+      return `<div style="width:20px;height:20px;${base}transform:rotate(45deg);border-radius:4px;"></div>`
+
+    case 'grave':
+      return `
+      <div style="position:relative;width:22px;height:22px;">
+      <div style="position:absolute;left:8px;top:0;width:6px;height:22px;${base}border-radius:2px;"></div>
+      <div style="position:absolute;left:0;top:7px;width:22px;height:6px;${base}border-radius:2px;"></div>
+      </div>
+      `
+
+    case 'park':
+      return `<div style="width:24px;height:16px;${base}border-radius:50% 50% 50% 0;transform:rotate(-35deg);"></div>`
+
+    case 'building':
+      return `
+      <div style="
+      width:22px;
+      height:18px;
+      ${base}
+      border-radius:2px;
+      clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 35%);
+      "></div>
+      `
+
+    case 'composition':
+      return `
+      <div style="
+      width:22px;
+      height:22px;
+      ${base}
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      "></div>
+      `
+
+    case 'monument':
+    case 'memorial':
+    default:
+      return `<div style="width:20px;height:20px;${base}border-radius:50%;"></div>`
+  }
+}
+
+function createCustomIcon(type, color) {
   return L.divIcon({
     className: '',
-    html: `
-    <div style="
-    width: 18px;
-    height: 18px;
-    background: ${color};
-    border: 3px solid white;
-    border-radius: 50%;
-    box-shadow: 0 0 6px rgba(0,0,0,0.35);
-    "></div>
-    `,
-    iconSize: [18, 18],
-    iconAnchor: [9, 9],
-    popupAnchor: [0, -10]
+    html: getMarkerShape(type, color),
+                   iconSize: [28, 28],
+                   iconAnchor: [14, 14],
+                   popupAnchor: [0, -12]
   })
+}
+
+function OsmLoaderButton({
+  setOsmObjects,
+  setShowOsmObjects,
+  setOsmLoading,
+  setOsmError,
+  osmLoading
+}) {
+  const map = useMap()
+
+  async function handleLoadOsm() {
+    try {
+      setOsmLoading(true)
+      setOsmError('')
+
+      const bounds = map.getBounds()
+      const bbox = [
+        bounds.getSouth(),
+        bounds.getWest(),
+        bounds.getNorth(),
+        bounds.getEast()
+      ].join(',')
+
+      const data = await fetchOsmLiteraryObjectsByBbox(bbox)
+
+      setOsmObjects((prev) => {
+        const unique = new Map(prev.map((item) => [item.id, item]))
+        data.forEach((item) => unique.set(item.id, item))
+        return [...unique.values()]
+      })
+
+      setShowOsmObjects(true)
+    } catch (error) {
+      console.error(error)
+      setOsmError('OSM не відповів або область завелика. Наблизь карту і спробуй ще раз.')
+    } finally {
+      setOsmLoading(false)
+    }
+  }
+
+  return (
+    <button
+    type="button"
+    onClick={handleLoadOsm}
+    disabled={osmLoading}
+    style={{
+      position: 'absolute',
+      right: '15px',
+      top: '15px',
+      zIndex: 2000,
+      padding: '10px 12px',
+      borderRadius: '8px',
+      border: 'none',
+      cursor: 'pointer',
+      background: '#171717',
+      color: 'white',
+      boxShadow: '0 2px 12px rgba(0,0,0,0.35)'
+    }}
+    >
+    {osmLoading ? 'Завантаження OSM...' : 'Завантажити OSM у цій області'}
+    </button>
+  )
 }
 
 export default function App() {
   const [selectedPerson, setSelectedPerson] = useState('Усі')
   const [selectedCountry, setSelectedCountry] = useState('Усі')
+  const [selectedType, setSelectedType] = useState('Усі')
   const [yearFrom, setYearFrom] = useState('')
   const [yearTo, setYearTo] = useState('')
 
+  const [showOsmObjects, setShowOsmObjects] = useState(false)
+  const [osmObjects, setOsmObjects] = useState([])
+  const [osmLoading, setOsmLoading] = useState(false)
+  const [osmError, setOsmError] = useState('')
+
+  const allObjects = useMemo(() => {
+    return showOsmObjects
+    ? [...literaryObjects, ...osmObjects]
+    : literaryObjects
+  }, [showOsmObjects, osmObjects])
+
   const persons = useMemo(() => {
-    return ['Усі', ...new Set(monuments.map(item => item.person))]
-  }, [])
+    return ['Усі', ...new Set(allObjects.map(item => item.person).filter(Boolean))]
+  }, [allObjects])
 
   const countries = useMemo(() => {
-    return ['Усі', ...new Set(monuments.map(item => item.country))]
-  }, [])
+    return ['Усі', ...new Set(allObjects.map(item => item.country).filter(Boolean))]
+  }, [allObjects])
 
-  const filteredMonuments = useMemo(() => {
-    return monuments.filter(item => {
+  const types = useMemo(() => {
+    return ['Усі', ...new Set(allObjects.map(item => item.type || 'object'))]
+  }, [allObjects])
+
+  const filtered = useMemo(() => {
+    return allObjects.filter(item => {
       const matchPerson =
       selectedPerson === 'Усі' || item.person === selectedPerson
 
       const matchCountry =
       selectedCountry === 'Усі' || item.country === selectedCountry
 
+      const matchType =
+      selectedType === 'Усі' || (item.type || 'object') === selectedType
+
       const matchYearFrom =
-      yearFrom === '' || item.year >= Number(yearFrom)
+      yearFrom === '' || !item.year || Number(item.year) >= Number(yearFrom)
 
       const matchYearTo =
-      yearTo === '' || item.year <= Number(yearTo)
+      yearTo === '' || !item.year || Number(item.year) <= Number(yearTo)
 
-      return matchPerson && matchCountry && matchYearFrom && matchYearTo
+      return matchPerson && matchCountry && matchType && matchYearFrom && matchYearTo
     })
-  }, [selectedPerson, selectedCountry, yearFrom, yearTo])
+  }, [allObjects, selectedPerson, selectedCountry, selectedType, yearFrom, yearTo])
 
   return (
     <div style={{ height: '100vh', width: '100%', position: 'relative' }}>
     <div
     style={{
       position: 'absolute',
-      top: '10px',
-      left: '10px',
-      zIndex: 1000,
-      background: 'white',
+      top: '15px',
+      left: '15px',
+      zIndex: 2000,
+      background: '#171717',
+      color: 'white',
       padding: '12px',
       borderRadius: '10px',
-      boxShadow: '0 2px 10px rgba(0,0,0,0.15)',
+      boxShadow: '0 2px 12px rgba(0,0,0,0.35)',
           display: 'flex',
           flexDirection: 'column',
           gap: '8px',
-          minWidth: '220px'
+          minWidth: '260px'
     }}
     >
     <h3 style={{ margin: 0 }}>Фільтри</h3>
 
     <label>
-    Письменник:
+    Персона:
     <select
     value={selectedPerson}
     onChange={(e) => setSelectedPerson(e.target.value)}
-    style={{ width: '100%', marginTop: '4px' }}
+    style={controlStyle}
     >
     {persons.map(person => (
       <option key={person} value={person}>
@@ -111,11 +261,26 @@ export default function App() {
     <select
     value={selectedCountry}
     onChange={(e) => setSelectedCountry(e.target.value)}
-    style={{ width: '100%', marginTop: '4px' }}
+    style={controlStyle}
     >
     {countries.map(country => (
       <option key={country} value={country}>
       {country}
+      </option>
+    ))}
+    </select>
+    </label>
+
+    <label>
+    Тип об’єкта:
+    <select
+    value={selectedType}
+    onChange={(e) => setSelectedType(e.target.value)}
+    style={controlStyle}
+    >
+    {types.map(type => (
+      <option key={type} value={type}>
+      {type === 'Усі' ? 'Усі' : objectTypes[type] || type}
       </option>
     ))}
     </select>
@@ -128,7 +293,7 @@ export default function App() {
     value={yearFrom}
     onChange={(e) => setYearFrom(e.target.value)}
     placeholder="Напр. 1900"
-    style={{ width: '100%', marginTop: '4px' }}
+    style={controlStyle}
     />
     </label>
 
@@ -139,30 +304,63 @@ export default function App() {
     value={yearTo}
     onChange={(e) => setYearTo(e.target.value)}
     placeholder="Напр. 2000"
-    style={{ width: '100%', marginTop: '4px' }}
+    style={controlStyle}
     />
     </label>
+
+    <label style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+    <input
+    type="checkbox"
+    checked={showOsmObjects}
+    onChange={(e) => setShowOsmObjects(e.target.checked)}
+    />
+    Показати OSM-точки
+    </label>
+
+    {osmLoading && (
+      <p style={{ margin: 0, fontSize: '13px' }}>
+      Завантаження OSM...
+      </p>
+    )}
+
+    {osmError && (
+      <p style={{ margin: 0, color: '#f87171', fontSize: '13px' }}>
+      {osmError}
+      </p>
+    )}
 
     <button
     onClick={() => {
       setSelectedPerson('Усі')
       setSelectedCountry('Усі')
+      setSelectedType('Усі')
       setYearFrom('')
       setYearTo('')
     }}
+    style={controlStyle}
     >
     Скинути фільтри
     </button>
 
     <p style={{ margin: 0 }}>
-    Знайдено: <strong>{filteredMonuments.length}</strong>
+    Знайдено: <strong>{filtered.length}</strong>
     </p>
+
+    <div style={{ fontSize: '12px', opacity: 0.85, lineHeight: '1.5' }}>
+    <div>● пам’ятник / меморіал</div>
+    <div>■ університет</div>
+    <div>▭ дошка</div>
+    <div>◆ музей</div>
+    <div>✚ могила</div>
+    </div>
     </div>
 
     <MapContainer
+    key="main-map"
     center={[50.45, 30.52]}
     zoom={4}
     minZoom={3}
+    maxZoom={18}
     zoomControl={false}
     maxBounds={[
       [-85, -180],
@@ -177,9 +375,17 @@ export default function App() {
     noWrap={true}
     />
 
-    {filteredMonuments.map((item) => {
+    <OsmLoaderButton
+    setOsmObjects={setOsmObjects}
+    setShowOsmObjects={setShowOsmObjects}
+    setOsmLoading={setOsmLoading}
+    setOsmError={setOsmError}
+    osmLoading={osmLoading}
+    />
+
+    {filtered.map(item => {
       const color = personColors[item.person] || personColors.default
-      const icon = createCustomIcon(color)
+      const icon = createCustomIcon(item.type, color)
 
       return (
         <Marker
@@ -188,23 +394,35 @@ export default function App() {
         icon={icon}
         >
         <Popup>
-        <div style={{ maxWidth: '240px' }}>
+        <div style={{ maxWidth: '250px' }}>
         <h3>{item.name}</h3>
-        <p><strong>Письменник:</strong> {item.person}</p>
-        <p>{item.city}, {item.country}</p>
-        <p><strong>Встановлено:</strong> {item.year}</p>
+
+        <p>
+        <strong>Тип:</strong>{' '}
+        {objectTypes[item.type] || item.type || 'Об’єкт'}
+        </p>
+
+        <p><strong>Персона:</strong> {item.person}</p>
+
+        {(item.city || item.country) && (
+          <p>
+          {item.city}
+          {item.city && item.country ? ', ' : ''}
+          {item.country}
+          </p>
+        )}
+
+        <p>
+        <strong>Рік:</strong>{' '}
+        {item.year || 'невідомо'}
+        </p>
+
         <p>{item.description}</p>
 
-        {item.image && (
-          <img
-          src={item.image}
-          alt={item.name}
-          style={{
-            width: '100%',
-            borderRadius: '8px',
-            marginTop: '8px'
-          }}
-          />
+        {item.isOsm && (
+          <p style={{ fontSize: '12px', opacity: 0.75 }}>
+          Дані з OpenStreetMap
+          </p>
         )}
 
         {item.sourceUrl && (
