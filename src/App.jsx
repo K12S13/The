@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
 import L from 'leaflet'
@@ -51,13 +51,10 @@ function getMarkerShape(type, color) {
   switch (type) {
     case 'university':
       return `<div style="width:20px;height:20px;${base}border-radius:4px;"></div>`
-
     case 'plaque':
       return `<div style="width:26px;height:16px;${base}border-radius:4px;"></div>`
-
     case 'museum':
       return `<div style="width:20px;height:20px;${base}transform:rotate(45deg);border-radius:4px;"></div>`
-
     case 'grave':
       return `
       <div style="position:relative;width:22px;height:22px;">
@@ -65,10 +62,8 @@ function getMarkerShape(type, color) {
       <div style="position:absolute;left:0;top:7px;width:22px;height:6px;${base}border-radius:2px;"></div>
       </div>
       `
-
     case 'park':
       return `<div style="width:24px;height:16px;${base}border-radius:50% 50% 50% 0;transform:rotate(-35deg);"></div>`
-
     case 'building':
       return `
       <div style="
@@ -79,7 +74,6 @@ function getMarkerShape(type, color) {
       clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 35%);
       "></div>
       `
-
     case 'composition':
       return `
       <div style="
@@ -89,7 +83,6 @@ function getMarkerShape(type, color) {
       clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
       "></div>
       `
-
     case 'monument':
     case 'memorial':
     default:
@@ -135,28 +128,23 @@ function createClusterIcon(cluster) {
   })
 }
 
-function OsmLoaderButton({
-  setOsmObjects,
-  setShowOsmObjects,
-  setOsmLoading,
-  setOsmError,
-  osmLoading
-}) {
+function OsmButton({ setOsmObjects, setShowOsmObjects, setOsmLoading, setOsmError, osmLoading }) {
   const map = useMap()
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
 
-  async function handleLoadOsm() {
+  useEffect(() => {
+    const resize = () => setIsMobile(window.innerWidth <= 600)
+    window.addEventListener('resize', resize)
+    return () => window.removeEventListener('resize', resize)
+  }, [])
+
+  async function load() {
     try {
       setOsmLoading(true)
       setOsmError('')
 
-      const bounds = map.getBounds()
-      const bbox = [
-        bounds.getSouth(),
-        bounds.getWest(),
-        bounds.getNorth(),
-        bounds.getEast()
-      ].join(',')
-
+      const b = map.getBounds()
+      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`
       const data = await fetchOsmLiteraryObjectsByBbox(bbox)
 
       setOsmObjects((prev) => {
@@ -166,8 +154,8 @@ function OsmLoaderButton({
       })
 
       setShowOsmObjects(true)
-    } catch (error) {
-      console.error(error)
+    } catch (e) {
+      console.error(e)
       setOsmError('OSM не відповів або область завелика. Наблизь карту і спробуй ще раз.')
     } finally {
       setOsmLoading(false)
@@ -177,45 +165,47 @@ function OsmLoaderButton({
   return (
     <button
     type="button"
-    onClick={handleLoadOsm}
+    onClick={load}
     disabled={osmLoading}
     style={{
       position: 'absolute',
-      right: '15px',
       top: '15px',
+      right: '15px',
       zIndex: 2000,
-      padding: '10px 12px',
+      padding: isMobile ? '10px 14px' : '10px 12px',
       borderRadius: '8px',
       border: 'none',
-      cursor: 'pointer',
       background: '#171717',
       color: 'white',
-      boxShadow: '0 2px 12px rgba(0,0,0,0.35)'
+      cursor: 'pointer',
+      boxShadow: '0 2px 12px rgba(0,0,0,0.35)',
+          fontWeight: 600
     }}
     >
-    {osmLoading ? 'Завантаження OSM...' : 'Завантажити OSM у цій області'}
+    {osmLoading ? '...' : isMobile ? 'OSM' : 'Завантажити OSM'}
     </button>
   )
 }
 
 export default function App() {
+  const [filtersOpen, setFiltersOpen] = useState(true)
+
   const [selectedPerson, setSelectedPerson] = useState('Усі')
   const [selectedCountry, setSelectedCountry] = useState('Усі')
   const [selectedType, setSelectedType] = useState('Усі')
   const [yearFrom, setYearFrom] = useState('')
   const [yearTo, setYearTo] = useState('')
 
-  const [showOsmObjects, setShowOsmObjects] = useState(false)
   const [osmObjects, setOsmObjects] = useState([])
+  const [showOsmObjects, setShowOsmObjects] = useState(false)
   const [osmLoading, setOsmLoading] = useState(false)
   const [osmError, setOsmError] = useState('')
-  const [filtersOpen, setFiltersOpen] = useState(true)
 
   const allObjects = useMemo(() => {
     return showOsmObjects
     ? [...literaryObjects, ...osmObjects]
     : literaryObjects
-  }, [showOsmObjects, osmObjects])
+  }, [osmObjects, showOsmObjects])
 
   const persons = useMemo(() => {
     return ['Усі', ...new Set(allObjects.map(item => item.person).filter(Boolean))]
@@ -269,23 +259,16 @@ export default function App() {
           width: 'min(280px, calc(100vw - 30px))'
     }}
     >
-    <div
-    style={{
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      gap: '10px'
-    }}
-    >
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
     <h3 style={{ margin: 0 }}>Фільтри</h3>
 
     <button
     type="button"
-    onClick={() => setFiltersOpen(prev => !prev)}
+    onClick={() => setFiltersOpen(!filtersOpen)}
     style={{
-      background: '#2d2d35',
+      background: '#333',
       color: 'white',
-      border: '1px solid #666',
+      border: 'none',
       borderRadius: '6px',
       padding: '4px 10px',
       cursor: 'pointer'
@@ -415,16 +398,16 @@ export default function App() {
 
     <MapContainer
     key="main-map"
+    zoomControl={false}
     center={[50.45, 30.52]}
     zoom={4}
     minZoom={3}
     maxZoom={18}
-    zoomControl={false}
     maxBounds={[
       [-85, -180],
       [85, 180]
     ]}
-    maxBoundsViscosity={1.0}
+    maxBoundsViscosity={1}
     style={{ height: '100%', width: '100%' }}
     >
     <TileLayer
@@ -433,7 +416,7 @@ export default function App() {
     noWrap={true}
     />
 
-    <OsmLoaderButton
+    <OsmButton
     setOsmObjects={setOsmObjects}
     setShowOsmObjects={setShowOsmObjects}
     setOsmLoading={setOsmLoading}
