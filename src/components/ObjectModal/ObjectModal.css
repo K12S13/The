@@ -1,0 +1,263 @@
+.object-modal__backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(20, 25, 35, 0.48);
+  backdrop-filter: blur(5px);
+}
+
+.object-modal {
+  width: min(850px, 100%);
+  max-height: min(90vh, 900px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #202938;
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 22px;
+  box-shadow: 0 24px 80px rgba(20, 30, 50, 0.22);
+  text-align: left;
+}
+
+.object-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 32px 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.object-modal__eyebrow {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.object-modal__header h2 {
+  margin: 8px 0;
+  color: #172033;
+  font-size: clamp(22px, 4vw, 30px);
+  line-height: 1.2;
+  font-weight: 750;
+}
+
+.object-modal__header p {
+  color: #718096;
+  font-size: 14px;
+}
+
+.object-modal__close {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #f1f4f8;
+  color: #344054;
+  font-size: 26px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.object-modal__close:hover {
+  background: #e4eaf2;
+  transform: rotate(90deg);
+}
+
+.object-modal__content {
+  overflow-y: auto;
+  padding: 26px 32px 32px;
+}
+
+.object-modal__section + .object-modal__section {
+  margin-top: 30px;
+}
+
+.object-modal__section h3 {
+  margin: 0 0 14px;
+  color: #202b3d;
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.object-modal__description {
+  color: #596579;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.object-modal__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.object-modal__gallery img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 13px;
+  background: #f1f4f8;
+}
+
+.object-modal__info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.object-modal__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 14px 16px;
+  border: 1px solid #edf0f4;
+  border-radius: 12px;
+  background: #fafbfd;
+  min-width: 0;
+}
+
+.object-modal__info-item span {
+  color: #8993a3;
+  font-size: 12px;
+}
+
+.object-modal__info-item strong {
+  color: #344054;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.object-modal__videos {
+  display: grid;
+  gap: 20px;
+}
+
+.object-modal__video {
+  min-width: 0;
+}
+
+.object-modal__video-frame {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  background: #101828;
+}
+
+.object-modal__video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.object-modal__video p {
+  margin-top: 9px;
+  color: #596579;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.object-modal__sources {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.object-modal__sources a,
+.object-modal__footer a {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.object-modal__sources a:hover,
+.object-modal__footer a:hover {
+  text-decoration: underline;
+}
+
+.object-modal__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #edf0f4;
+}
+
+.object-modal__footer span {
+  color: #8993a3;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .object-modal__backdrop {
+    padding: 10px;
+  }
+
+  .object-modal {
+    max-height: 94vh;
+    border-radius: 16px;
+  }
+
+  .object-modal__header {
+    padding: 20px 18px 16px;
+  }
+
+  .object-modal__content {
+    padding: 20px 18px 24px;
+  }
+
+  .object-modal__info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .object-modal__gallery img {
+    height: 150px;
+  }
+  .map-popup {
+  min-width: 190px;
+  color: #263244;
+}
+
+.map-popup h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.map-popup p {
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.map-popup__button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 650;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.map-popup__button:hover {
+  background: #1d4ed8;
+}
+}

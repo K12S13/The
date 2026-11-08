@@ -1,18 +1,63 @@
 const monuments = [
     // ===== ТАРАС ШЕВЧЕНКО =====
+    //{
+        //id: 1,
+        //name: "Пам’ятник Тарасові Шевченку",
+        //type: "university",
+        //person: "Тарас Шевченко",
+        //city: "Київ",
+        //country: "Україна",
+        //lat: 50.4423,
+        //lng: 30.5144,
+        //year: 1939,
+        //description: "Пам’ятник у парку Шевченка навпроти червоного корпусу КНУ.",
+        //sourceUrl: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Київ)"
+    //},
     {
-        id: 1,
-        name: "Пам’ятник Тарасові Шевченку",
-        type: "university",
-        person: "Тарас Шевченко",
-        city: "Київ",
-        country: "Україна",
-        lat: 50.4423,
-        lng: 30.5144,
-        year: 1939,
-        description: "Пам’ятник у парку Шевченка навпроти червоного корпусу КНУ.",
-        sourceUrl: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Київ)"
+  id: 1,
+  name: "Пам’ятник Тарасові Шевченку",
+  type: "monument",
+  person: "Тарас Шевченко",
+
+  city: "Київ",
+  country: "Україна",
+  lat: 50.4423,
+  lng: 30.5144,
+
+  year: 1939,
+  openingDate: "1939",
+
+  description: "Короткий опис пам'ятника.",
+  history: "Розширена історія створення та встановлення.",
+
+  author: "Ім'я скульптора",
+  architect: "Ім'я архітектора",
+
+  images: [
+    "https://example.com/photo-1.jpg",
+    "https://example.com/photo-2.jpg"
+  ],
+
+  videos: [
+    {
+      title: "Історія пам'ятника",
+      url: "https://www.youtube.com/watch?v=VIDEO_ID"
     },
+    {
+      title: "Відеоекскурсія",
+      url: "https://vimeo.com/VIDEO_ID"
+    }
+  ],
+
+  sources: [
+    {
+      title: "Історична довідка",
+      url: "https://example.com/article"
+    }
+  ],
+
+  sourceUrl: "https://uk.wikipedia.org/"
+},
 {
     id: 2,
     name: "Пам’ятник Тарасові Шевченку",

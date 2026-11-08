@@ -1,3 +1,4 @@
+import ObjectModal from './components/ObjectModal/ObjectModal'
 import { useMemo, useState, useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
@@ -189,6 +190,7 @@ function OsmButton({ setOsmObjects, setShowOsmObjects, setOsmLoading, setOsmErro
 
 export default function App() {
   const [filtersOpen, setFiltersOpen] = useState(true)
+  const [selectedObject, setSelectedObject] = useState(null)
 
   const [selectedPerson, setSelectedPerson] = useState('Усі')
   const [selectedCountry, setSelectedCountry] = useState('Усі')
@@ -447,63 +449,41 @@ export default function App() {
         icon={icon}
         >
         <Popup>
-        <div style={{ maxWidth: '250px' }}>
-        <h3>{item.name}</h3>
+          <div className="map-popup">
+            <h3>{item.name}</h3>
 
-        <p>
-        <strong>Тип:</strong>{' '}
-        {objectTypes[item.type] || item.type || 'Об’єкт'}
-        </p>
+            <p>
+              <strong>Персона:</strong> {item.person || 'Невідомо'}
+            </p>
 
-        <p><strong>Персона:</strong> {item.person}</p>
+            <p>
+              <strong>Місто:</strong> {item.city || 'Невідомо'}
+            </p>
 
-        {(item.city || item.country) && (
-          <p>
-          {item.city}
-          {item.city && item.country ? ', ' : ''}
-          {item.country}
-          </p>
-        )}
+            <p>
+              <strong>Рік:</strong> {item.year || 'Невідомо'}
+            </p>
 
-        <p>
-        <strong>Рік:</strong>{' '}
-        {item.year || 'невідомо'}
-        </p>
-
-        <p>{item.description}</p>
-
-        {item.isOsm && (
-          <p style={{ fontSize: '12px', opacity: 0.75 }}>
-          Дані з OpenStreetMap
-          </p>
-        )}
-
-        {item.sourceUrl && (
-          <a
-          href={item.sourceUrl}
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            display: 'inline-block',
-            marginTop: '10px',
-            padding: '8px 12px',
-            background: '#2563eb',
-            color: 'white',
-            textDecoration: 'none',
-            borderRadius: '8px',
-            fontWeight: '600'
-          }}
-          >
-          Джерело
-          </a>
-        )}
-        </div>
+            <button
+              type="button"
+              className="map-popup__button"
+              onClick={() => setSelectedObject(item)}
+            >
+              Детальніше про об'єкт
+            </button>
+          </div>
         </Popup>
         </Marker>
       )
     })}
     </MarkerClusterGroup>
     </MapContainer>
+    {selectedObject && (
+  <ObjectModal
+    object={selectedObject}
+    onClose={() => setSelectedObject(null)}
+  />
+)}
     </div>
   )
 }
