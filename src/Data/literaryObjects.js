@@ -14,6 +14,20 @@ const monuments = [
     history: "Розширена історія створення та встановлення.",
     author: "Ім'я скульптора",
     architect: "Ім'я архітектора",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Taras_Shevchenko_Monument_in_Kyiv%2C_May_2022.jpg/1280px-Taras_Shevchenko_Monument_in_Kyiv%2C_May_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Milana Sribniak",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Taras_Shevchenko_Monument_in_Kyiv,_May_2022.jpg"
+      },
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Monument_to_Taras_Shevchenko%2C_sheltered_from_Russian_shelling._Kyiv%2C_2022.jpg/1280px-Monument_to_Taras_Shevchenko%2C_sheltered_from_Russian_shelling._Kyiv%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Ввласенко",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Monument_to_Taras_Shevchenko,_sheltered_from_Russian_shelling._Kyiv,_2022.jpg"
+      }
+    ],
     videos: [
       {
         title: "Історія пам'ятника",
@@ -1208,6 +1222,14 @@ const monuments = [
     description: "Пам’ятник у вигляді гармати на Арсенальній площі. Пов’язаний зі збройним повстанням робітників заводу «Арсенал» проти Центральної Ради Української Народної Республіки.",
     history: "У січні 1918 року робітники заводу «Арсенал» та інші збройні формування виступили проти Центральної Ради. Повстання стало частиною боротьби за контроль над Києвом під час Української революції. Після боїв завод був узятий військами УНР. У 1923 році на Арсенальній площі встановили гармату на постаменті колишнього пам’ятника Іскрі та Кочубею.",
     significance: "Цей монумент є прикладом радянської меморіальної політики. Його первісне призначення було прославленням учасників більшовицького повстання. Сьогодні він також є матеріальним свідченням складної історії Української революції.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg/1280px-%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Prymasal",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D1%97%D0%B2,_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.,_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg"
+      }
+    ],
     sources: [
       {
         title: "mdch.kyiv.ua",
@@ -1967,6 +1989,14 @@ const monuments = [
     description: "Унікальний комплекс пісковикових скель із печерами, гротами та тисячами стародавніх наскельних зображень.",
     history: "Кам'яна Могила використовувалася людьми протягом багатьох тисячоліть. На її поверхнях і в гротах виявлено петрогліфи різних історичних періодів, зокрема зображення тварин, символи та знаки.",
     significance: "Одна з найвизначніших археологічних пам'яток України, що зберігає сліди духовного життя давніх суспільств.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/a/ac/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Pavel dp",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0.jpg"
+      }
+    ],
     sources: [
       {
         title: "Encyclopedia of Ukraine",
@@ -1989,6 +2019,14 @@ const monuments = [
     description: "Археологічна стоянка мисливців пізнього палеоліту на березі Десни. Відома знахідками з кісток мамонтів, крем'яними знаряддями та прикрасами.",
     history: "Мезинська стоянка була відкрита наприкінці XIX століття. Археологічні дослідження виявили залишки жител, знаряддя праці, вироби з бивня мамонта та предмети мистецтва.",
     significance: "Надзвичайно важлива пам'ятка для дослідження життя, мистецтва й технологій людей пізнього палеоліту на території України.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg/1280px-%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Inishche",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg"
+      }
+    ],
     sources: [
       {
         title: "mezinpark.com.ua",
@@ -2011,6 +2049,14 @@ const monuments = [
     description: "Масштабний археологічний комплекс ранньої залізної доби з залишками укріплень, поселень, курганів та виробничих майстерень.",
     history: "Більське городище складалося з кількох укріплених поселень, об'єднаних оборонними валами. Деякі дослідники пов'язують його з містом Гелон, яке описував давньогрецький історик Геродот.",
     significance: "Одна з найбільших археологічних пам'яток ранньої залізної доби у Східній Європі. Важливий центр дослідження скіфського світу та населення лісостепу.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bilske_gorogische.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Mpas",
+        license: "CC BY-SA 1.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Bilske_gorogische.JPG"
+      }
+    ],
     sources: [
       {
         title: "bilsk.com.ua",
@@ -2122,6 +2168,14 @@ const monuments = [
     description: "Хотинська фортеця — одна з найвідоміших середньовічних оборонних споруд України. Розташована на березі Дністра та протягом століть контролювала важливі торговельні й військові шляхи.",
     history: "Кам'яну фортецю споруджували та перебудовували протягом XIII–XVI століть. У 1621 році поблизу неї відбулася масштабна битва між військами Речі Посполитої та Османської імперії. Важливу роль у битві відіграло козацьке військо під проводом Петра Конашевича-Сагайдачного.",
     significance: "Фортеця є важливим свідченням військової історії Східної Європи та ролі українського козацтва у Хотинській кампанії.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/73-250-0001_Khotyn_Fortress_RB_18.jpg/1280px-73-250-0001_Khotyn_Fortress_RB_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Rbrechko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:73-250-0001_Khotyn_Fortress_RB_18.jpg"
+      }
+    ],
     sources: [
       {
         title: "vue.gov.ua",
@@ -2144,6 +2198,14 @@ const monuments = [
     description: "Пам'ятник видатному авіаконструктору Ігорю Сікорському, одному з піонерів світового літакобудування та вертольотобудування.",
     history: "Ігор Сікорський навчався у Київському політехнічному інституті в 1907–1911 роках. Він створив низку літаків, зокрема багатомоторні конструкції, а згодом став одним із піонерів практичного вертольотобудування. Пам'ятник відкрили на території КПІ біля колишнього авіаційного ангару.",
     significance: "Сікорський є однією з найвідоміших постатей українського походження в історії світової авіації.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/6/62/Sikorskiy_2_by_Igor_Palamarchuk.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "IgorPalamarchuk",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Sikorskiy_2_by_Igor_Palamarchuk.png"
+      }
+    ],
     sources: [
       {
         title: "kpi.ua",
@@ -2166,6 +2228,14 @@ const monuments = [
     description: "Музей присвячений історії космонавтики, ракетобудування та життю видатного конструктора Сергія Корольова.",
     history: "Сергій Корольов народився в Житомирі у 1907 році. Він став одним із головних конструкторів радянської ракетно-космічної програми. У музейній експозиції представлені макети космічних апаратів, скафандри, обладнання та інші матеріали з історії освоєння космосу. Музей відкрили у 1970 році.",
     significance: "Музей зберігає пам'ять про розвиток ракетної техніки та внесок Корольова в історію космонавтики.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Korolev-museum-zhytomyr.jpg/1280px-Korolev-museum-zhytomyr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Texnik",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Korolev-museum-zhytomyr.jpg"
+      }
+    ],
     sources: [
       {
         title: "cosmosmuseum.info",
@@ -2323,6 +2393,14 @@ const monuments = [
     description: "Один із найважливіших художніх музеїв України. Зберігає колекцію українського образотворчого мистецтва від давніх часів до сучасності.",
     history: "Музей розпочав діяльність у 1899 році з археологічної виставки. Будівлю спроєктував архітектор Владислав Городецький. У 1904 році відбулося урочисте відкриття закладу під назвою Київський художньо-промисловий і науковий музей.",
     significance: "Музей відіграє важливу роль у збереженні української художньої спадщини, зокрема іконопису, живопису та скульптури.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/National_Art_Museum_of_Ukraine_20190505.jpg/1280px-National_Art_Museum_of_Ukraine_20190505.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Suicasmo",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:National_Art_Museum_of_Ukraine_20190505.jpg"
+      }
+    ],
     sources: [
       {
         title: "namu.ua",
@@ -2346,6 +2424,14 @@ const monuments = [
     description: "Одна з найвідоміших архітектурних споруд Києва. Будинок вирізняється скульптурним декором із зображеннями фантастичних істот, тварин та морських чудовиськ.",
     history: "Будівлю спорудили за проєктом Владислава Городецького у 1901–1903 роках. Вона поєднувала функції приватного особняка та прибуткового будинку. Скульптурне оформлення створював Еліо Саля. Через складний рельєф ділянки під час будівництва застосували спеціальні інженерні рішення.",
     significance: "Будинок є визначною пам'яткою київського архітектурного модерну та прикладом незвичайного використання скульптурного декору в архітектурі.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Олійник Богдан",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8,_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg"
+      }
+    ],
     sources: [
       {
         title: "guide.kyivcity.gov.ua",
@@ -2369,6 +2455,14 @@ const monuments = [
     description: "Великий музей просто неба, який представляє традиційну архітектуру, побут і культуру різних історико-етнографічних регіонів України.",
     history: "Музей заснували у 1969 році. На його території зібрано сотні пам'яток народного будівництва XVI–XX століть: житлові будинки, дерев'яні церкви, вітряки, господарські споруди та інші об'єкти. Експозиція охоплює Полісся, Карпати, Поділля, Слобожанщину, Полтавщину, Наддніпрянщину та Південь України.",
     significance: "Музей зберігає матеріальну спадщину українського народу та демонструє регіональні особливості традиційного будівництва.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kiev_Pyrogiv_Podillya_070628.jpg/1280px-Kiev_Pyrogiv_Podillya_070628.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Dgri",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kiev_Pyrogiv_Podillya_070628.jpg"
+      }
+    ],
     sources: [
       {
         title: "pyrohiv.com",
@@ -2507,6 +2601,14 @@ const monuments = [
     description: "Олеський замок — одна з найвідоміших середньовічних фортець Західної України. Розташований на пагорбі серед рівнинної місцевості.",
     history: "Перші письмові згадки про замок датуються 1327 роком. Фортеця неодноразово переходила між різними власниками та перебудовувалася. У 1629 році тут народився майбутній польський король Ян III Собеський. У XX столітті споруду відновили та пристосували для музейної діяльності.",
     significance: "Замок є важливою пам'яткою оборонної архітектури та історії Галичини.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Olesko_Castle.jpg/1280px-Olesko_Castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Mykola Swarnyk",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Olesko_Castle.jpg"
+      }
+    ],
     sources: [
       {
         title: "lvivgallery.org",
@@ -2530,6 +2632,14 @@ const monuments = [
     description: "Величний палацово-оборонний комплекс, який поєднує ренесансну архітектуру з елементами бастіонних укріплень.",
     history: "Замок збудували за наказом коронного гетьмана Станіслава Конєцпольського. Проєкт пов'язують з архітекторами Андреа дель Аква та Гійомом де Бопланом. Комплекс мав розкішні інтер'єри, парк і систему оборонних укріплень. Протягом наступних століть він неодноразово змінював власників і зазнавав пошкоджень.",
     significance: "Підгорецький замок є одним із найяскравіших прикладів поєднання палацової та оборонної архітектури в Україні.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Podhorce_-_Zamek_01A.jpg/1280px-Podhorce_-_Zamek_01A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Lestat (Jan Mehlich)",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Podhorce_-_Zamek_01A.jpg"
+      }
+    ],
     sources: [
       {
         title: "lvivgallery.org",
@@ -2553,6 +2663,14 @@ const monuments = [
     description: "Середньовічний замок, розташований на пагорбі біля озера. Відомий оборонними мурами, баштами та мальовничим архітектурним ансамблем.",
     history: "Перша відома письмова згадка про замок датується 1484 роком. У XVII столітті споруду значно перебудували та укріпили. Замок належав різним шляхетським родинам і використовувався як оборонна та житлова резиденція.",
     significance: "Свірзький замок демонструє розвиток фортифікаційної архітектури Галичини та поєднання оборонних і житлових функцій.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/46-233-0009_Svirzh_Castle_RB.jpg/1280px-46-233-0009_Svirzh_Castle_RB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Rbrechko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:46-233-0009_Svirzh_Castle_RB.jpg"
+      }
+    ],
     sources: [
       {
         title: "castles.com.ua",
@@ -2576,6 +2694,14 @@ const monuments = [
     description: "Середньовічна фортеця, одна з найвідоміших архітектурних пам'яток Волині. Відома також як Верхній замок Луцька.",
     history: "Будівництво мурованого замку пов'язане з князем Любартом Гедиміновичем. Фортеця стала важливим політичним та адміністративним центром Волинського князівства. До складу комплексу входять три основні вежі: В'їзна, Стирова та Владича.",
     significance: "Замок є одним із найкраще збережених середньовічних укріплень України та символом історії Луцька.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Lutsk_Lubarts%27_Castle_02_%28YDS_5502%29.jpg/1280px-Lutsk_Lubarts%27_Castle_02_%28YDS_5502%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Nataliya Shestakova",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Lutsk_Lubarts%27_Castle_02_(YDS_5502).jpg"
+      }
+    ],
     sources: [
       {
         title: "lutskrada.gov.ua",
@@ -2599,6 +2725,14 @@ const monuments = [
     description: "Відновлена цитадель Батуринської фортеці — історичний центр оборони та гетьманської влади.",
     history: "Батурин став гетьманською резиденцією у 1669 році. За часів Івана Мазепи місто було важливим політичним, економічним і військовим центром Гетьманщини. У листопаді 1708 року московські війська під командуванням Олександра Меншикова захопили та зруйнували Батурин, убивши значну частину його населення. Сучасну цитадель відтворили за результатами археологічних досліджень.",
     significance: "Пам'ятка символізує боротьбу Гетьманщини за політичну самостійність та трагічні події 1708 року.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg/1280px-%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "NSayenko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg"
+      }
+    ],
     sources: [
       {
         title: "baturin-capital.gov.ua",
@@ -2622,6 +2756,14 @@ const monuments = [
     description: "Кам'яна церква XVII століття, пов'язана з родиною Богдана Хмельницького. Вважається місцем його поховання.",
     history: "Іллінську церкву спорудили в середині XVII століття за часів Богдана Хмельницького. Вона була частиною його родинного маєтку в Суботові. Після смерті гетьмана у 1657 році його поховали в цій церкві. Згодом могила зазнала історичних потрясінь, а точне місце останків Хмельницького залишається предметом дискусій.",
     significance: "Одна з найважливіших пам'яток козацької доби та української сакральної архітектури.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E%2C_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg/1280px-%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E%2C_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Kiyanka",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E,_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg"
+      }
+    ],
     sources: [
       {
         title: "chigirinzapovidnyk.org.ua",
@@ -2645,6 +2787,14 @@ const monuments = [
     description: "Історична височина в центрі Чигирина, на якій розташовувалися укріплення та резиденція гетьмана Богдана Хмельницького.",
     history: "Чигирин був важливим адміністративним і військовим центром ще до Національно-визвольної війни. За Богдана Хмельницького місто стало гетьманською резиденцією та одним із головних політичних центрів козацької держави. На Замковій горі розташовувалися оборонні споруди, які відігравали важливу роль у захисті міста.",
     significance: "Замкова гора є одним із головних символів формування української козацької державності.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Zamkova_gora_Cherk-517.jpg/1280px-Zamkova_gora_Cherk-517.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Сергій Криниця (Haidamac)",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Zamkova_gora_Cherk-517.jpg"
+      }
+    ],
     sources: [
       {
         title: "chigirinzapovidnyk.org.ua",
@@ -2668,6 +2818,14 @@ const monuments = [
     description: "Розкішний палац останнього гетьмана Війська Запорозького Кирила Розумовського, створений у стилі класицизму.",
     history: "Палац спорудили наприкінці XVIII — на початку XIX століття за проєктом шотландського архітектора Чарльза Камерона. Він був частиною великого садибного комплексу в Батурині. Кирило Розумовський планував зробити місто своєю резиденцією. Після тривалого занепаду палац відреставрували та відкрили для відвідувачів у 2009 році.",
     significance: "Палац є важливим свідченням європейських культурних впливів та архітектурних амбіцій останнього українського гетьмана.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg/1280px-%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "NSayenko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg"
+      }
+    ],
     sources: [
       {
         title: "baturin-capital.gov.ua",
@@ -2874,6 +3032,14 @@ const monuments = [
     description: "Масштабний гідроенергетичний комплекс на річці Дніпро, який став символом індустріалізації та розвитку енергетики України.",
     history: "Будівництво Дніпровської ГЕС розпочалося у 1927 році. Проєкт передбачав створення великої греблі та електростанції, яка мала забезпечувати електроенергією промислові підприємства регіону. Перші агрегати запрацювали у 1932 році. У 1941 році греблю підірвали під час відступу радянських військ, що спричинило масштабну катастрофу. Після Другої світової війни станцію відновили. У наступні десятиліття комплекс розширили.",
     significance: "ДніпроГЕС стала однією з ключових споруд української енергетичної інфраструктури та важливим об'єктом історії інженерії.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg/1280px-%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Anatoliy Volkov",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg"
+      }
+    ],
     sources: [
       {
         title: "uhe.gov.ua",
@@ -2897,6 +3063,14 @@ const monuments = [
     description: "Величезна система підземних виробок, створена внаслідок промислового видобутку кам'яної солі. Шахти стали основою розвитку міста Соледар.",
     history: "Промислове освоєння соляних родовищ розпочалося у 1881 році. Протягом наступних десятиліть під землею утворилася розгалужена система тунелів і камер. У шахтах облаштовували підземні зали, проводили екскурсії та культурні заходи. Після початку повномасштабного вторгнення Росії місто стало ареною важких бойових дій, а шахтна інфраструктура зазнала руйнувань.",
     significance: "Шахти є важливою частиною історії української гірничої промисловості та промислового розвитку Донбасу.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Soledar_salt_mine_%28Sep_2020%29_9.jpg/1280px-Soledar_salt_mine_%28Sep_2020%29_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Visem",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Soledar_salt_mine_(Sep_2020)_9.jpg"
+      }
+    ],
     sources: [
       {
         title: "soledar.saltway.in.ua",
@@ -2920,6 +3094,14 @@ const monuments = [
     description: "Історичний комплекс одного з найстаріших військово-промислових підприємств Києва. Тут виготовляли та ремонтували артилерійське озброєння й військове спорядження.",
     history: "У 1750 році було ухвалено рішення про створення київського арсеналу. Перша тимчасова дерев'яна будівля з'явилася у 1763 році, а промислове підприємство почало діяти у 1764 році. У наступні десятиліття комплекс розширювали, зводили кам'яні виробничі корпуси та майстерні. У січні 1918 року робітники підприємства брали участь у збройному повстанні проти Української Центральної Ради. На частині старих будівель збереглися сліди від куль і снарядів.",
     significance: "Комплекс поєднує історію військового виробництва, архітектури Києва та драматичних подій Української революції.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Arsenal_Factory%2C_Kyiv_%2852672804299%29.jpg/1280px-Arsenal_Factory%2C_Kyiv_%2852672804299%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Svvyatoslav Igorevich",
+        license: "CC0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Arsenal_Factory,_Kyiv_(52672804299).jpg"
+      }
+    ],
     sources: [
       {
         title: "pamyatky.kiev.ua",
@@ -2943,6 +3125,14 @@ const monuments = [
     description: "Один із найвідоміших залізничних вокзалів України, який став важливим транспортним вузлом між українськими землями та Центральною Європою.",
     history: "Перший поїзд прибув до Львова з Перемишля 4 листопада 1861 року. Це стало початком історії регулярного залізничного сполучення на території сучасної України. Сучасну будівлю вокзалу спорудили у 1899–1904 роках за проєктом Владислава Садловського. Будівельними роботами займалася фірма Івана Левинського. Споруда поєднала інженерні рішення того часу з архітектурою модерну.",
     significance: "Вокзал є важливою пам'яткою транспортної інфраструктури та символом інтеграції українських земель у європейську залізничну мережу.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Lviv_railway_station2.png/1280px-Lviv_railway_station2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Юрій Коберник",
+        license: "CC BY 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Lviv_railway_station2.png"
+      }
+    ],
     sources: [
       {
         title: "lviv.travel",
@@ -3058,6 +3248,14 @@ const monuments = [
     description: "Музей розташований у будинку на вулиці Саксаганського, де видатний український композитор Микола Лисенко проживав із 1894 року до своєї смерті у 1912 році. Експозиція знайомить із його життям, творчістю та внеском у розвиток української музики.",
     history: "Микола Лисенко мешкав у цьому будинку разом із родиною, орендуючи другий поверх. Тут він працював над багатьма музичними творами, приймав українських митців і громадських діячів. Після його смерті виникла ідея створення меморіального музею. У 1980 році музей відкрили для відвідувачів. У його приміщеннях відтворено меморіальні кімнати композитора, зберігаються особисті речі, архіви та музичні інструменти.",
     significance: "Музей зберігає пам'ять про засновника української національної композиторської школи, який зробив величезний внесок у розвиток опери, хорової та інструментальної музики.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kyiv%2C_Saksaganskogo_str.%2C_95.JPG/1280px-Kyiv%2C_Saksaganskogo_str.%2C_95.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Xsandriel",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyiv,_Saksaganskogo_str.,_95.JPG"
+      }
+    ],
     sources: [
       {
         title: "guide.kyivcity.gov.ua",
@@ -3081,6 +3279,14 @@ const monuments = [
     description: "Музей присвячений життю та творчості Соломії Крушельницької — однієї з найвидатніших українських оперних співачок. Він розташований у будинку, який співачка придбала у Львові в 1903 році.",
     history: "У цьому будинку Соломія Крушельницька провела останні роки свого життя. Після повернення до Львова у 1939 році вона продовжувала викладати вокал і підтримувати музичне життя міста. Після її смерті у 1952 році будинок зберіг меморіальне значення. У 1989 році тут відкрили музей. Його експозиція розповідає про міжнародну кар'єру співачки, її виступи на провідних оперних сценах світу та особисте життя.",
     significance: "Музей увічнює пам'ять про українську співачку світового рівня, яка виступала на найвідоміших оперних сценах Європи та Америки й прославила українську вокальну школу.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Musicmuseumlviv2.jpg/1280px-Musicmuseumlviv2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Георг Фридрих Зандерлинг",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Musicmuseumlviv2.jpg"
+      }
+    ],
     sources: [
       {
         title: "lviv.travel",
@@ -3127,6 +3333,14 @@ const monuments = [
     description: "Історична будівля на вулиці Римарській, 21 у Харкові пов'язана з раннім розвитком міської оперної сцени. У XIX столітті тут діяв Комерційний клуб, а згодом приміщення було перебудоване для театральних та оперних вистав.",
     history: "Будівлю спорудили 1829 року. У 1850-х роках її пристосували для проведення вистав, а в 1884–1885 роках капітально реконструювали для потреб оперного театру за проєктом архітектора Б. Михаловського. Тут відбувалися оперні постановки та виступи відомих артистів. У 1991 році Харківський театр опери та балету остаточно перейшов до нового приміщення на вулиці Сумській. Історична будівля на Римарській згодом стала домівкою Харківської обласної філармонії.",
     significance: "Це важливе місце в історії музичного життя Харкова, пов'язане зі становленням професійної опери та розвитком міської концертної культури.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG/1280px-Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Сергій Криниця (Haidamac)",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG"
+      }
+    ],
     sources: [
       {
         title: "sq.com.ua",
@@ -4038,6 +4252,14 @@ const monuments = [
     description: "Місце поховання Тараса Григоровича Шевченка на Тарасовій горі в Каневі.",
     history: "Після смерті в Санкт-Петербурзі 10 березня 1861 року Шевченка спочатку поховали на Смоленському кладовищі. Згодом, відповідно до його заповіту, домовину перевезли в Україну. 22 травня 1861 року поета перепоховали на Чернечій горі поблизу Канева. Відтоді вона отримала назву Тарасова гора. У 1939 році тут відкрили сучасний пам'ятник роботи скульптора Матвія Манізера.",
     significance: "Могила Шевченка стала одним із головних місць національної пам'яті України. Територія входить до Шевченківського національного заповідника.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_%28%D0%9A%D0%B0%D0%BD%D1%96%D0%B2%29.jpg/1280px-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_%28%D0%9A%D0%B0%D0%BD%D1%96%D0%B2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Куннова Олена",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_(%D0%9A%D0%B0%D0%BD%D1%96%D0%B2).jpg"
+      }
+    ],
     sources: [
       {
         title: "shevchenko-museum.com.ua",
@@ -4062,6 +4284,14 @@ const monuments = [
     description: "Місце поховання української поетеси, драматургині та перекладачки Лесі Українки на Байковому кладовищі.",
     history: "Леся Українка померла 1 серпня 1913 року в Сурамі, Грузія. Її тіло перевезли до Києва та поховали 7 серпня на Байковому кладовищі, на старій ділянці №3. У 1939 році на могилі встановили бронзовий надгробний пам'ятник роботи скульпторки Галини Петрашевич.",
     significance: "Могила є місцем вшанування однієї з найважливіших постатей української літератури та жіночого інтелектуального руху.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg/1280px-%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Половко Сергей Николаевич",
+        license: "Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg"
+      }
+    ],
     sources: [
       {
         title: "lesyaukrainka.com",
@@ -4086,6 +4316,14 @@ const monuments = [
     description: "Місце поховання українського письменника, поета, перекладача, науковця та громадського діяча Івана Франка на Личаківському цвинтарі.",
     history: "Іван Франко помер 28 травня 1916 року у Львові. Спочатку його поховали у склепі родини Мотичинських. У 1921 році останки перенесли до окремої могили на Личаківському цвинтарі. У 1933 році над нею встановили пам'ятник роботи скульптора Сергія Литвиненка, що зображає Франка-каменяра.",
     significance: "Могила Франка є однією з найвідоміших пам'яток Личаківського цвинтаря та місцем вшанування його літературної, наукової та громадської спадщини.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/1/18/IwanFrankoLwow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Stanisław Kosiedowski",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:IwanFrankoLwow.jpg"
+      }
+    ],
     sources: [
       {
         title: "swr.lnu.edu.ua",
@@ -4110,6 +4348,14 @@ const monuments = [
     description: "Місце поховання українського історика, академіка та першого голови Української Центральної Ради Михайла Грушевського.",
     history: "Михайло Грушевський помер 24 листопада 1934 року в Кисловодську. Його тіло перевезли до Києва. Похорон відбувся 29 листопада 1934 року. Могила розташована на Байковому кладовищі, ділянка №8. Поховання має статус пам'ятки історії національного значення.",
     significance: "Грушевський був одним із ключових українських істориків і політичних діячів початку XX століття. Його наукові праці та діяльність Центральної Ради мають фундаментальне значення для історії української державності.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9C._%D0%A1.%2C_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0%2C_%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%97_%D0%A0%D0%B0%D0%B4%D0%B8.JPG/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Kiyanka",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9C._%D0%A1.,_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0,_%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%97_%D0%A0%D0%B0%D0%B4%D0%B8.JPG"
+      }
+    ],
     sources: [
       {
         title: "hrushevsky.history.org.ua",
@@ -4134,6 +4380,14 @@ const monuments = [
     description: "Один із провідних історичних музеїв України, розташований на Старокиївській горі біля Десятинної церкви. Його колекції охоплюють історію українських земель від найдавніших часів до сучасності.",
     history: "Музей виник наприкінці XIX століття як Київський художньо-промисловий і науковий музей. Його сучасна будівля на вулиці Володимирській була споруджена на початку XX століття. У фондах зберігаються археологічні знахідки, стародавні прикраси, зброя, монети, документи, рукописи, предмети побуту та мистецтва.",
     significance: "Музей є важливим центром збереження матеріальної історії України. Його археологічні, етнографічні та історичні колекції дозволяють простежити розвиток суспільства на українських землях протягом тисячоліть.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Building_of_National_Museum_of_the_History_of_Ukraine_%282018-10-13%29.jpg/1280px-Building_of_National_Museum_of_the_History_of_Ukraine_%282018-10-13%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Oleh Kushch",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Building_of_National_Museum_of_the_History_of_Ukraine_(2018-10-13).jpg"
+      }
+    ],
     sources: [
       {
         title: "nmiu.org",
@@ -4158,6 +4412,14 @@ const monuments = [
     description: "Музей присвячений життю, творчості та культурній спадщині Тараса Григоровича Шевченка. Тут зберігаються особисті речі поета, його рукописи, документи, малярські роботи та видання творів.",
     history: "Музейна колекція формувалася на основі матеріалів про життя і творчість Шевченка, зокрема предметів, переданих із приватних зібрань та інших установ. Експозиція знайомить із дитинством поета, його викупом із кріпацтва, навчанням у Петербурзі, творчістю, засланням та останніми роками життя.",
     significance: "Це один із головних осередків збереження спадщини Тараса Шевченка. Музей допомагає досліджувати його не лише як поета, а і як художника, мислителя та важливу постать українського національного руху.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG/1280px-%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "AMY",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG"
+      }
+    ],
     sources: [
       {
         title: "museumshevchenko.org.ua",
@@ -4182,6 +4444,14 @@ const monuments = [
     description: "Один із найвідоміших художніх музеїв України, створений на основі колекції меценатів Богдана та Варвари Ханенків. Музей розташований у двох історичних будівлях на вулиці Терещенківській.",
     history: "Богдан і Варвара Ханенки протягом життя збирали твори мистецтва різних країн та епох. Після смерті Богдана Ханенка Варвара передала їхню колекцію Києву разом із будинком та іншими цінностями. У зібранні представлені твори західноєвропейського живопису, візантійські ікони, японська графіка, китайське мистецтво та інші цінні експонати.",
     significance: "Музей є одним із найважливіших центрів збереження світового мистецтва в Україні. Його історія також є прикладом масштабного меценатства та приватного колекціонування.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Khanenko_Museum_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Museum of Bogdan and Varvara Khanenko",
+        license: "Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Khanenko_Museum_01.png"
+      }
+    ],
     sources: [
       {
         title: "khanenko.museum",
@@ -4206,6 +4476,14 @@ const monuments = [
     description: "Музей, присвячений історії українського козацтва, Гетьманщини та гетьманської державної традиції. Розташований у старовинній кам'яниці на Подолі, відомій як Будинок Мазепи.",
     history: "Музей було засновано в незалежній Україні у 1993 році. Його експозиції розповідають про добу Богдана Хмельницького, державотворчу діяльність Івана Мазепи, спадщину Пилипа Орлика, а також Українську Державу Павла Скоропадського. У колекції представлені документи, козацька зброя, печатки, предмети побуту та матеріали про українських гетьманів.",
     significance: "Музей зберігає пам'ять про українську козацьку державність та розвиток традицій українського державотворення.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Budynok_Mazepy_Kyiv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Невідомий автор",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Budynok_Mazepy_Kyiv.jpg"
+      }
+    ],
     sources: [
       {
         title: "hetmanmuseum.com.ua",
@@ -4254,6 +4532,14 @@ const monuments = [
     description: "Найстаріший археологічний музей України. Його колекції розповідають про історію Північного Причорномор'я від кам'яної доби до середньовіччя.",
     history: "Музей заснований у 1825 році. У його зібраннях представлені матеріали трипільської, скіфської, сарматської, грецької та інших стародавніх культур. Окрему цінність становлять колекції античних старожитностей, єгипетських предметів, монет і скульптур. Перед будівлею музею розташована копія знаменитої скульптурної композиції «Лаокоон».",
     significance: "Музей є одним із провідних наукових центрів дослідження стародавньої історії Північного Причорномор'я. Його колекції мають значення для вивчення античних міст Півдня України.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg/1280px-51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Haidamac",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg"
+      }
+    ],
     sources: [
       {
         title: "museum.mincult.gov.ua",
@@ -4278,6 +4564,14 @@ const monuments = [
     description: "Один із найбільших історичних музеїв України, присвячений історії Харкова, Слобожанщини та українських земель.",
     history: "Музей веде свою історію від Музею Слобідської України імені Григорія Сковороди, заснованого 21 січня 1920 року за участю академіка Миколи Сумцова. До його колекції увійшли матеріали попередніх музейних установ Харкова. У 2015 році закладу присвоїли ім'я Миколи Сумцова. Сучасна будівля музею — колишній Харківський міський ломбард, споруджений у 1908 році.",
     significance: "Фонди музею налічують понад 330 тисяч предметів: археологічні знахідки, документи, твори мистецтва, зброю та предмети повсякденного життя. Це один із головних осередків дослідження історії Слобожанщини.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Kharkiv_Historical_Museum_1.JPG/1280px-Kharkiv_Historical_Museum_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Kharkivian (Сергій Петров)",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kharkiv_Historical_Museum_1.JPG"
+      }
+    ],
     sources: [
       {
         title: "museum.kh.ua",
@@ -4302,6 +4596,14 @@ const monuments = [
     description: "Один із найвідоміших регіональних музеїв України, розташований у будівлі колишнього Полтавського губернського земства — видатній пам'ятці українського архітектурного модерну.",
     history: "Музей заснований у 1891 році як природничо-історичний музей Полтавського губернського земства. Важливу роль у створенні його колекцій відіграв учений Василь Докучаєв. Будівлю музею спроєктував архітектор і художник Василь Кричевський. Споруда стала одним із найвідоміших прикладів українського архітектурного стилю.",
     significance: "Музей зберігає природничу, археологічну, етнографічну та історичну спадщину Полтавщини. Його будівля є важливим зразком українського архітектурного модерну.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97%2C_2.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Posterrr",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97,_2.jpg"
+      }
+    ],
     sources: [
       {
         title: "pkm.poltava.ua",
@@ -4326,6 +4628,14 @@ const monuments = [
     description: "Один із найбільших художніх музеїв України, що зберігає виняткову колекцію українського сакрального мистецтва, іконопису, рукописів, графіки та живопису.",
     history: "Музей заснований митрополитом Андреєм Шептицьким у 1905 році як приватна фундація під назвою «Церковний музей». 13 грудня 1913 року його урочисто передали в дар українському народові. Зібрання музею поступово розширювалося та стало одним із найважливіших центрів дослідження українського мистецтва.",
     significance: "Музей зберігає унікальні пам'ятки української культури, зокрема давній іконопис, сакральне мистецтво та твори українських художників. Його колекції мають національне та міжнародне значення.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg/1280px-%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Wereskowa",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg"
+      }
+    ],
     sources: [
       {
         title: "nml.com.ua",
@@ -4350,6 +4660,14 @@ const monuments = [
     description: "Відомий як Шевченківський гай або Львівський скансен. Музей просто неба представляє традиційну архітектуру, побут і культуру західних регіонів України.",
     history: "Музей заснований у 1971 році. На його території площею близько 36,6 гектара розміщено понад 100 архітектурних об'єктів, перевезених із різних куточків Західної України. Серед них — дерев'яні церкви, дзвіниці, селянські хати, господарські споруди та традиційні садиби. Експозиція представляє Бойківщину, Лемківщину, Гуцульщину, Буковину, Покуття, Поділля та інші етнографічні регіони.",
     significance: "Музей зберігає унікальні зразки дерев'яної народної архітектури та сакрального мистецтва. Його колекція дерев'яних церков є однією з найцінніших музейних збірок такого типу в Україні.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_%2811%29.jpg/1280px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_%2811%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Дмитрий Ванькевич",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_(11).jpg"
+      }
+    ],
     sources: [
       {
         title: "lvivskansen.org",
@@ -4374,6 +4692,14 @@ const monuments = [
     description: "Ужгородський скансен — один із перших музеїв просто неба в Україні. Він відтворює традиційне закарпатське село з житловими будинками, господарськими спорудами, церквою та іншими архітектурними пам'ятками.",
     history: "Музей відкрили для відвідувачів у червні 1970 року на схилі Замкової гори поруч з Ужгородським замком. Експозиція відображає традиційну архітектуру різних етнографічних груп Закарпаття: долинян, бойків і гуцулів, а також угорського та румунського населення краю. Тут представлені садиби, дерев'яна церква, дзвіниця, школа, кузня, млин і корчма.",
     significance: "Музей зберігає багатокультурну спадщину Закарпаття та демонструє особливості народної архітектури й побуту різних етнічних спільнот регіону.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/1/17/Panorama_uschhorod_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Elya",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Panorama_uschhorod_museum.jpg"
+      }
+    ],
     sources: [
       {
         title: "uzhhorod-skansen.com",
@@ -4398,6 +4724,14 @@ const monuments = [
     description: "Один із перших музеїв просто неба в Україні. На території відтворено традиційне українське село Середньої Наддніпрянщини з житловими будинками, церквами, вітряками, майстернями та господарськими спорудами.",
     history: "Створення музею розпочалося у 1964 році на Татарській горі в Переяславі. Його концепція передбачає відтворення еволюції українського житла та сільського побуту від найдавніших часів до XX століття. На території розташовано численні архітектурні пам'ятки XVII–XIX століть, традиційні садиби, ремісничі майстерні, вітряки та дерев'яні церкви. Музей є частиною Національного історико-етнографічного заповідника «Переяслав».",
     significance: "Комплекс дозволяє досліджувати традиційну архітектуру, ремесла, господарство та повсякденне життя населення Середньої Наддніпрянщини.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Windmill_-_Museum_of_folk_architecture_and_way_of_life_of_Middle_Naddnipryanschina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        author: "Uk-Kamelot",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Windmill_-_Museum_of_folk_architecture_and_way_of_life_of_Middle_Naddnipryanschina.jpg"
+      }
+    ],
     sources: [
       {
         title: "niez.com.ua",
@@ -4422,6 +4756,14 @@ const monuments = [
     description: "Етнографічний музей просто неба, який відтворює традиційне буковинське село XIX — першої половини XX століття.",
     history: "Музей заснований у 1977 році, а першу експозицію відкрили для відвідувачів у липні 1986 року. На території представлені житлові та господарські споруди, церква, дзвіниця, кузня, корчма, сільська управа та інші об'єкти. Будівлі перевезені з різних районів Буковини й облаштовані відповідно до традиційного сільського середовища.",
     significance: "Музей зберігає матеріальну спадщину Буковини, демонструє регіональні особливості дерев'яного будівництва, традиційного одягу, ремесел і побуту.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg/1280px-%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        author: "Dmytro37",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg"
+      }
+    ],
     sources: [
       {
         title: "skansen.cv.ua",
