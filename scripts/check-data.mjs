@@ -66,6 +66,11 @@ for (const o of objects) {
 
   if (o.year !== undefined && o.year !== null && !Number.isInteger(o.year)) err(o, 'year має бути цілим числом')
   if (o.eraYear !== undefined && !Number.isInteger(o.eraYear)) err(o, 'eraYear має бути цілим числом')
+  if (o.eraYearEnd !== undefined) {
+    if (!Number.isInteger(o.eraYearEnd)) err(o, 'eraYearEnd має бути цілим числом')
+    if (o.eraYear === undefined) err(o, 'eraYearEnd без eraYear')
+    else if (o.eraYearEnd < o.eraYear) err(o, 'eraYearEnd менший за eraYear')
+  }
 
   if (o.forgotten !== undefined && typeof o.forgotten !== 'boolean') err(o, 'forgotten має бути true/false')
   if (o.forgotten && !o.whyForgotten) err(o, 'forgotten: true потребує whyForgotten')

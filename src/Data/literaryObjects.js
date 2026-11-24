@@ -10,6 +10,8 @@ const monuments = [
     lat: 50.4423,
     lng: 30.5144,
     year: 1939,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник у парку Шевченка навпроти Червоного корпусу Київського університету. Встановлений 1939 року до 125-річчя від дня народження поета; один із символів Києва.",
     history: "Встановленню передували п’ять невдалих спроб за часів Російської імперії та Української революції. Кошти на пам’ятник почали збирати ще 1904 року; до комітету зі спорудження входили, зокрема, Михайло Коцюбинський, Микола Лисенко, Борис Грінченко та Євген Чикаленко. 1910 року оголосили міжнародний конкурс проєктів, але задум удалося втілити лише 1939 року. Після початку повномасштабного вторгнення 2022 року пам’ятник укрили, щоб захистити від можливого руйнування під час обстрілів.",
     author: "Матвій Манізер",
@@ -32,6 +34,10 @@ const monuments = [
       {
         title: "Вікіпедія: Пам’ятник Тарасові Шевченку (Київ)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Київ)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -46,11 +52,17 @@ const monuments = [
     lat: 50.0011,
     lng: 36.2342,
     year: 1935,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Відомий багатофігурний монумент у саду Шевченка.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Харків)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Харків)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -65,11 +77,17 @@ const monuments = [
     lat: 49.8419,
     lng: 24.0297,
     year: 1992,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Монумент на проспекті Свободи в центрі Львова.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Львів)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Львів)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -84,11 +102,17 @@ const monuments = [
     lat: 48.4663,
     lng: 35.0744,
     year: 1959,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Монумент на Монастирському острові.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Монастирський острів)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Монастирський_острів)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -103,7 +127,15 @@ const monuments = [
     lat: 50.7506,
     lng: 33.4856,
     year: 1918,
-    description: "Один із перших повнофігурних пам’ятників Шевченку."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Один із перших повнофігурних пам’ятників Шевченку.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 6,
@@ -116,7 +148,15 @@ const monuments = [
     lat: 48.9119,
     lng: 24.6956,
     year: 2011,
-    description: "Пам’ятник молодому Шевченку в міському парку."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник молодому Шевченку в міському парку.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 7,
@@ -129,11 +169,17 @@ const monuments = [
     lat: 50.2479,
     lng: 28.6782,
     year: 1976,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в центральній частині міста.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Житомир)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Житомир)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -148,11 +194,17 @@ const monuments = [
     lat: 50.7467,
     lng: 25.3308,
     year: 1995,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник перед Волинським національним університетом.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Луцьк)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Луцьк)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -167,11 +219,17 @@ const monuments = [
     lat: 49.4219,
     lng: 26.985,
     year: 1992,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник у сквері імені Шевченка.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Хмельницький)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Хмельницький)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -186,7 +244,15 @@ const monuments = [
     lat: 47.8193,
     lng: 35.1964,
     year: 1989,
-    description: "Пам’ятник Шевченку в Запоріжжі."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник Шевченку в Запоріжжі.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 11,
@@ -199,11 +265,17 @@ const monuments = [
     lat: 49.4426,
     lng: 32.0614,
     year: 1964,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник у місті, пов’язаному з шевченківською спадщиною.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Черкаси)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Черкаси)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -218,7 +290,15 @@ const monuments = [
     lat: 51.4894,
     lng: 31.3067,
     year: 1992,
-    description: "Пам’ятник молодому Шевченку на Валу."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник молодому Шевченку на Валу.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 13,
@@ -231,7 +311,15 @@ const monuments = [
     lat: 49.5536,
     lng: 25.5948,
     year: 1982,
-    description: "Пам’ятник біля театру на Театральній площі."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник біля театру на Театральній площі.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 14,
@@ -244,7 +332,15 @@ const monuments = [
     lat: 48.2921,
     lng: 25.9355,
     year: 1999,
-    description: "Пам’ятник на Центральній площі Чернівців."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник на Центральній площі Чернівців.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 15,
@@ -257,11 +353,17 @@ const monuments = [
     lat: 48.738,
     lng: 37.584,
     year: 2008,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в Донецькій області.",
     sources: [
       {
         title: "Вікіпедія: Памятник Тарасу Шевченко (Краматорск)",
         url: "https://ru.wikipedia.org/wiki/Памятник_Тарасу_Шевченко_(Краматорск)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -276,7 +378,15 @@ const monuments = [
     lat: 50.3527,
     lng: 30.955,
     year: 1994,
-    description: "Пам’ятний знак на честь перебування Шевченка в Борисполі."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятний знак на честь перебування Шевченка в Борисполі.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 17,
@@ -289,11 +399,17 @@ const monuments = [
     lat: 50.4301,
     lng: 30.5386,
     year: 1973,
+    eraYear: 1871,
+    eraYearEnd: 1913,
     description: "Пам’ятник на площі Лесі Українки.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Лесі Українці (Київ)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Лесі_Українці_(Київ)"
+      },
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
       }
     ]
   },
@@ -308,7 +424,15 @@ const monuments = [
     lat: 50.4476,
     lng: 30.5511,
     year: 1965,
-    description: "Паркова скульптура Лесі Українки в Маріїнському парку."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Паркова скульптура Лесі Українки в Маріїнському парку.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 19,
@@ -321,7 +445,15 @@ const monuments = [
     lat: 50.7417,
     lng: 25.3308,
     year: 1966,
-    description: "Пам’ятник у Центральному парку культури і відпочинку."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник у Центральному парку культури і відпочинку.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 20,
@@ -334,7 +466,15 @@ const monuments = [
     lat: 51.2141,
     lng: 24.71,
     year: 1991,
-    description: "Пам’ятник біля парку імені Лесі Українки."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник біля парку імені Лесі Українки.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 21,
@@ -347,7 +487,15 @@ const monuments = [
     lat: 51.2438,
     lng: 24.7415,
     year: 1958,
-    description: "Погруддя на території музею-садиби Лесі Українки."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Погруддя на території музею-садиби Лесі Українки.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 22,
@@ -360,7 +508,15 @@ const monuments = [
     lat: 44.4917,
     lng: 34.1619,
     year: 1972,
-    description: "Пам’ятник у Ялті біля місць, пов’язаних із перебуванням поетеси."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник у Ялті біля місць, пов’язаних із перебуванням поетеси.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 23,
@@ -373,7 +529,15 @@ const monuments = [
     lat: 50.5921,
     lng: 27.6215,
     year: 1963,
-    description: "Пам’ятник у рідному місті Лесі Українки."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник у рідному місті Лесі Українки.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 24,
@@ -386,7 +550,15 @@ const monuments = [
     lat: 46.1952,
     lng: 30.3494,
     year: 2012,
-    description: "Пам’ятник біля будівлі педагогічного училища."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник біля будівлі педагогічного училища.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 25,
@@ -399,7 +571,15 @@ const monuments = [
     lat: 49.044,
     lng: 25.765,
     year: 1967,
-    description: "Погруддя біля сільського будинку культури."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Погруддя біля сільського будинку культури.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 26,
@@ -412,7 +592,15 @@ const monuments = [
     lat: 48.967,
     lng: 24.292,
     year: 1992,
-    description: "Пам’ятник Лесі Українці біля сільського клубу."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник Лесі Українці біля сільського клубу.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 27,
@@ -425,11 +613,17 @@ const monuments = [
     lat: 50.4455,
     lng: 30.5273,
     year: 1956,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     description: "Пам’ятник на площі Івана Франка біля театру.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Київ)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Іванові_Франку_(Київ)"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -444,11 +638,17 @@ const monuments = [
     lat: 49.8398,
     lng: 24.0213,
     year: 1964,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     description: "Монумент перед головним корпусом Львівського університету.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Львів)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Іванові_Франку_(Львів)"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -463,11 +663,17 @@ const monuments = [
     lat: 49.3546,
     lng: 23.5029,
     year: 1966,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     description: "Пам’ятник Франкові в Дрогобичі.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Франкові у Дрогобичі",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Франкові_у_Дрогобичі"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -482,11 +688,17 @@ const monuments = [
     lat: 48.9226,
     lng: 24.7111,
     year: 1978,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     description: "Пам’ятник Іванові Франку в обласному центрі.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Івано-Франківськ)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Іванові_Франку_(Івано-Франківськ)"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -501,11 +713,17 @@ const monuments = [
     lat: 48.5312,
     lng: 25.0365,
     year: 2012,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     description: "Пам’ятник Іванові Франку в Коломиї.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Коломия)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Іванові_Франку_(Коломия)"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -520,7 +738,15 @@ const monuments = [
     lat: 49.2867,
     lng: 23.4214,
     year: 1958,
-    description: "Пам’ятник Іванові Франку в Бориславі."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник Іванові Франку в Бориславі.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 33,
@@ -533,7 +759,15 @@ const monuments = [
     lat: 50.0879,
     lng: 25.1503,
     year: 1966,
-    description: "Пам’ятник Франкові на вулиці, названій його іменем."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник Франкові на вулиці, названій його іменем.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 34,
@@ -546,7 +780,15 @@ const monuments = [
     lat: 49.8152,
     lng: 24.1439,
     year: 1978,
-    description: "Повторно відкритий пам’ятник Франкові у Винниках."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Повторно відкритий пам’ятник Франкові у Винниках.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 35,
@@ -559,7 +801,15 @@ const monuments = [
     lat: 49.366,
     lng: 23.462,
     year: 1981,
-    description: "Бронзовий пам’ятник біля сільської школи."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Бронзовий пам’ятник біля сільської школи.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 36,
@@ -572,7 +822,15 @@ const monuments = [
     lat: 49.356,
     lng: 23.478,
     year: 1986,
-    description: "Повнофігурний пам’ятник у селі, де народився Франко."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Повнофігурний пам’ятник у селі, де народився Франко.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 37,
@@ -585,7 +843,15 @@ const monuments = [
     lat: 49.5183,
     lng: 23.1975,
     year: 1996,
-    description: "Пам’ятник Франкові на площі Івана Франка."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник Франкові на площі Івана Франка.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 38,
@@ -598,7 +864,15 @@ const monuments = [
     lat: 49.2604,
     lng: 23.8518,
     year: 1995,
-    description: "Монумент, де поруч зображені Шевченко, Франко та Леся Українка."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Монумент, де поруч зображені Шевченко, Франко та Леся Українка.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 39,
@@ -611,7 +885,15 @@ const monuments = [
     lat: 46.4825,
     lng: 30.7233,
     year: 2006,
-    description: "Перший державний пам’ятник Франкові на півдні України."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Перший державний пам’ятник Франкові на півдні України.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 40,
@@ -624,7 +906,15 @@ const monuments = [
     lat: 49.5535,
     lng: 25.5948,
     year: 1995,
-    description: "Пам’ятник у сквері на вулиці Сагайдачного."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник у сквері на вулиці Сагайдачного.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 41,
@@ -637,7 +927,15 @@ const monuments = [
     lat: 48.8044,
     lng: 26.0435,
     year: 1983,
-    description: "Пам’ятник Франкові в Борщеві."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник Франкові в Борщеві.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 42,
@@ -650,7 +948,15 @@ const monuments = [
     lat: 49.6636,
     lng: 25.7763,
     year: 1992,
-    description: "Пам’ятник Франкові в Збаражі."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник Франкові в Збаражі.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 43,
@@ -663,7 +969,15 @@ const monuments = [
     lat: 49.3019,
     lng: 25.7097,
     year: 1999,
-    description: "Погруддя Івана Франка в Теребовлі."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Погруддя Івана Франка в Теребовлі.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 44,
@@ -676,7 +990,15 @@ const monuments = [
     lat: 49.381,
     lng: 25.0275,
     year: 1970,
-    description: "Пам’ятник роботи Івана Гончара."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник роботи Івана Гончара.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 45,
@@ -689,11 +1011,17 @@ const monuments = [
     lat: 50.4654,
     lng: 30.5198,
     year: 1977,
+    eraYear: 1722,
+    eraYearEnd: 1794,
     description: "Пам’ятник Григорію Сковороді на Контрактовій площі.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Григорію Сковороді (Київ)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Григорію_Сковороді_(Київ)"
+      },
+      {
+        title: "Вікіпедія: Сковорода Григорій Савич",
+        url: "https://uk.wikipedia.org/wiki/Сковорода_Григорій_Савич"
       }
     ]
   },
@@ -708,7 +1036,15 @@ const monuments = [
     lat: 50.4449,
     lng: 30.5042,
     year: 1960,
-    description: "Погруддя на станції метро «Університет»."
+    eraYear: 1722,
+    eraYearEnd: 1794,
+    description: "Погруддя на станції метро «Університет».",
+    sources: [
+      {
+        title: "Вікіпедія: Сковорода Григорій Савич",
+        url: "https://uk.wikipedia.org/wiki/Сковорода_Григорій_Савич"
+      }
+    ]
   },
   {
     id: 47,
@@ -721,7 +1057,15 @@ const monuments = [
     lat: 50.3679,
     lng: 33.26,
     year: 1922,
-    description: "Один із ранніх пам’ятників Григорію Сковороді."
+    eraYear: 1722,
+    eraYearEnd: 1794,
+    description: "Один із ранніх пам’ятників Григорію Сковороді.",
+    sources: [
+      {
+        title: "Вікіпедія: Сковорода Григорій Савич",
+        url: "https://uk.wikipedia.org/wiki/Сковорода_Григорій_Савич"
+      }
+    ]
   },
   {
     id: 48,
@@ -734,11 +1078,17 @@ const monuments = [
     lat: 49.5883,
     lng: 34.5514,
     year: 1903,
+    eraYear: 1769,
+    eraYearEnd: 1838,
     description: "Один із найстаріших пам’ятників українському письменнику.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Івану Котляревському",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Івану_Котляревському"
+      },
+      {
+        title: "Вікіпедія: Котляревський Іван Петрович",
+        url: "https://uk.wikipedia.org/wiki/Котляревський_Іван_Петрович"
       }
     ]
   },
@@ -753,11 +1103,17 @@ const monuments = [
     lat: 49.2331,
     lng: 28.4682,
     year: 2002,
+    eraYear: 1938,
+    eraYearEnd: 1985,
     description: "Пам’ятник українському поету-дисиденту.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Василю Стусу (Вінниця)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Василю_Стусу_(Вінниця)"
+      },
+      {
+        title: "Вікіпедія: Стус Василь Семенович",
+        url: "https://uk.wikipedia.org/wiki/Стус_Василь_Семенович"
       }
     ]
   },
@@ -772,7 +1128,15 @@ const monuments = [
     lat: 49.2331,
     lng: 28.4682,
     year: 1927,
-    description: "Пам’ятник Михайлу Коцюбинському у Вінниці."
+    eraYear: 1864,
+    eraYearEnd: 1913,
+    description: "Пам’ятник Михайлу Коцюбинському у Вінниці.",
+    sources: [
+      {
+        title: "Вікіпедія: Коцюбинський Михайло Михайлович",
+        url: "https://uk.wikipedia.org/wiki/Коцюбинський_Михайло_Михайлович"
+      }
+    ]
   },
   {
     id: 51,
@@ -785,7 +1149,15 @@ const monuments = [
     lat: 51.4982,
     lng: 31.2893,
     year: 1934,
-    description: "Пам’ятник біля музею Михайла Коцюбинського."
+    eraYear: 1864,
+    eraYearEnd: 1913,
+    description: "Пам’ятник біля музею Михайла Коцюбинського.",
+    sources: [
+      {
+        title: "Вікіпедія: Коцюбинський Михайло Михайлович",
+        url: "https://uk.wikipedia.org/wiki/Коцюбинський_Михайло_Михайлович"
+      }
+    ]
   },
   {
     id: 52,
@@ -798,11 +1170,17 @@ const monuments = [
     lat: 38.91,
     lng: -77.0489,
     year: 1964,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Один із найвідоміших пам’ятників Шевченку у світі.",
     sources: [
       {
         title: "Вікіпедія: Меморіал Тарасові Шевченку (Вашингтон)",
         url: "https://uk.wikipedia.org/wiki/Меморіал_Тарасові_Шевченку_(Вашингтон)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -817,11 +1195,17 @@ const monuments = [
     lat: 50.0784,
     lng: 14.4044,
     year: 2009,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник на площі Кінських у районі Сміхов.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Прага)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Прага)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -836,11 +1220,17 @@ const monuments = [
     lat: 52.2116,
     lng: 21.0234,
     year: 2002,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник у сквері імені Тараса Шевченка.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Варшава)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Варшава)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -855,11 +1245,17 @@ const monuments = [
     lat: 48.8546,
     lng: 2.3308,
     year: 1978,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник у сквері імені Тараса Шевченка.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Париж)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Париж)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -874,7 +1270,15 @@ const monuments = [
     lat: 42.4304,
     lng: 19.2594,
     year: 2011,
-    description: "Пам’ятник у міському парку Крушевац."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник у міському парку Крушевац.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 57,
@@ -887,11 +1291,17 @@ const monuments = [
     lat: 40.3898,
     lng: 49.8422,
     year: 2008,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник молодому Тарасу Шевченку.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Баку)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Баку)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -906,7 +1316,15 @@ const monuments = [
     lat: 45.3764,
     lng: -75.7033,
     year: 2011,
-    description: "Пам’ятник на території українського святинного комплексу."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник на території українського святинного комплексу.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 59,
@@ -919,7 +1337,15 @@ const monuments = [
     lat: 49.8847,
     lng: -97.1485,
     year: 1961,
-    description: "Пам’ятник Шевченку в столиці української громади Канади."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник Шевченку в столиці української громади Канади.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 60,
@@ -932,11 +1358,17 @@ const monuments = [
     lat: -34.6037,
     lng: -58.3816,
     year: 1971,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в столиці Аргентини.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Буенос-Айрес)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Буенос-Айрес)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -951,7 +1383,15 @@ const monuments = [
     lat: -25.4302,
     lng: -49.2929,
     year: 1967,
-    description: "Пам’ятник у місті з великою українською громадою."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник у місті з великою українською громадою.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 62,
@@ -964,7 +1404,15 @@ const monuments = [
     lat: -25.2115,
     lng: -50.9742,
     year: 1989,
-    description: "Пам’ятник Шевченку в бразильському центрі української діаспори."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник Шевченку в бразильському центрі української діаспори.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 63,
@@ -977,11 +1425,17 @@ const monuments = [
     lat: 41.9118,
     lng: 12.3979,
     year: 1973,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник біля українського собору Святої Софії.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Рим)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Рим)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -996,7 +1450,15 @@ const monuments = [
     lat: 47.5111,
     lng: 19.038,
     year: 2007,
-    description: "Пам’ятник у сквері біля української греко-католицької церкви."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник у сквері біля української греко-католицької церкви.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 65,
@@ -1009,7 +1471,15 @@ const monuments = [
     lat: 56.9578,
     lng: 24.1039,
     year: 2015,
-    description: "Пам’ятник у парку Кронвалда."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник у парку Кронвалда.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 66,
@@ -1022,7 +1492,15 @@ const monuments = [
     lat: 37.9502,
     lng: 58.3802,
     year: 1972,
-    description: "Пам’ятник Шевченку в Ашгабаті."
+    eraYear: 1814,
+    eraYearEnd: 1861,
+    description: "Пам’ятник Шевченку в Ашгабаті.",
+    sources: [
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
+      }
+    ]
   },
   {
     id: 67,
@@ -1035,11 +1513,17 @@ const monuments = [
     lat: 40.1735,
     lng: 44.5186,
     year: 2018,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в Єревані.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Єреван)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Єреван)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -1054,11 +1538,17 @@ const monuments = [
     lat: 45.77,
     lng: 15.9974,
     year: 2015,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в столиці Хорватії.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Загреб)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Загреб)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -1073,11 +1563,17 @@ const monuments = [
     lat: 41.3041,
     lng: 69.2751,
     year: 2002,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в Ташкенті.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Ташкент)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Ташкент)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -1092,11 +1588,17 @@ const monuments = [
     lat: 41.7151,
     lng: 44.8271,
     year: 2007,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в столиці Грузії.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Тбілісі)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Тбілісі)"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -1111,7 +1613,15 @@ const monuments = [
     lat: 41.6509,
     lng: 41.6369,
     year: 1972,
-    description: "Пам’ятник Лесі Українці в Батумі."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник Лесі Українці в Батумі.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 72,
@@ -1124,7 +1634,15 @@ const monuments = [
     lat: 42.0243,
     lng: 43.5556,
     year: 1952,
-    description: "Погруддя у дворі музею Лесі Українки."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Погруддя у дворі музею Лесі Українки.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 73,
@@ -1137,7 +1655,15 @@ const monuments = [
     lat: 41.9197,
     lng: 45.4731,
     year: 2017,
-    description: "Бронзова статуя в парку Надікварі."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Бронзова статуя в парку Надікварі.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 74,
@@ -1150,7 +1676,15 @@ const monuments = [
     lat: 43.647,
     lng: -79.4641,
     year: 1975,
-    description: "Пам’ятник у High Park / районі Bloor West Village."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник у High Park / районі Bloor West Village.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 75,
@@ -1163,7 +1697,15 @@ const monuments = [
     lat: 52.1332,
     lng: -106.6339,
     year: 1976,
-    description: "Пам’ятник на території Університету Саскачевану."
+    eraYear: 1871,
+    eraYearEnd: 1913,
+    description: "Пам’ятник на території Університету Саскачевану.",
+    sources: [
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
+      }
+    ]
   },
   {
     id: 76,
@@ -1176,11 +1718,17 @@ const monuments = [
     lat: 45.4116,
     lng: 17.1529,
     year: 2011,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     description: "Пам’ятник у місті, де Франко лікувався.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Липик)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Іванові_Франку_(Липик)"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -1195,7 +1743,15 @@ const monuments = [
     lat: 48.2082,
     lng: 16.3738,
     year: 1999,
-    description: "Пам’ятник Іванові Франку у Відні."
+    eraYear: 1856,
+    eraYearEnd: 1916,
+    description: "Пам’ятник Іванові Франку у Відні.",
+    sources: [
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
+      }
+    ]
   },
   {
     id: 78,
@@ -1208,11 +1764,17 @@ const monuments = [
     lat: 38.9072,
     lng: -77.0369,
     year: 2022,
+    eraYear: 1722,
+    eraYearEnd: 1794,
     description: "Пам’ятник біля Українського дому у Вашингтоні.",
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Григорію Сковороді (Вашингтон)",
         url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Григорію_Сковороді_(Вашингтон)"
+      },
+      {
+        title: "Вікіпедія: Сковорода Григорій Савич",
+        url: "https://uk.wikipedia.org/wiki/Сковорода_Григорій_Савич"
       }
     ]
   },
@@ -1227,7 +1789,15 @@ const monuments = [
     lat: 46.0569,
     lng: 14.5058,
     year: 2016,
-    description: "Скульптура в Парку Книги на Алеї митців."
+    eraYear: 1722,
+    eraYearEnd: 1794,
+    description: "Скульптура в Парку Книги на Алеї митців.",
+    sources: [
+      {
+        title: "Вікіпедія: Сковорода Григорій Савич",
+        url: "https://uk.wikipedia.org/wiki/Сковорода_Григорій_Савич"
+      }
+    ]
   },
   {
     id: 80,
@@ -1241,6 +1811,7 @@ const monuments = [
     lat: 51.081111,
     lng: 32.159167,
     year: 2006,
+    eraYear: 1918,
     eventDate: "29 січня 1918",
     description: "Меморіальний комплекс присвячений учасникам бою під Крутами. До комплексу входять монументальна колона, курган, хрест і музейна експозиція.",
     history: "29 січня 1918 року українські військові, студенти та гімназисти вступили в бій із більшовицькими військами, що наступали на Київ. Меморіальний комплекс відкрили у 2006 році.",
@@ -1264,11 +1835,17 @@ const monuments = [
     lat: 50.453611,
     lng: 30.516389,
     year: 1888,
+    eraYear: 1595,
+    eraYearEnd: 1657,
     description: "Кінний пам'ятник гетьману Богдану Хмельницькому на Софійській площі. Монумент відкрили в 1888 році.",
     sources: [
       {
         title: "knmc.kyivcity.gov.ua",
         url: "https://knmc.kyivcity.gov.ua/pam-yatnyk-getmanu-bogdanu-hmelnytskomu/"
+      },
+      {
+        title: "Вікіпедія: Богдан Хмельницький",
+        url: "https://uk.wikipedia.org/wiki/Богдан_Хмельницький"
       }
     ]
   },
@@ -1284,6 +1861,7 @@ const monuments = [
     lat: 50.443889,
     lng: 30.545278,
     year: 1923,
+    eraYear: 1918,
     eventDate: "Січень 1918 року",
     description: "Пам’ятник у вигляді гармати на Арсенальній площі. Пов’язаний зі збройним повстанням робітників заводу «Арсенал» проти Центральної Ради Української Народної Республіки.",
     history: "У січні 1918 року робітники заводу «Арсенал» та інші збройні формування виступили проти Центральної Ради. Повстання стало частиною боротьби за контроль над Києвом під час Української революції. Після боїв завод був узятий військами УНР. У 1923 році на Арсенальній площі встановили гармату на постаменті колишнього пам’ятника Іскрі та Кочубею.",
@@ -1315,6 +1893,8 @@ const monuments = [
     lat: 50.447806,
     lng: 30.529278,
     year: 2014,
+    eraYear: 2013,
+    eraYearEnd: 2014,
     eventDate: "Листопад 2013 — лютий 2014 року",
     description: "Меморіальна вулиця в центрі Києва, присвячена учасникам Революції Гідності, які загинули під час протестів.",
     history: "18–20 лютого 2014 року на вулиці Інститутській відбулися найтрагічніші зіткнення між протестувальниками та силовиками. Особливо трагічним стало 20 лютого, коли загинули десятки учасників протесту. Після цих подій місце перетворилося на стихійний меморіал, а згодом отримало назву Алея Героїв Небесної Сотні.",
@@ -1338,6 +1918,7 @@ const monuments = [
     lat: 50.443272,
     lng: 30.544107,
     year: 1918,
+    eraYear: 1918,
     eventDate: "Січень 1918 року",
     description: "Історичний корпус заводу «Арсенал», пов’язаний із боями між військами Української Центральної Ради та учасниками більшовицького повстання.",
     history: "Завод «Арсенал» був одним із центрів збройного виступу в Києві в січні 1918 року. Сліди куль і артилерійських влучань на старих стінах нагадують про бої, які точилися навколо підприємства.",
@@ -1360,6 +1941,7 @@ const monuments = [
     lat: 50.449889,
     lng: 30.462444,
     year: 1985,
+    eraYear: 1905,
     eventDate: "Грудень 1905 року",
     description: "Пам’ятник присвячений подіям революційного руху 1905 року та першій Київській раді робітничих депутатів.",
     history: "У грудні 1905 року на Шулявці відбувалися страйки та робітничі виступи. Центром подій став Київський політехнічний інститут.",
@@ -1382,6 +1964,7 @@ const monuments = [
     lat: 50.444,
     lng: 30.5514,
     year: 2012,
+    eraYear: 1918,
     eventDate: "29 січня 1918 року",
     description: "Гранітний козацький хрест із тризубом на Аскольдовій могилі, присвячений українським студентам і гімназистам, які загинули під Крутами.",
     history: "Після бою під Крутами загиблих українських юнаків урочисто вшанували в Києві. У 2012 році на Аскольдовій могилі встановили кам’яний пам’ятник у формі козацького хреста.",
@@ -1404,6 +1987,7 @@ const monuments = [
     lat: 50.4501,
     lng: 30.5234,
     year: 1990,
+    eraYear: 1990,
     eventDate: "2–17 жовтня 1990 року",
     description: "Місце масштабного студентського протесту та голодування проти політики радянської влади.",
     history: "2 жовтня 1990 року студенти розпочали голодування на тодішній площі Жовтневої революції. Вони висунули політичні вимоги, зокрема щодо відставки уряду та демократичних змін. Акція завершилася 17 жовтня.",
@@ -1426,6 +2010,8 @@ const monuments = [
     lat: 50.4706,
     lng: 30.4491,
     year: 1941,
+    eraYear: 1941,
+    eraYearEnd: 1943,
     eventDate: "1941–1943 роки",
     description: "Місце масових розстрілів мирного населення, військовополонених та інших жертв нацистської окупації Києва.",
     history: "У вересні 1941 року в Бабиному Яру нацисти розпочали масові розстріли. За роки окупації тут було вбито понад 100 тисяч людей, серед яких переважали євреї.",
@@ -1448,6 +2034,7 @@ const monuments = [
     lat: 50.475651,
     lng: 30.457529,
     year: 1991,
+    eraYear: 1941,
     eventDate: "29–30 вересня 1941 року",
     description: "Бронзовий семисвічник у Бабиному Яру, встановлений на пам’ять про євреїв, убитих нацистами.",
     history: "Меморіал відкрили у вересні 1991 року, до 50-ї річниці масового розстрілу євреїв у Бабиному Яру.",
@@ -1470,6 +2057,8 @@ const monuments = [
     lat: 50.438994,
     lng: 30.553178,
     year: 1957,
+    eraYear: 1941,
+    eraYearEnd: 1945,
     eventDate: "1941–1945 роки",
     description: "Меморіальний комплекс у Парку Вічної Слави з 27-метровим обеліском, могилою Невідомого солдата та вічним вогнем.",
     history: "Меморіал відкрили 6 листопада 1957 року. До комплексу також входить Алея Полеглих Героїв із військовими похованнями.",
@@ -1492,6 +2081,7 @@ const monuments = [
     lat: 50.442536,
     lng: 30.526608,
     year: 2011,
+    eraYear: 1986,
     eventDate: "26 квітня 1986 року",
     description: "Пам’ятник пожежникам, які першими боролися з пожежею після аварії на Чорнобильській АЕС.",
     history: "Монумент відкрили у 2011 році, до 25-ї річниці Чорнобильської катастрофи. Автор — скульптор Микола Тихонов.",
@@ -1514,6 +2104,8 @@ const monuments = [
     lat: 50.426414,
     lng: 30.56299,
     year: 1981,
+    eraYear: 1939,
+    eraYearEnd: 1945,
     eventDate: "1939–1945 роки",
     description: "Монументальна скульптура на території Національного музею історії України у Другій світовій війні.",
     history: "Монумент відкрили у 1981 році як центральну частину меморіального комплексу. Спочатку він мав радянську назву та ідеологічне оформлення. У 2023 році на щиті замінили радянський герб на український тризуб.",
@@ -1536,6 +2128,7 @@ const monuments = [
     lat: 50.4554,
     lng: 30.5235,
     year: 2015,
+    eraYear: 2014,
     eventDate: "З 2014 року",
     description: "Меморіал із фотографіями та біографіями українських військових, добровольців і правоохоронців, які загинули під час російсько-української війни.",
     history: "Меморіал почав формуватися у 2014 році. У 2015 році його розмістили вздовж зовнішньої стіни Михайлівського Золотоверхого монастиря. У наступні роки стіну розширювали та оновлювали.",
@@ -1558,6 +2151,8 @@ const monuments = [
     lat: 50.476383,
     lng: 30.69939,
     year: 2001,
+    eraYear: 1937,
+    eraYearEnd: 1941,
     eventDate: "1937–1941 роки",
     description: "Національний меморіальний заповідник у Биківнянському лісі — місце поховання людей, розстріляних НКВС під час сталінських репресій.",
     history: "У 1937–1941 роках Биківнянський ліс використовувався НКВС для таємного поховання жертв політичних репресій. Меморіальний комплекс почали створювати у 1994 році, а заповідник заснували у 2001 році.",
@@ -1580,6 +2175,7 @@ const monuments = [
     lat: 50.479705,
     lng: 30.452324,
     year: 2006,
+    eraYear: 1961,
     eventDate: "13 березня 1961 року",
     description: "Меморіальний знак із двома гранітними плитами на території Бабиного Яру, присвячений загиблим під час Куренівської катастрофи.",
     history: "13 березня 1961 року прорив дамби спричинив потужний селевий потік із Бабиного Яру, який затопив Куренівку. Пам’ятний знак встановили у 2006 році до 45-ї річниці трагедії.",
@@ -1602,6 +2198,7 @@ const monuments = [
     lat: 50.456,
     lng: 30.48119,
     year: 1981,
+    eraYear: 1942,
     eventDate: "1942 рік",
     description: "Пам’ятний знак на стадіоні «Старт», присвячений футболістам київської команди «Старт», серед яких були гравці довоєнного «Динамо».",
     history: "У 1942 році під час нацистської окупації Києва команда «Старт» проводила футбольні матчі з командами окупаційних військ. Пам’ятний знак на стадіоні встановили у 1981 році.",
@@ -1624,6 +2221,7 @@ const monuments = [
     lat: 50.473164,
     lng: 30.448254,
     year: 2017,
+    eraYear: 1942,
     eventDate: "Лютий 1942 року",
     description: "Скульптурна композиція, присвячена українській поетесі, публіцистці та діячці ОУН Олені Телізі й учасникам українського руху, які загинули за незалежність України.",
     history: "Під час нацистської окупації Києва Олена Теліга організувала Спілку українських письменників. У лютому 1942 року її заарештувало гестапо та розстріляло в Бабиному Яру. Пам’ятник відкрили 25 лютого 2017 року.",
@@ -1646,6 +2244,8 @@ const monuments = [
     lat: 50.474176,
     lng: 30.449517,
     year: 2001,
+    eraYear: 1941,
+    eraYearEnd: 1943,
     eventDate: "1941–1943 роки",
     description: "Меморіальна скульптура, присвячена дітям, убитим нацистами в Бабиному Яру.",
     history: "Пам’ятник відкрили 30 вересня 2001 року, біля виходу зі станції метро «Дорогожичі». Скульптор — Володимир Медведєв, архітектори — Роман Кухаренко та Юрій Мельничук.",
@@ -1668,6 +2268,8 @@ const monuments = [
     lat: 50.4712,
     lng: 30.44915,
     year: 1976,
+    eraYear: 1941,
+    eraYearEnd: 1943,
     eventDate: "1941–1943 роки",
     description: "Велика скульптурна композиція на території Бабиного Яру, встановлена на пам’ять про розстріляних мирних жителів і військовополонених.",
     history: "Монумент відкрили 2 липня 1976 року. Початковий напис використовував узагальнене формулювання «радянські громадяни», не акцентуючи на тому, що більшість загиблих у масових розстрілах 29–30 вересня 1941 року становили київські євреї. У 1989 році написи на меморіалі оновили.",
@@ -1690,6 +2292,8 @@ const monuments = [
     lat: 50.44665,
     lng: 30.51415,
     year: 1912,
+    eraYear: 1917,
+    eraYearEnd: 1918,
     eventDate: "11 березня 1917 — 29 квітня 1918 року",
     description: "Будівля колишнього Педагогічного музею, у якій працювала Українська Центральна Рада — представницький орган українського національного руху.",
     history: "Будівлю спорудили у 1910–1912 роках за проєктом архітектора Павла Альошина. З березня 1917 року тут працювала Українська Центральна Рада на чолі з Михайлом Грушевським. У цій будівлі відбувалася значна частина політичної діяльності, що привела до проголошення Української Народної Республіки.",
@@ -1712,6 +2316,8 @@ const monuments = [
     lat: 50.44408,
     lng: 30.51306,
     year: 1998,
+    eraYear: 1866,
+    eraYearEnd: 1934,
     description: "Бронзова скульптура Михайла Грушевського, який сидить на лаві біля Будинку вчителя.",
     history: "Пам’ятник відкрили 1 грудня 1998 року. Скульптор — Володимир Чепелик, архітектори — Микола Кислий, Руслан Кухаренко та Юрій Мельничук.",
     significance: "Вшановує першого голову Української Центральної Ради, історика та одного з провідних діячів українського державотворення.",
@@ -1719,6 +2325,10 @@ const monuments = [
       {
         title: "hrushevsky.history.org.ua",
         url: "https://hrushevsky.history.org.ua/item/0008104"
+      },
+      {
+        title: "Вікіпедія: Грушевський Михайло Сергійович",
+        url: "https://uk.wikipedia.org/wiki/Грушевський_Михайло_Сергійович"
       }
     ]
   },
@@ -1734,6 +2344,7 @@ const monuments = [
     lat: 50.43865,
     lng: 30.50865,
     year: 1908,
+    eraYear: 1908,
     description: "Меморіальна садиба на Паньківській, 9, де мешкала родина Михайла Грушевського. Сьогодні тут працює історико-меморіальний музей.",
     history: "У 1908 році Михайло Грушевський разом із родиною придбав садибу. Тут зберігалися його особисті речі, документи, рукописи та родинна бібліотека. Музей створили у 1992 році, а експозицію відкрили для відвідувачів у 2006 році.",
     significance: "Місце дозволяє дослідити не лише політичну діяльність Грушевського, а й його наукове, культурне та сімейне життя.",
@@ -1756,6 +2367,8 @@ const monuments = [
     lat: 49.123,
     lng: 32.285,
     year: 1804,
+    eraYear: 1768,
+    eraYearEnd: 1922,
     eventDate: "1768 рік; 1918–1922 роки",
     description: "Мотронинський монастир розташований на території історичного урочища Холодний Яр — одного з важливих осередків українського повстанського руху.",
     history: "Монастир відігравав важливу роль під час Коліївщини 1768 року. У 1918–1922 роках Холодний Яр став одним із центрів українського повстанського руху проти більшовицької та інших окупаційних влад. На території монастиря розташована Троїцька церква, споруджена у 1804 році.",
@@ -1779,6 +2392,7 @@ const monuments = [
     lat: 51.345,
     lng: 32.876,
     year: 1625,
+    eraYear: 1708,
     eventDate: "2 листопада 1708 року",
     description: "Оборонний комплекс колишньої гетьманської столиці Батурина. Місто було важливим політичним і військовим центром Гетьманщини.",
     history: "На початку XVIII століття Батурин був резиденцією гетьмана Івана Мазепи. У листопаді 1708 року московські війська під командуванням Олександра Меншикова захопили та зруйнували місто. Загинули численні оборонці й мешканці.",
@@ -1802,6 +2416,8 @@ const monuments = [
     lat: 49.0833,
     lng: 32.655,
     year: 2009,
+    eraYear: 1601,
+    eraYearEnd: 1700,
     eventDate: "Середина XVII століття",
     description: "Історико-архітектурний комплекс у Чигирині, присвячений резиденції гетьмана Богдана Хмельницького.",
     history: "Чигирин був столицею козацької держави за часів Богдана Хмельницького. У 2006–2009 роках на території Нижнього міста спорудили відтворений комплекс із будинком гетьмана, військовою канцелярією, скарбницею та іншими будівлями.",
@@ -1824,6 +2440,8 @@ const monuments = [
     lat: 47.86023062,
     lng: 35.07139945,
     year: 2004,
+    eraYear: 1501,
+    eraYearEnd: 1800,
     eventDate: "XVI–XVIII століття",
     description: "Історико-культурний комплекс на острові Хортиця, який відтворює архітектуру, побут і військову організацію Запорозької Січі.",
     history: "Комплекс створений як історична реконструкція козацької Січі. На його території представлені укріплення, курені, військова канцелярія, церква Покрови та інші споруди, пов'язані з життям запорозьких козаків.",
@@ -1847,6 +2465,8 @@ const monuments = [
     lat: 48.6744,
     lng: 26.5684,
     year: 1374,
+    eraYear: 1301,
+    eraYearEnd: 1800,
     eventDate: "XIV–XVIII століття",
     description: "Середньовічна фортеця на скелястому острові, оточеному каньйоном річки Смотрич. Один із найвідоміших оборонних комплексів України.",
     history: "Фортеця формувалася протягом кількох століть і була важливим оборонним центром Поділля. Її укріплення неодноразово перебудовували та посилювали. У різні періоди вона перебувала під владою литовських князів, Речі Посполитої та Османської імперії.",
@@ -1870,6 +2490,8 @@ const monuments = [
     lat: 48.521942,
     lng: 26.498349,
     year: 1325,
+    eraYear: 1621,
+    eraYearEnd: 1673,
     eventDate: "1621 рік; 1673 рік",
     description: "Величний оборонний комплекс на березі Дністра. Фортеця була стратегічним пунктом на торговельних і військових шляхах між Центральною та Східною Європою.",
     history: "Мурована фортеця сформувалася у XIII–XIV століттях. У 1621 році біля Хотина відбулася велика битва між військами Речі Посполитої та Османської імперії, у якій брало участь козацьке військо Петра Конашевича-Сагайдачного. У 1673 році тут відбулася ще одна велика битва.",
@@ -1904,6 +2526,7 @@ const monuments = [
     lat: 50.3489521,
     lng: 25.1926374,
     year: 1967,
+    eraYear: 1651,
     eventDate: "28 червня — 10 липня 1651 року",
     description: "Національний історико-меморіальний заповідник на місці Берестецької битви — однієї з найбільших битв Національно-визвольної війни під проводом Богдана Хмельницького.",
     history: "У 1651 році поблизу Берестечка відбулася масштабна битва між козацько-селянським військом Богдана Хмельницького та військами Речі Посполитої. Після битви козацьке військо відступило, а події стали одним із переломних моментів війни.",
@@ -1927,6 +2550,8 @@ const monuments = [
     lat: 44.610833,
     lng: 33.491389,
     year: -422,
+    eraYear: -500,
+    eraYearEnd: 1500,
     eventDate: "V століття до н. е. — XV століття",
     description: "Руїни античного міста-держави на території південно-західного Криму. Херсонес був важливим торговельним, політичним і культурним центром Північного Причорномор’я.",
     history: "Місто заснували давньогрецькі колоністи у V столітті до н. е. Згодом воно перебувало під впливом Римської та Візантійської імперій. Археологічні залишки охоплюють житлові квартали, оборонні споруди, громадські будівлі та давні виноградники.",
@@ -1950,6 +2575,8 @@ const monuments = [
     lat: 46.69182,
     lng: 31.90634,
     year: -600,
+    eraYear: -600,
+    eraYearEnd: 400,
     eventDate: "VI століття до н. е. — IV століття н. е.",
     description: "Руїни давньогрецького міста-держави на правому березі Бузького лиману. Тут збереглися залишки житлових кварталів, оборонних споруд, агори та некрополя.",
     history: "Ольвію заснували грецькі переселенці приблизно у VI столітті до н. е. Місто стало важливим торговельним центром, підтримувало зв’язки з іншими грецькими містами та місцевими народами. У IV столітті н. е. поселення занепало після нападів гунів.",
@@ -1973,6 +2600,8 @@ const monuments = [
     lat: 49.191671,
     lng: 23.409346,
     year: 900,
+    eraYear: 801,
+    eraYearEnd: 1600,
     eventDate: "IX–XVI століття",
     description: "Унікальна середньовічна фортеця, побудована серед пісковикових скель Карпат. У скелях збереглися тисячі пазів і вирізів від дерев’яних конструкцій.",
     history: "Тустань була оборонним, митним та адміністративним центром на важливому торговельному шляху через Карпати. Дерев’яні споруди не збереглися, але археологічні сліди дозволили дослідникам відтворити її приблизний вигляд.",
@@ -1996,6 +2625,8 @@ const monuments = [
     lat: 50.44883,
     lng: 30.51343,
     year: 1037,
+    eraYear: 1001,
+    eraYearEnd: 1100,
     eventDate: "XI століття",
     description: "Головна парадна брама стародавнього Києва та важлива частина оборонної системи міста за часів Київської Русі.",
     history: "Золоті ворота спорудили за князювання Ярослава Мудрого. Вони виконували оборонну та церемоніальну функції. До комплексу входила надбрамна церква Благовіщення. Сучасна споруда є архітектурною реконструкцією, що захищає залишки давньої брами.",
@@ -2019,6 +2650,8 @@ const monuments = [
     lat: 48.7925,
     lng: 30.5131,
     year: -4000,
+    eraYear: -4000,
+    eraYearEnd: -2001,
     eventDate: "IV–III тисячоліття до н. е.",
     description: "Одне з найбільших відомих поселень трипільської культури. Археологічна пам'ятка демонструє складну організацію поселень енеолітичної доби.",
     history: "Поселення Тальянки належало до трипільської культури. Воно мало концентричне планування та складалося з великої кількості дерев'яних жител. Поруч у селі Легедзине працює Державний історико-культурний заповідник «Трипільська культура».",
@@ -2076,6 +2709,8 @@ const monuments = [
     lat: 51.824161,
     lng: 33.07153,
     year: -17000,
+    eraYear: -18000,
+    eraYearEnd: -13000,
     eventDate: "Приблизно 20–15 тисяч років тому",
     description: "Археологічна стоянка мисливців пізнього палеоліту на березі Десни. Відома знахідками з кісток мамонтів, крем'яними знаряддями та прикрасами.",
     history: "Мезинська стоянка була відкрита наприкінці XIX століття. Археологічні дослідження виявили залишки жител, знаряддя праці, вироби з бивня мамонта та предмети мистецтва.",
@@ -2106,6 +2741,8 @@ const monuments = [
     lat: 50.07758,
     lng: 34.669662,
     year: -500,
+    eraYear: -800,
+    eraYearEnd: -201,
     eventDate: "VIII–III століття до н. е.",
     description: "Масштабний археологічний комплекс ранньої залізної доби з залишками укріплень, поселень, курганів та виробничих майстерень.",
     history: "Більське городище складалося з кількох укріплених поселень, об'єднаних оборонними валами. Деякі дослідники пов'язують його з містом Гелон, яке описував давньогрецький історик Геродот.",
@@ -2136,6 +2773,8 @@ const monuments = [
     lat: 48.78872,
     lng: 25.87148,
     year: -4000,
+    eraYear: -4000,
+    eraYearEnd: -2001,
     eventDate: "IV–III тисячоліття до н. е.",
     description: "Печера Вертеба — одна з найважливіших пам'яток трипільської культури. Тут знайдено численні керамічні вироби, знаряддя праці та людські останки.",
     history: "У печері виявлено сліди перебування людей різних епох. Особливе значення мають знахідки трипільської культури. У 2004 році тут відкрили підземний археологічний музей.",
@@ -2158,6 +2797,8 @@ const monuments = [
     lat: 49.122,
     lng: 31.716,
     year: -700,
+    eraYear: 601,
+    eraYearEnd: 800,
     eventDate: "VII–VIII століття н. е. — основний ранньосередньовічний шар",
     description: "Велике укріплене поселення площею близько 25 гектарів. Городище має складну історію заселення, що охоплює кілька археологічних періодів.",
     history: "Пам'ятка містить ранньоскіфські, пізньоскіфські та ранньосередньовічні культурні шари. Її досліджували Вікентій Хвойка, Михайло Брайчевський та Олег Приходнюк.",
@@ -2180,6 +2821,7 @@ const monuments = [
     lat: 47.83685,
     lng: 35.0511,
     year: 1556,
+    eraYear: 1556,
     eventDate: "1556 рік",
     description: "Острів Мала Хортиця, відомий як острів Байда, пов'язаний із заснуванням укріплення князем Дмитром Вишневецьким.",
     history: "У середині XVI століття Дмитро Вишневецький спорудив тут дерев'яно-земляне укріплення. Воно стало одним із попередників Запорозької Січі та важливим осередком козацької військової організації.",
@@ -2202,6 +2844,8 @@ const monuments = [
     lat: 50.4547,
     lng: 30.5165,
     year: 980,
+    eraYear: 901,
+    eraYearEnd: 1300,
     eventDate: "Кінець X — перша половина XIII століття",
     description: "Центральна укріплена частина Стародавнього Києва, розташована на Старокиївській горі. Тут містилися князівські палаци, храми та інші важливі споруди.",
     history: "За князювання Володимира Святославича наприкінці X століття територію давнього городища перебудували та перетворили на князівський дитинець. Тут розташовувалися Десятинна церква та князівські палаци. Під час монгольської навали 1240 року ця частина міста зазнала руйнувань.",
@@ -2224,6 +2868,8 @@ const monuments = [
     lat: 50.4496,
     lng: 30.4609,
     year: 2008,
+    eraYear: 1889,
+    eraYearEnd: 1972,
     eventDate: "14 травня 2008 року",
     description: "Пам'ятник видатному авіаконструктору Ігорю Сікорському, одному з піонерів світового літакобудування та вертольотобудування.",
     history: "Ігор Сікорський навчався у Київському політехнічному інституті в 1907–1911 роках. Він створив низку літаків, зокрема багатомоторні конструкції, а згодом став одним із піонерів практичного вертольотобудування. Пам'ятник відкрили на території КПІ біля колишнього авіаційного ангару.",
@@ -2240,6 +2886,10 @@ const monuments = [
       {
         title: "kpi.ua",
         url: "https://kpi.ua/mem-sikorsky"
+      },
+      {
+        title: "Вікіпедія: Сікорський Ігор Іванович",
+        url: "https://uk.wikipedia.org/wiki/Сікорський_Ігор_Іванович"
       }
     ]
   },
@@ -2254,6 +2904,7 @@ const monuments = [
     lat: 50.253484,
     lng: 28.67784,
     year: 1970,
+    eraYear: 1970,
     eventDate: "1970 рік — відкриття музею",
     description: "Музей присвячений історії космонавтики, ракетобудування та життю видатного конструктора Сергія Корольова.",
     history: "Сергій Корольов народився в Житомирі у 1907 році. Він став одним із головних конструкторів радянської ракетно-космічної програми. У музейній експозиції представлені макети космічних апаратів, скафандри, обладнання та інші матеріали з історії освоєння космосу. Музей відкрили у 1970 році.",
@@ -2284,6 +2935,8 @@ const monuments = [
     lat: 50.445667,
     lng: 30.514361,
     year: null,
+    eraYear: 1918,
+    eraYearEnd: 2020,
     eventDate: "Пам'ятний бюст біля будівлі Президії НАН України",
     description: "Пам'ятний бюст Борису Патону — видатному українському вченому, багаторічному президенту Національної академії наук України.",
     history: "Борис Патон народився у 1918 році. Він присвятив життя дослідженню електрозварювання, розробці нових технологій з'єднання металів та їх застосуванню в промисловості й медицині. Очолював Національну академію наук України з 1962 до 2020 року.",
@@ -2292,6 +2945,10 @@ const monuments = [
       {
         title: "nas.gov.ua",
         url: "https://www.nas.gov.ua/"
+      },
+      {
+        title: "Вікіпедія: Патон Борис Євгенович",
+        url: "https://uk.wikipedia.org/wiki/Патон_Борис_Євгенович"
       }
     ]
   },
@@ -2306,6 +2963,7 @@ const monuments = [
     lat: 50.4496,
     lng: 30.4609,
     year: 1995,
+    eraYear: 1995,
     eventDate: "1995 рік — створення музею",
     description: "Музей історії науки, техніки, інженерії та промислового розвитку. Розташований на території Київського політехнічного інституту.",
     history: "Музей створений у 1995 році. Його експозиції присвячені розвитку технічної освіти, авіації, космонавтики, транспорту, електроніки та інших галузей. Серед експонатів є історичні технічні пристрої, моделі та зразки обладнання.",
@@ -2329,6 +2987,7 @@ const monuments = [
     lat: 50.3291,
     lng: 26.5139,
     year: 1576,
+    eraYear: 1576,
     eventDate: "1576 рік — заснування академії",
     description: "Острозька академія — один із найважливіших освітніх і культурних осередків ранньомодерної України.",
     history: "Академія була заснована князем Василем-Костянтином Острозьким у 1576 році. Тут викладали грецьку, латинську та церковнослов'янську мови, філософію, математику й інші дисципліни. При академії діяла друкарня Івана Федорова, а її середовище було пов'язане з підготовкою Острозької Біблії 1581 року.",
@@ -2352,6 +3011,7 @@ const monuments = [
     lat: 50.4646,
     lng: 30.5186,
     year: 1615,
+    eraYear: 1615,
     eventDate: "15 жовтня 1615 року — початок історії академії",
     description: "Один із найвідоміших історичних освітніх закладів України, що відіграв значну роль у розвитку освіти, богослов'я, філософії та науки.",
     history: "Історія академії починається з Київської братської школи, заснованої 1615 року за підтримки Галшки Гулевичівни. У 1632 році школи об'єднали під опікою митрополита Петра Могили. У 1701 році заклад офіційно отримав статус академії. У 1817 році його закрили, а в 1991 році університет відновив діяльність.",
@@ -2374,6 +3034,8 @@ const monuments = [
     lat: 50.43547,
     lng: 30.558321,
     year: 1972,
+    eraYear: 1972,
+    eraYearEnd: 1975,
     eventDate: "1972 рік — створення музею; 1975 рік — відкриття для відвідувачів",
     description: "Музей присвячений історії української книги — від рукописних видань до сучасного книгодрукування.",
     history: "Музей розташований у будівлі колишньої друкарні Києво-Печерської лаври. Лаврська друкарня була заснована 1615 року архімандритом Єлисеєм Плетенецьким і протягом століть була одним із головних центрів українського книговидання.",
@@ -2397,6 +3059,7 @@ const monuments = [
     lat: 49.8364,
     lng: 24.0304,
     year: 1940,
+    eraYear: 1940,
     eventDate: "1940 рік — створення бібліотеки",
     description: "Одна з найбільших наукових бібліотек України, що зберігає значні колекції рукописів, стародруків, архівних документів та наукових видань.",
     history: "Бібліотеку створили у 1940 році на основі об'єднання фондів різних львівських книгозбірень та установ. Сьогодні вона є важливим центром наукових досліджень і збереження української книжкової спадщини.",
@@ -2419,6 +3082,8 @@ const monuments = [
     lat: 50.44941,
     lng: 30.5308,
     year: 1899,
+    eraYear: 1899,
+    eraYearEnd: 1904,
     eventDate: "1899 рік — початок діяльності; 1904 рік — урочисте відкриття",
     description: "Один із найважливіших художніх музеїв України. Зберігає колекцію українського образотворчого мистецтва від давніх часів до сучасності.",
     history: "Музей розпочав діяльність у 1899 році з археологічної виставки. Будівлю спроєктував архітектор Владислав Городецький. У 1904 році відбулося урочисте відкриття закладу під назвою Київський художньо-промисловий і науковий музей.",
@@ -2450,6 +3115,8 @@ const monuments = [
     lat: 50.44593,
     lng: 30.5296,
     year: 1903,
+    eraYear: 1901,
+    eraYearEnd: 1903,
     eventDate: "1901–1903 роки — будівництво",
     description: "Одна з найвідоміших архітектурних споруд Києва. Будинок вирізняється скульптурним декором із зображеннями фантастичних істот, тварин та морських чудовиськ.",
     history: "Будівлю спорудили за проєктом Владислава Городецького у 1901–1903 роках. Вона поєднувала функції приватного особняка та прибуткового будинку. Скульптурне оформлення створював Еліо Саля. Через складний рельєф ділянки під час будівництва застосували спеціальні інженерні рішення.",
@@ -2481,6 +3148,8 @@ const monuments = [
     lat: 50.3532,
     lng: 30.5045,
     year: 1969,
+    eraYear: 1969,
+    eraYearEnd: 1976,
     eventDate: "6 лютого 1969 року — заснування; 1976 рік — відкриття для відвідувачів",
     description: "Великий музей просто неба, який представляє традиційну архітектуру, побут і культуру різних історико-етнографічних регіонів України.",
     history: "Музей заснували у 1969 році. На його території зібрано сотні пам'яток народного будівництва XVI–XX століть: житлові будинки, дерев'яні церкви, вітряки, господарські споруди та інші об'єкти. Експозиція охоплює Полісся, Карпати, Поділля, Слобожанщину, Полтавщину, Наддніпрянщину та Південь України.",
@@ -2512,6 +3181,7 @@ const monuments = [
     lat: 49.75444,
     lng: 26.12639,
     year: 2010,
+    eraYear: 1936,
     eventDate: "20 квітня 2010 року — відкриття меморіальної кімнати-музею",
     description: "Меморіальна кімната-музей, присвячена українському художнику Івану Марчуку, який народився у селі Москалівка.",
     history: "Іван Марчук народився 12 травня 1936 року в Москалівці. Він став автором унікальної живописної техніки, відомої як «пльонтанізм». У 2010 році в рідному селі художника відкрили меморіальну кімнату-музей за участю самого митця.",
@@ -2520,6 +3190,10 @@ const monuments = [
       {
         title: "tobm.org.ua",
         url: "https://tobm.org.ua/ivan-marchuk/"
+      },
+      {
+        title: "Вікіпедія: Марчук Іван Степанович",
+        url: "https://uk.wikipedia.org/wiki/Марчук_Іван_Степанович"
       }
     ]
   },
@@ -2535,6 +3209,8 @@ const monuments = [
     lat: 50.4378,
     lng: 30.5575,
     year: 2008,
+    eraYear: 1932,
+    eraYearEnd: 1933,
     eventDate: "1932–1933 роки — Голодомор; 2008 рік — відкриття меморіалу",
     description: "Музей присвячений вшануванню мільйонів українців, які загинули під час Голодомору 1932–1933 років, та дослідженню цього злочину.",
     history: "Голодомор 1932–1933 років був штучним масовим голодом, організованим радянським тоталітарним режимом. У 2008 році відкрили меморіальну частину комплексу. Музей збирає документи, свідчення очевидців, фотографії та інші матеріали про трагедію.",
@@ -2558,6 +3234,8 @@ const monuments = [
     lat: 49.83448,
     lng: 24.01868,
     year: 2009,
+    eraYear: 1901,
+    eraYearEnd: 2000,
     eventDate: "XX століття — період функціонування політичної в'язниці",
     description: "Меморіальний музей у приміщенні колишньої політичної в'язниці, де утримували людей польські, нацистські та радянські окупаційні режими.",
     history: "Будівля використовувалася як місце ув'язнення протягом XX століття. Тут перебували політичні в'язні різних режимів. Особливо трагічними стали події червня 1941 року, коли під час відступу радянські органи НКВС розстріляли в'язнів у львівських тюрмах. Музей відкрили для громадськості у 2009 році.",
@@ -2581,6 +3259,8 @@ const monuments = [
     lat: 50.426858,
     lng: 30.563697,
     year: 1974,
+    eraYear: 1974,
+    eraYearEnd: 1981,
     eventDate: "1974 рік — заснування; 1981 рік — відкриття комплексу на сучасному місці",
     description: "Масштабний музейний комплекс, присвячений історії України у Другій світовій війні та сучасній боротьбі за незалежність.",
     history: "Музей заснували у 1974 році. У 1981 році він почав працювати на території сучасного меморіального комплексу. Його центральним елементом стала монументальна скульптура «Батьківщина-мати». Сьогодні експозиції охоплюють не лише Другу світову війну, а й російсько-українську війну.",
@@ -2604,6 +3284,8 @@ const monuments = [
     lat: 50.435594,
     lng: 30.554878,
     year: 2014,
+    eraYear: 2013,
+    eraYearEnd: 2014,
     eventDate: "Листопад 2013 — лютий 2014 року",
     description: "Меморіальний комплекс присвячений учасникам Революції Гідності та людям, які загинули під час протестів за свободу, гідність і європейське майбутнє України.",
     history: "Революція Гідності розпочалася в листопаді 2013 року після відмови української влади підписати Угоду про асоціацію з Європейським Союзом. Найкривавіші події відбулися у лютому 2014 року. Під час протестів загинули учасники Майдану, яких згодом назвали Героями Небесної Сотні.",
@@ -2627,6 +3309,8 @@ const monuments = [
     lat: 49.9689,
     lng: 24.8983,
     year: 1327,
+    eraYear: 1301,
+    eraYearEnd: 1700,
     eventDate: "XIV–XVII століття",
     description: "Олеський замок — одна з найвідоміших середньовічних фортець Західної України. Розташований на пагорбі серед рівнинної місцевості.",
     history: "Перші письмові згадки про замок датуються 1327 роком. Фортеця неодноразово переходила між різними власниками та перебудовувалася. У 1629 році тут народився майбутній польський король Ян III Собеський. У XX столітті споруду відновили та пристосували для музейної діяльності.",
@@ -2658,6 +3342,8 @@ const monuments = [
     lat: 49.9456,
     lng: 24.9817,
     year: 1635,
+    eraYear: 1635,
+    eraYearEnd: 1640,
     eventDate: "1635–1640 роки — основний період будівництва",
     description: "Величний палацово-оборонний комплекс, який поєднує ренесансну архітектуру з елементами бастіонних укріплень.",
     history: "Замок збудували за наказом коронного гетьмана Станіслава Конєцпольського. Проєкт пов'язують з архітекторами Андреа дель Аква та Гійомом де Бопланом. Комплекс мав розкішні інтер'єри, парк і систему оборонних укріплень. Протягом наступних століть він неодноразово змінював власників і зазнавав пошкоджень.",
@@ -2689,6 +3375,8 @@ const monuments = [
     lat: 49.6509,
     lng: 24.4354,
     year: 1484,
+    eraYear: 1401,
+    eraYearEnd: 1700,
     eventDate: "XV–XVII століття",
     description: "Середньовічний замок, розташований на пагорбі біля озера. Відомий оборонними мурами, баштами та мальовничим архітектурним ансамблем.",
     history: "Перша відома письмова згадка про замок датується 1484 роком. У XVII столітті споруду значно перебудували та укріпили. Замок належав різним шляхетським родинам і використовувався як оборонна та житлова резиденція.",
@@ -2720,6 +3408,8 @@ const monuments = [
     lat: 50.7392,
     lng: 25.3232,
     year: 1340,
+    eraYear: 1301,
+    eraYearEnd: 1400,
     eventDate: "XIV століття — основний період будівництва",
     description: "Середньовічна фортеця, одна з найвідоміших архітектурних пам'яток Волині. Відома також як Верхній замок Луцька.",
     history: "Будівництво мурованого замку пов'язане з князем Любартом Гедиміновичем. Фортеця стала важливим політичним та адміністративним центром Волинського князівства. До складу комплексу входять три основні вежі: В'їзна, Стирова та Владича.",
@@ -2751,6 +3441,7 @@ const monuments = [
     lat: 51.3338,
     lng: 32.8847,
     year: 1669,
+    eraYear: 1708,
     eventDate: "1708 рік — Батуринська трагедія",
     description: "Відновлена цитадель Батуринської фортеці — історичний центр оборони та гетьманської влади.",
     history: "Батурин став гетьманською резиденцією у 1669 році. За часів Івана Мазепи місто було важливим політичним, економічним і військовим центром Гетьманщини. У листопаді 1708 року московські війська під командуванням Олександра Меншикова захопили та зруйнували Батурин, убивши значну частину його населення. Сучасну цитадель відтворили за результатами археологічних досліджень.",
@@ -2782,6 +3473,7 @@ const monuments = [
     lat: 49.1445,
     lng: 32.5787,
     year: 1656,
+    eraYear: 1650,
     eventDate: "1650-ті роки — спорудження церкви",
     description: "Кам'яна церква XVII століття, пов'язана з родиною Богдана Хмельницького. Вважається місцем його поховання.",
     history: "Іллінську церкву спорудили в середині XVII століття за часів Богдана Хмельницького. Вона була частиною його родинного маєтку в Суботові. Після смерті гетьмана у 1657 році його поховали в цій церкві. Згодом могила зазнала історичних потрясінь, а точне місце останків Хмельницького залишається предметом дискусій.",
@@ -2813,6 +3505,8 @@ const monuments = [
     lat: 49.0789,
     lng: 32.661,
     year: 1590,
+    eraYear: 1601,
+    eraYearEnd: 1700,
     eventDate: "XVII століття — розквіт Чигирина як гетьманської резиденції",
     description: "Історична височина в центрі Чигирина, на якій розташовувалися укріплення та резиденція гетьмана Богдана Хмельницького.",
     history: "Чигирин був важливим адміністративним і військовим центром ще до Національно-визвольної війни. За Богдана Хмельницького місто стало гетьманською резиденцією та одним із головних політичних центрів козацької держави. На Замковій горі розташовувалися оборонні споруди, які відігравали важливу роль у захисті міста.",
@@ -2844,6 +3538,8 @@ const monuments = [
     lat: 51.3326,
     lng: 32.8917,
     year: 1799,
+    eraYear: 1799,
+    eraYearEnd: 1803,
     eventDate: "1799–1803 роки — будівництво",
     description: "Розкішний палац останнього гетьмана Війська Запорозького Кирила Розумовського, створений у стилі класицизму.",
     history: "Палац спорудили наприкінці XVIII — на початку XIX століття за проєктом шотландського архітектора Чарльза Камерона. Він був частиною великого садибного комплексу в Батурині. Кирило Розумовський планував зробити місто своєю резиденцією. Після тривалого занепаду палац відреставрували та відкрили для відвідувачів у 2009 році.",
@@ -2875,6 +3571,7 @@ const monuments = [
     lat: 50.273542,
     lng: 26.126033,
     year: 1944,
+    eraYear: 1944,
     eventDate: "21–25 квітня 1944 року",
     description: "Меморіальний комплекс на місці масштабного бою між підрозділами Української повстанської армії та військами НКВС.",
     history: "У квітні 1944 року в районі урочища Гурби відбулися запеклі бої між повстанськими підрозділами та радянськими внутрішніми військами. Повстанці опинилися в оточенні й намагалися прорватися з нього. Згодом тут створили Пантеон слави героїв Гурбенського бою, встановили меморіальну колону, каплицю та пам'ятний хрест.",
@@ -2898,6 +3595,8 @@ const monuments = [
     lat: 48.31985,
     lng: 25.09211,
     year: null,
+    eraYear: 1930,
+    eraYearEnd: 1950,
     eventDate: "1930–1950-ті роки — основний історичний період експозиції",
     description: "Музей, присвячений історії національно-визвольного руху на Прикарпатті та участі місцевого населення в боротьбі за незалежність України.",
     history: "Експозиція розповідає про створення ОУН та УПА, діяльність підпільних організацій, медичну й пропагандистську служби повстанців, репресії радянської влади та долі місцевих учасників визвольного руху. У музеї також відтворено інтер'єр підпільної криївки.",
@@ -2921,6 +3620,7 @@ const monuments = [
     lat: 48.15615,
     lng: 24.82572,
     year: 2021,
+    eraYear: 2021,
     eventDate: "2021 рік — відкриття музею",
     description: "Незвичайний музей, облаштований у підвальному приміщенні старовинного будинку. Відтворює побут і умови життя українських повстанців.",
     history: "Музей створили в підвалі Меморіального музею Петра Шекерика-Дониківа. До експозиції входять реконструйовані підпільні приміщення, документи, фотографії, одяг та предмети повсякденного використання. Потрапити всередину можна через спеціально облаштований прихований вхід.",
@@ -2944,6 +3644,7 @@ const monuments = [
     lat: 49.597652,
     lng: 23.767912,
     year: 1946,
+    eraYear: 1946,
     eventDate: "1946 рік — перебування підпільного штабу",
     description: "Музей, присвячений діяльності підпільного штабу УПА та мережі ОУН у селі Грімне.",
     history: "У підвалі будинку священника облаштували підпільний штаб, пов'язаний із діяльністю Романа Шухевича. Невелике приміщення використовували для конспіративної роботи. Сьогодні музейна експозиція містить матеріали про діяльність підпільників, зв'язкових та місцевої мережі ОУН.",
@@ -2966,6 +3667,8 @@ const monuments = [
     lat: 46.595026,
     lng: 31.412906,
     year: -647,
+    eraYear: -700,
+    eraYearEnd: 300,
     eventDate: "Друга половина VII століття до н. е. — III століття н. е.",
     description: "Залишки одного з найдавніших давньогрецьких поселень на території сучасної України. Античне поселення відоме під назвою Борисфеніда.",
     history: "Поселення заснували вихідці з Мілета у другій половині VII століття до н. е. Спочатку воно було важливим політичним і торговельним центром регіону, а пізніше увійшло до сфери впливу Ольвійського поліса. Археологи виявили залишки житлових споруд, господарських ям, майстерень, кераміки та поховань. На острові також знайдено сліди середньовічного слов'янського поселення.",
@@ -2989,6 +3692,8 @@ const monuments = [
     lat: 47.923,
     lng: 34.43,
     year: -350,
+    eraYear: -400,
+    eraYearEnd: -301,
     eventDate: "IV століття до н. е.; археологічні розкопки 1862–1863 років",
     description: "Один із найбільших царських курганів скіфського часу. Був місцем поховання представника скіфської знаті.",
     history: "Курган досліджував археолог Іван Забєлін у 1862–1863 роках. Під час розкопок було знайдено поховальні камери та численні предмети матеріальної культури, зокрема зброю, прикраси й вироби з дорогоцінних металів. У 1970–1980-х роках археологічні дослідження продовжили українські та німецькі науковці.",
@@ -3012,6 +3717,8 @@ const monuments = [
     lat: 47.8665,
     lng: 35.0865,
     year: 1932,
+    eraYear: 1927,
+    eraYearEnd: 1932,
     eventDate: "1927–1932 роки — будівництво; 1932 рік — введення в експлуатацію",
     description: "Масштабний гідроенергетичний комплекс на річці Дніпро, який став символом індустріалізації та розвитку енергетики України.",
     history: "Будівництво Дніпровської ГЕС розпочалося у 1927 році. Проєкт передбачав створення великої греблі та електростанції, яка мала забезпечувати електроенергією промислові підприємства регіону. Перші агрегати запрацювали у 1932 році. У 1941 році греблю підірвали під час відступу радянських військ, що спричинило масштабну катастрофу. Після Другої світової війни станцію відновили. У наступні десятиліття комплекс розширили.",
@@ -3043,6 +3750,7 @@ const monuments = [
     lat: 48.692703,
     lng: 38.060868,
     year: 1881,
+    eraYear: 1881,
     eventDate: "1881 рік — початок промислового освоєння",
     description: "Величезна система підземних виробок, створена внаслідок промислового видобутку кам'яної солі. Шахти стали основою розвитку міста Соледар.",
     history: "Промислове освоєння соляних родовищ розпочалося у 1881 році. Протягом наступних десятиліть під землею утворилася розгалужена система тунелів і камер. У шахтах облаштовували підземні зали, проводили екскурсії та культурні заходи. Після початку повномасштабного вторгнення Росії місто стало ареною важких бойових дій, а шахтна інфраструктура зазнала руйнувань.",
@@ -3074,6 +3782,8 @@ const monuments = [
     lat: 50.4388,
     lng: 30.546,
     year: 1764,
+    eraYear: 1750,
+    eraYearEnd: 1764,
     eventDate: "1750 рік — рішення про створення арсеналу; 1764 рік — початок роботи підприємства",
     description: "Історичний комплекс одного з найстаріших військово-промислових підприємств Києва. Тут виготовляли та ремонтували артилерійське озброєння й військове спорядження.",
     history: "У 1750 році було ухвалено рішення про створення київського арсеналу. Перша тимчасова дерев'яна будівля з'явилася у 1763 році, а промислове підприємство почало діяти у 1764 році. У наступні десятиліття комплекс розширювали, зводили кам'яні виробничі корпуси та майстерні. У січні 1918 року робітники підприємства брали участь у збройному повстанні проти Української Центральної Ради. На частині старих будівель збереглися сліди від куль і снарядів.",
@@ -3105,6 +3815,8 @@ const monuments = [
     lat: 49.8409,
     lng: 23.9511,
     year: 1904,
+    eraYear: 1861,
+    eraYearEnd: 1904,
     eventDate: "4 листопада 1861 року — прибуття першого поїзда; 1904 рік — відкриття сучасної будівлі",
     description: "Один із найвідоміших залізничних вокзалів України, який став важливим транспортним вузлом між українськими землями та Центральною Європою.",
     history: "Перший поїзд прибув до Львова з Перемишля 4 листопада 1861 року. Це стало початком історії регулярного залізничного сполучення на території сучасної України. Сучасну будівлю вокзалу спорудили у 1899–1904 роках за проєктом Владислава Садловського. Будівельними роботами займалася фірма Івана Левинського. Споруда поєднала інженерні рішення того часу з архітектурою модерну.",
@@ -3137,6 +3849,7 @@ const monuments = [
     lat: 50.44662,
     lng: 30.51278,
     year: 1901,
+    eraYear: 1901,
     description: "Національна опера України — одна з найважливіших оперних сцен країни. Її історія почалася 1867 року з відкриття постійної оперної трупи в Києві. Сучасну будівлю театру урочисто відкрили 29 вересня 1901 року.",
     history: "Першою виставою в новій будівлі стала опера Михайла Глінки «Життя за царя». До цього київська оперна трупа виступала в іншому міському театрі, який згодом згорів. Нова споруда була зведена за проєктом архітектора Віктора Шретера. Театр став важливим центром українського та європейського музичного життя.",
     significance: "Будівля є видатною архітектурною пам'яткою Києва та одним із головних осередків оперного і балетного мистецтва України.",
@@ -3160,6 +3873,8 @@ const monuments = [
     lat: 49.843973,
     lng: 24.026205,
     year: 1900,
+    eraYear: 1872,
+    eraYearEnd: 1952,
     description: "Львівська опера — одна з найвідоміших архітектурних і культурних пам'яток Львова. Театр відкрився 4 жовтня 1900 року як Великий міський театр. Сучасну назву він носить на честь видатної української оперної співачки Соломії Крушельницької.",
     history: "Будівництво театру розпочалося в червні 1897 року за проєктом архітектора Зигмунта Горголевського. Споруду звели в стилі неоренесансу з елементами необароко. Від самого початку театр став важливим місцем культурного життя Львова, де виступали українські та європейські артисти.",
     significance: "Театр є однією з головних культурних візитівок Львова та важливим осередком розвитку українського оперного і балетного мистецтва.",
@@ -3167,6 +3882,10 @@ const monuments = [
       {
         title: "opera.lviv.ua",
         url: "https://opera.lviv.ua/urodyny-lvivskoyi-opery/"
+      },
+      {
+        title: "Вікіпедія: Крушельницька Соломія Амвросіївна",
+        url: "https://uk.wikipedia.org/wiki/Крушельницька_Соломія_Амвросіївна"
       }
     ]
   },
@@ -3183,6 +3902,7 @@ const monuments = [
     lat: 50.445513,
     lng: 30.528415,
     year: 1920,
+    eraYear: 1920,
     description: "Театр імені Івана Франка — один із провідних драматичних театрів України. Його історія почалася 1920 року у Вінниці. У 1926 році колектив переїхав до Києва, де отримав постійне приміщення на площі Івана Франка.",
     history: "Першим керівником театру був Гнат Юра. У різні періоди з театром були пов'язані видатні українські актори, режисери та драматурги. Київська будівля театру була споруджена 1898 року для театру «Соловцов». У 1924–1926 роках у цьому приміщенні також працював театр «Березіль» Леся Курбаса.",
     significance: "Театр став одним із важливих центрів українського драматичного мистецтва та зберігає традиції національної театральної школи.",
@@ -3206,6 +3926,8 @@ const monuments = [
     lat: 49.999224,
     lng: 36.232167,
     year: 1925,
+    eraYear: 1842,
+    eraYearEnd: 1912,
     description: "Харківський театр опери та балету — один із найстаріших музичних театрів України. Музичні вистави в Харкові відбувалися ще наприкінці XVIII століття. У 1925 році тут було створено першу в Україні державну оперу.",
     history: "У 1870-х роках у Харкові почалися регулярні стаціонарні оперні сезони. У 1883 році тут відбулася постановка опери Миколи Лисенка «Різдвяна ніч», а згодом — «Утопленої». У 1925 році театр отримав статус державної столичної опери. Сучасна будівля на вулиці Сумській стала його домівкою на початку 1990-х років.",
     significance: "Театр відіграв важливу роль у становленні української опери та популяризації творів українських композиторів. Його історія пов'язана з розвитком музичного мистецтва Слобожанщини.",
@@ -3213,6 +3935,10 @@ const monuments = [
       {
         title: "kharkivopera.com.ua",
         url: "https://kharkivopera.com.ua/pro-nas/"
+      },
+      {
+        title: "Вікіпедія: Лисенко Микола Віталійович",
+        url: "https://uk.wikipedia.org/wiki/Лисенко_Микола_Віталійович"
       }
     ]
   },
@@ -3229,6 +3955,8 @@ const monuments = [
     lat: 50.43953,
     lng: 30.5008,
     year: 1980,
+    eraYear: 1842,
+    eraYearEnd: 1912,
     description: "Музей розташований у будинку на вулиці Саксаганського, де видатний український композитор Микола Лисенко проживав із 1894 року до своєї смерті у 1912 році. Експозиція знайомить із його життям, творчістю та внеском у розвиток української музики.",
     history: "Микола Лисенко мешкав у цьому будинку разом із родиною, орендуючи другий поверх. Тут він працював над багатьма музичними творами, приймав українських митців і громадських діячів. Після його смерті виникла ідея створення меморіального музею. У 1980 році музей відкрили для відвідувачів. У його приміщеннях відтворено меморіальні кімнати композитора, зберігаються особисті речі, архіви та музичні інструменти.",
     significance: "Музей зберігає пам'ять про засновника української національної композиторської школи, який зробив величезний внесок у розвиток опери, хорової та інструментальної музики.",
@@ -3248,6 +3976,10 @@ const monuments = [
       {
         title: "mvduk.com.ua",
         url: "https://mvduk.com.ua/"
+      },
+      {
+        title: "Вікіпедія: Лисенко Микола Віталійович",
+        url: "https://uk.wikipedia.org/wiki/Лисенко_Микола_Віталійович"
       }
     ]
   },
@@ -3264,6 +3996,8 @@ const monuments = [
     lat: 49.83669,
     lng: 24.01992,
     year: 1989,
+    eraYear: 1872,
+    eraYearEnd: 1952,
     description: "Музей присвячений життю та творчості Соломії Крушельницької — однієї з найвидатніших українських оперних співачок. Він розташований у будинку, який співачка придбала у Львові в 1903 році.",
     history: "У цьому будинку Соломія Крушельницька провела останні роки свого життя. Після повернення до Львова у 1939 році вона продовжувала викладати вокал і підтримувати музичне життя міста. Після її смерті у 1952 році будинок зберіг меморіальне значення. У 1989 році тут відкрили музей. Його експозиція розповідає про міжнародну кар'єру співачки, її виступи на провідних оперних сценах світу та особисте життя.",
     significance: "Музей увічнює пам'ять про українську співачку світового рівня, яка виступала на найвідоміших оперних сценах Європи та Америки й прославила українську вокальну школу.",
@@ -3283,6 +4017,10 @@ const monuments = [
       {
         title: "lvivmusic.museum",
         url: "https://www.lvivmusic.museum/"
+      },
+      {
+        title: "Вікіпедія: Крушельницька Соломія Амвросіївна",
+        url: "https://uk.wikipedia.org/wiki/Крушельницька_Соломія_Амвросіївна"
       }
     ]
   },
@@ -3299,6 +4037,8 @@ const monuments = [
     lat: 48.722325,
     lng: 29.688621,
     year: 2016,
+    eraYear: 1877,
+    eraYearEnd: 1921,
     description: "Музей у селі Марківка присвячений українському композитору, хоровому диригенту та фольклористу Миколі Леонтовичу. Він відомий передусім завдяки хоровій обробці української народної пісні «Щедрик», яка стала всесвітньо відомою як Carol of the Bells.",
     history: "22 серпня 2016 року в Марківці відкрили нову музейну експозицію — філію Вінницького обласного краєзнавчого музею. Вона присвячена життю, творчості та педагогічній діяльності Леонтовича. Композитор працював із народними мелодіями, створював хорові твори та зробив вагомий внесок у розвиток української музичної культури.",
     significance: "Музей зберігає пам'ять про автора музичної обробки «Щедрика» — одного з найвідоміших українських музичних творів у світі.",
@@ -3306,6 +4046,10 @@ const monuments = [
       {
         title: "museum.vinnytsia.ua",
         url: "https://museum.vinnytsia.ua/branches/leontovych-museum"
+      },
+      {
+        title: "Вікіпедія: Леонтович Микола Дмитрович",
+        url: "https://uk.wikipedia.org/wiki/Леонтович_Микола_Дмитрович"
       }
     ]
   },
@@ -3322,6 +4066,7 @@ const monuments = [
     lat: 49.997723,
     lng: 36.230629,
     year: 1829,
+    eraYear: 1829,
     description: "Історична будівля на вулиці Римарській, 21 у Харкові пов'язана з раннім розвитком міської оперної сцени. У XIX столітті тут діяв Комерційний клуб, а згодом приміщення було перебудоване для театральних та оперних вистав.",
     history: "Будівлю спорудили 1829 року. У 1850-х роках її пристосували для проведення вистав, а в 1884–1885 роках капітально реконструювали для потреб оперного театру за проєктом архітектора Б. Михаловського. Тут відбувалися оперні постановки та виступи відомих артистів. У 1991 році Харківський театр опери та балету остаточно перейшов до нового приміщення на вулиці Сумській. Історична будівля на Римарській згодом стала домівкою Харківської обласної філармонії.",
     significance: "Це важливе місце в історії музичного життя Харкова, пов'язане зі становленням професійної опери та розвитком міської концертної культури.",
@@ -3353,6 +4098,8 @@ const monuments = [
     lat: 48.676588,
     lng: 28.872778,
     year: 1977,
+    eraYear: 1877,
+    eraYearEnd: 1921,
     description: "Музей присвячений Миколі Леонтовичу — українському композитору, хоровому диригенту та автору всесвітньо відомої обробки народної пісні «Щедрик».",
     history: "Тульчинський період був важливим етапом життя композитора. Леонтович працював тут учителем співу в єпархіальному училищі, керував хорами та продовжував створювати музичні твори. Музей-квартиру відкрили 1977 року до сторіччя від дня народження композитора. Експозиція розповідає про його педагогічну діяльність, творчість і зв'язок із Поділлям.",
     significance: "Леонтович зробив значний внесок у розвиток української хорової музики. Його обробка «Щедрика» стала основою всесвітньо відомої композиції Carol of the Bells.",
@@ -3360,6 +4107,10 @@ const monuments = [
       {
         title: "museum.vinnytsia.ua",
         url: "https://museum.vinnytsia.ua/branches/leontovych-museum"
+      },
+      {
+        title: "Вікіпедія: Леонтович Микола Дмитрович",
+        url: "https://uk.wikipedia.org/wiki/Леонтович_Микола_Дмитрович"
       }
     ]
   },
@@ -3376,6 +4127,7 @@ const monuments = [
     lat: 49.994982,
     lng: 36.231686,
     year: 1926,
+    eraYear: 1926,
     description: "Будівля на вулиці Сумській, 9, у якій працював український театр «Березіль» під керівництвом режисера Леся Курбаса. Це один із найважливіших осередків українського театрального авангарду XX століття.",
     history: "Театр «Березіль» був заснований Лесем Курбасом у Києві в березні 1922 року. У 1926 році колектив перевели до Харкова, тодішньої столиці УСРР. Перший харківський сезон відкрився 16 жовтня 1926 року виставою «Золоте черево». У театрі Курбас співпрацював із драматургом Миколою Кулішем та художником Вадимом Меллером. У 1933 році Курбаса усунули від керівництва, а згодом заарештували. У 1935 році театр перейменували на честь Тараса Шевченка.",
     significance: "«Березіль» став символом українського театрального модернізму. Його діяльність була важливою частиною культурного відродження 1920-х років, згодом знищеного сталінськими репресіями.",
@@ -3399,6 +4151,8 @@ const monuments = [
     lat: 49.516077,
     lng: 23.191581,
     year: 1993,
+    eraYear: 1887,
+    eraYearEnd: 1937,
     description: "Музей розташований у будинку, де 1887 року народився Лесь Курбас — видатний український режисер, актор і реформатор театру.",
     history: "Будинок на вулиці Леся Курбаса, 1 пов'язаний із дитинством майбутнього режисера. Музей урочисто відкрили 25 лютого 1993 року. Його експозиція знайомить із життям Курбаса, історією українського театру та його мистецькою спадщиною.",
     significance: "Лесь Курбас став одним із головних реформаторів українського театру XX століття та засновником театру «Березіль». Його творчість була знищена сталінськими репресіями.",
@@ -3406,6 +4160,10 @@ const monuments = [
       {
         title: "travels.in.ua",
         url: "https://travels.in.ua/uk-UA/object/2521/mystetskyy-muzey-imeni-lesya-kurbasa"
+      },
+      {
+        title: "Вікіпедія: Лесь Курбас",
+        url: "https://uk.wikipedia.org/wiki/Лесь_Курбас"
       }
     ]
   },
@@ -3422,6 +4180,7 @@ const monuments = [
     lat: 49.23487,
     lng: 28.464224,
     year: 1910,
+    eraYear: 1910,
     description: "Історична театральна будівля у Вінниці, споруджена за проєктом архітектора Григорія Артинова. Театр відкрився 1910 року та став одним із важливих культурних осередків Поділля.",
     history: "Першу виставу — «Затоплений дзвін» Ґергардта Гауптмана — показали 4 грудня 1910 року за новим стилем. У 1920–1923 роках у приміщенні працював театр імені Івана Франка під керівництвом Гната Юри. Пізніше тут діяли оперні колективи, а 1940 року заклад реорганізували в музично-драматичний театр. Після пошкодження під час Другої світової війни будівлю відновили.",
     significance: "Театр зберігає понад столітню історію сценічного мистецтва Вінниччини та пов'язаний із розвитком української професійної сцени.",
@@ -3445,6 +4204,7 @@ const monuments = [
     lat: 49.8432,
     lng: 24.031,
     year: 1864,
+    eraYear: 1864,
     description: "Народний дім — історична українська культурно-освітня установа у Львові. У його приміщенні відбувалися театральні вистави, концерти, культурні та громадські заходи.",
     history: "Будівництво споруди тривало у 1851–1864 роках за проєктом архітектора Вільгельма Шмідта. У великій залі Народного дому в 1864–1876 роках, із перервами, виступав театр товариства «Руська бесіда» — один із перших професійних українських театрів у Галичині. Тут також працювали культурно-освітні організації та бібліотека. У 1930 році частину приміщень перебудували під театр «Розмаїтості».",
     significance: "Народний дім був одним із ключових центрів українського культурного життя Галичини XIX століття. Це місце пов'язане зі становленням професійного українського театру.",
@@ -3468,6 +4228,7 @@ const monuments = [
     lat: 50.4557,
     lng: 30.5309,
     year: 1882,
+    eraYear: 1882,
     description: "Національна філармонія України розташована в історичній будівлі колишнього Купецького зібрання на Володимирському узвозі. Її Колонна зала є однією з найвідоміших концертних зал Києва.",
     history: "Будівлю спорудили 1882 року за проєктом архітектора Володимира Ніколаєва. Велика зала мала особливу акустику та використовувалася для музичних вечорів, концертів і громадських заходів. Тут виступав Микола Лисенко, організовувалися квартетні зібрання та симфонічні концерти. У 1962 році Колонній залі присвоїли ім'я Миколи Лисенка.",
     significance: "Це один із найважливіших історичних концертних осередків України, пов'язаний зі становленням професійного музичного життя Києва.",
@@ -3491,6 +4252,7 @@ const monuments = [
     lat: 50.4489,
     lng: 30.5288,
     year: 1913,
+    eraYear: 1913,
     description: "Національна музична академія України — один із провідних закладів вищої музичної освіти країни, відомий також як Київська консерваторія. Розташована на вулиці Архітектора Городецького.",
     history: "Заклад заснували 3 листопада 1913 року на базі музичного училища Київського відділення Російського музичного товариства. Першим директором став піаніст і педагог Володимир Пухальський, а згодом заклад очолив композитор Рейнгольд Глієр. У 1920-х роках структура установи змінювалася, а в 1934 році консерваторію відновили. Сучасне приміщення на вулиці Городецького має власну архітектурну історію та не є датою заснування академії.",
     significance: "Академія підготувала покоління українських композиторів, диригентів, вокалістів та інструменталістів. Вона відіграє ключову роль у збереженні й розвитку професійної музичної освіти.",
@@ -3514,6 +4276,7 @@ const monuments = [
     lat: 46.4823,
     lng: 30.7416,
     year: 1899,
+    eraYear: 1899,
     description: "Одеська філармонія розташована в будівлі колишньої Нової купецької біржі — одній із найвиразніших архітектурних пам'яток історичного центру Одеси.",
     history: "Будівництво Нової біржі тривало у 1894–1899 роках. Первісний ескізний проєкт створив архітектор Вікентій Прохаска, а робочий проєкт розробив Олександр Бернардацці. Будівля виконана в стилі італійської готики. У 1946 році сюди переїхала Одеська філармонія, заснована 1931 року.",
     significance: "Споруда є пам'яткою архітектури національного значення та важливим центром музичного життя Півдня України.",
@@ -3537,6 +4300,7 @@ const monuments = [
     lat: 49.8364,
     lng: 24.0317,
     year: 1907,
+    eraYear: 1907,
     description: "Львівська національна філармонія — один із найстаріших концертних закладів України. Її історія пов'язана з розвитком професійної симфонічної музики в Галичині.",
     history: "Філармонія розпочала діяльність 27 вересня 1902 року в приміщенні колишнього театру Скарбека. З 1962 року вона працює в будівлі на вулиці Чайковського, 7, спорудженій 1907 року для Музичного товариства Галичини. У різні роки тут виступали видатні українські та закордонні музиканти.",
     significance: "Філармонія є важливим осередком української симфонічної та камерної музики, а також місцем проведення міжнародних музичних фестивалів.",
@@ -3560,6 +4324,7 @@ const monuments = [
     lat: 48.2914,
     lng: 25.937,
     year: 1877,
+    eraYear: 1877,
     description: "Чернівецька філармонія розташована в історичній будівлі, створеній для Музичного товариства Буковини. Це один із найстаріших концертних осередків західноукраїнських земель.",
     history: "Музичне товариство в Чернівцях було створене 1862 року. У 1876 році розпочалося будівництво його власного приміщення, а в листопаді 1877 року будівлю урочисто відкрили. Концертний зал прикрасив віденський художник Карл Йобст. Тут виступали відомі музиканти, серед яких Соломія Крушельницька та Микола Лисенко. Чернівецьку обласну філармонію заснували 1940 року.",
     significance: "Будівля є важливою пам'яткою музичної культури Буковини та свідченням багатонаціонального культурного життя Чернівців.",
@@ -3583,6 +4348,7 @@ const monuments = [
     lat: 50.4577,
     lng: 30.4255,
     year: 1927,
+    eraYear: 1927,
     description: "Одна з найвідоміших кіностудій України, розташована на Берестейському проспекті в Києві. Її історія пов'язана зі становленням українського кіновиробництва та розвитком вітчизняного художнього кіно.",
     history: "Будівництво кінофабрики Всеукраїнського фотокіноуправління розпочалося в березні 1927 року. Студія почала працювати у 1928 році. Першою стрічкою став фільм «Ванька і Месник» режисера Акселя Лундіна. У різні періоди тут працювали видатні режисери, оператори, актори та художники. У 1957 році кіностудії присвоїли ім'я Олександра Довженка.",
     significance: "Кіностудія стала одним із головних центрів українського кінематографа. Тут створювалися фільми, що увійшли до історії національного та світового кіно.",
@@ -3606,6 +4372,7 @@ const monuments = [
     lat: 46.4389,
     lng: 30.7618,
     year: 1907,
+    eraYear: 1907,
     description: "Одеська кіностудія — один із найстаріших центрів кіновиробництва в Україні. Її історія почалася з кіноательє «Мирограф», заснованого фотографом Мироном Гроссманом.",
     history: "У 1907 році Мирон Гроссман заснував кіноательє «Мирограф» на Французькому бульварі. У 1916 році підприємець Дмитро Харитонов побудував великий скляний знімальний павільйон. В Одесі знімали фільми за участю Віри Холодної та інших зірок німого кіно. У 1926 році сюди приїхав Олександр Довженко, який створив на студії свої перші кінороботи.",
     significance: "Одеський кінематограф відіграв важливу роль у формуванні української кіноіндустрії та розвитку світового німого кіно.",
@@ -3629,6 +4396,8 @@ const monuments = [
     lat: 50.4046,
     lng: 30.505,
     year: 1994,
+    eraYear: 1894,
+    eraYearEnd: 1956,
     description: "Довженко-Центр — національний кіноархів і культурна інституція, що займається збереженням, дослідженням та популяризацією української кінематографічної спадщини.",
     history: "Центр заснований у 1994 році на базі колишньої кінокопіювальної фабрики, створеної 1938 року. У його фондах зберігаються тисячі українських і закордонних фільмів, архівні документи, фотографії та матеріали з історії кінематографа. Центр також розвиває музейні, дослідницькі та освітні програми.",
     significance: "Це одна з головних установ зі збереження української кіноспадщини, без якої неможливе системне дослідження історії національного кінематографа.",
@@ -3636,6 +4405,10 @@ const monuments = [
       {
         title: "dovzhenkocentre.org",
         url: "https://dovzhenkocentre.org/pro-nas/"
+      },
+      {
+        title: "Вікіпедія: Довженко Олександр Петрович",
+        url: "https://uk.wikipedia.org/wiki/Довженко_Олександр_Петрович"
       }
     ]
   },
@@ -3652,6 +4425,7 @@ const monuments = [
     lat: 50.4573,
     lng: 30.5122,
     year: 1913,
+    eraYear: 1913,
     description: "Кінотеатр «Ліра» на Великій Житомирській, 40 — один із найстаріших діючих кінотеатрів Києва. Його історія почалася на початку XX століття, коли в місті активно поширювалися синематографи.",
     history: "Дозвіл на відкриття синематографа «Ліра» в будинку на Великій Житомирській, 40 був наданий 1913 року. У 1937 році кінотеатр перейменували на честь Василя Чапаєва. Протягом наступних десятиліть заклад неодноразово змінював назву та формат роботи. Сьогодні він відомий як кінотеатр «Ліра».",
     significance: "Кінотеатр є важливою пам'яткою історії міського кінематографа та зберігає традицію кінопоказів у Києві, що бере початок понад століття тому.",
@@ -3675,6 +4449,7 @@ const monuments = [
     lat: 48.172222,
     lng: 24.8975,
     year: 1858,
+    eraYear: 1964,
     description: "Традиційна гуцульська хата-гражда в присілку Заріччя села Криворівня. Ця історична споруда використовувалася під час зйомок фільму Сергія Параджанова «Тіні забутих предків» 1964 року.",
     history: "Гражду спорудили 1858 року. Це традиційний тип гуцульського житла із замкнутим внутрішнім подвір'ям, оточеним житловими та господарськими будівлями. У 1964 році споруду використовували як знімальний майданчик фільму «Тіні забутих предків». Після тривалого занепаду її відреставрували та відкрили як музей у 1993 році.",
     significance: "Об'єкт поєднує гуцульську архітектурну спадщину з історією українського кінематографа. Фільм Параджанова став одним із найвідоміших творів українського поетичного кіно.",
@@ -3698,6 +4473,7 @@ const monuments = [
     lat: 50.45889,
     lng: 30.51806,
     year: 1961,
+    eraYear: 1961,
     description: "Андріївська церква — одна з найвідоміших архітектурних пам'яток Києва. Її сходи стали місцем зйомок фінальних епізодів культової кінокомедії «За двома зайцями» режисера Віктора Іванова.",
     history: "Фільм «За двома зайцями» вийшов 1961 року та був знятий за мотивами однойменної п'єси Михайла Старицького. У фінальних сценах герої опиняються біля Андріївської церкви. У 1999 році неподалік храму встановили пам'ятник Проні Прокопівні та Свириду Голохвостому.",
     significance: "Локація стала невід'ємною частиною кінематографічного образу Києва. Фільм зберігає популярність і є одним із найвідоміших прикладів української кінокомедії.",
@@ -3721,6 +4497,7 @@ const monuments = [
     lat: 49.83738,
     lng: 33.91623,
     year: 1929,
+    eraYear: 1929,
     description: "Село Яреськи на Полтавщині стало одним із важливих натурних знімальних майданчиків Олександра Довженка. Тут створювалися сцени його фільмів «Звенигора» та «Земля».",
     history: "Олександр Довженко разом із художником Василем Кричевським обрав Яреськи для зйомок завдяки характерному українському сільському ландшафту. У 1927 році тут знімали «Звенигору», а влітку 1929 року — значну частину фільму «Земля». Останній став одним із найвизначніших творів світового німого кінематографа. У зйомках брали участь місцеві мешканці.",
     significance: "Яреськи є важливою локацією в історії українського поетичного кіно та творчості Олександра Довженка.",
@@ -3744,6 +4521,7 @@ const monuments = [
     lat: 49.67702,
     lng: 33.74568,
     year: 1972,
+    eraYear: 1972,
     description: "Село Красногорівка на Полтавщині стало одним із місць натурних зйомок українського фільму «Пропала грамота» режисера Бориса Івченка.",
     history: "Зйомки фільму розпочалися 1972 року. Перші епізоди створювали в Полтавській області, зокрема в Красногорівці, після чого знімальна група продовжила роботу в Петергофі. Головну роль козака Василя виконав Іван Миколайчук, який також брав участь у роботі над музичним оформленням стрічки. Радянська цензура заборонила фільм після перегляду, і широкому глядачеві він став доступний лише 1983 року.",
     significance: "«Пропала грамота» стала одним із важливих творів українського історико-пригодницького кіно, в якому поєдналися козацькі мотиви, народний гумор, фольклор і музика.",
@@ -3767,6 +4545,7 @@ const monuments = [
     lat: 48.167225,
     lng: 25.127131,
     year: 1970,
+    eraYear: 1970,
     description: "Село Розтоки на Буковині стало головним місцем натурних зйомок фільму «Білий птах з чорною ознакою» режисера Юрія Іллєнка. У стрічці зображено драматичну долю буковинської родини на тлі історичних потрясінь.",
     history: "Зйомки розпочалися влітку 1970 року. Розтоки стали основним майданчиком роботи кіногрупи. До зйомок долучалися місцеві мешканці, а частину сцен знімали в навколишніх селах. Під час перебування на Буковині композитор Володимир Івасюк почув від місцевих жителів легенду про червону руту, що згодом вплинула на створення відомої пісні.",
     significance: "Розтоки пов'язані одразу з двома важливими явищами української культури: українським поетичним кіно та історією створення пісні «Червона рута».",
@@ -3790,6 +4569,7 @@ const monuments = [
     lat: 50.11327,
     lng: 30.872895,
     year: 1979,
+    eraYear: 1979,
     description: "Витачів на Київщині став одним із головних натурних майданчиків фільму «Вавилон XX», режисерського дебюту Івана Миколайчука.",
     history: "Фільм створювали наприкінці 1970-х років за мотивами роману Василя Земляка «Лебедина зграя». Для зйомок шукали місцевість, яка поєднувала б пагорби, рівнини та характерні українські сільські краєвиди. Зрештою знімальна група обрала Витачів. Стрічка вийшла на екрани 1979 року.",
     significance: "Фільм став однією з найважливіших режисерських робіт Івана Миколайчука та помітним явищем українського поетичного кіно.",
@@ -3813,6 +4593,7 @@ const monuments = [
     lat: 48.582005,
     lng: 23.688941,
     year: 2019,
+    eraYear: 2019,
     description: "Карпатські околиці Синевирської Поляни стали одним із натурних майданчиків історичного фільму «Захар Беркут» 2019 року. Стрічку створено за мотивами однойменної повісті Івана Франка.",
     history: "Основні натурні зйомки проходили влітку 2018 року поблизу Синевирської Поляни. Для фільму створювали масштабні декорації гірського поселення та укріплень. Частину сцен також знімали під Києвом. Режисерами стрічки стали Ахтем Сеітаблаєв і Джон Вінн.",
     significance: "Це приклад сучасного українського історичного кіно, для якого використовували реальні карпатські ландшафти та масштабні декорації.",
@@ -3836,6 +4617,7 @@ const monuments = [
     lat: 48.625698,
     lng: 24.303519,
     year: 2019,
+    eraYear: 2019,
     description: "Манявський водоспад та навколишні карпатські краєвиди використовувалися під час натурних зйомок фільму «Захар Беркут» 2019 року.",
     history: "Під час створення фільму знімальна група працювала в Карпатах, зокрема поблизу Манявського водоспаду та озера Синевир. Природні ландшафти допомогли створити атмосферу гірського світу, описаного в повісті Івана Франка.",
     significance: "Об'єкт поєднує природну спадщину Карпат із сучасною історією українського кінематографа.",
@@ -3859,6 +4641,8 @@ const monuments = [
     lat: 47.67262,
     lng: 34.13211,
     year: -350,
+    eraYear: -400,
+    eraYearEnd: -301,
     eventDate: "IV століття до н. е.",
     description: "Один із найвідоміших скіфських курганів України. Саме тут у 1971 році археолог Борис Мозолевський знайшов золоту пектораль — шедевр скіфського ювелірного мистецтва.",
     history: "Під час розкопок виявили два поховання, залишки коней, зброю, посуд і сотні золотих прикрас. Центральне поховання було пограбоване ще в давнину, проте бічна гробниця зберегла надзвичайно цінні предмети. Найвідоміша знахідка — золота пектораль із зображеннями сцен життя та міфології скіфів.",
@@ -3883,6 +4667,8 @@ const monuments = [
     lat: 47.32597,
     lng: 34.33917,
     year: -400,
+    eraYear: -400,
+    eraYearEnd: -301,
     eventDate: "Кінець V — початок IV століття до н. е.",
     description: "Один із найбагатших скіфських царських курганів. Під його насипом заввишки приблизно 18 метрів археологи виявили два поховальні комплекси.",
     history: "Курган досліджував археолог Микола Веселовський у 1912–1913 роках. Серед знахідок — золотий гребінь із зображенням трьох воїнів у бою, золоті прикраси, зброя, посуд і кінська збруя. Частина поховання була пограбована ще в давнину.",
@@ -3907,6 +4693,8 @@ const monuments = [
     lat: 47.91031,
     lng: 34.49089,
     year: -350,
+    eraYear: -400,
+    eraYearEnd: -301,
     eventDate: "IV століття до н. е.",
     description: "Один із найвищих курганів степової частини Європи. Висота насипу нині становить близько 15 метрів.",
     history: "Курган також відомий під назвою Гегелина Могила. Попри інтерес археологів, повноцінні археологічні розкопки центрального поховання не були проведені. Тому його справжній поховальний вміст залишається невідомим.",
@@ -3931,6 +4719,8 @@ const monuments = [
     lat: 47.42139,
     lng: 34.37202,
     year: -3000,
+    eraYear: -4000,
+    eraYearEnd: 1500,
     eventDate: "IV тисячоліття до н. е. — перша половина II тисячоліття н. е.",
     description: "Великий курганний могильник, що складається з численних поховальних насипів різних історичних епох.",
     history: "На території могильника представлені поховання різних періодів — від доби енеоліту та бронзи до раннього залізного віку й середньовіччя. Це не одна могила, а цілий археологічний комплекс, який відображає тривалу історію заселення регіону.",
@@ -3955,6 +4745,8 @@ const monuments = [
     lat: 49.89,
     lng: 23.98,
     year: 2015,
+    eraYear: 1968,
+    eraYearEnd: 2015,
     eventDate: "5 лютого 2015 року",
     description: "Місце поховання українського музиканта, співака, композитора, телеведучого та лідера гурту «Скрябін» Андрія Кузьменка.",
     history: "Андрій Кузьменко загинув 2 лютого 2015 року в автомобільній аварії поблизу села Лозуватка на Дніпропетровщині. 5 лютого його поховали в родинному склепі Кузьменків на Брюховицькому кладовищі. На склепі встановлена меморіальна дошка з портретом музиканта.",
@@ -3963,6 +4755,10 @@ const monuments = [
       {
         title: "myplanet.com.ua",
         url: "https://myplanet.com.ua/de-pokhovanyi-skriabin-rodynnyi-sklep-u-briukhovychakh/"
+      },
+      {
+        title: "Вікіпедія: Кузьма Скрябін",
+        url: "https://uk.wikipedia.org/wiki/Кузьма_Скрябін"
       }
     ]
   },
@@ -3979,6 +4775,8 @@ const monuments = [
     lat: 49.8375,
     lng: 24.056,
     year: 2020,
+    eraYear: 1938,
+    eraYearEnd: 2020,
     eventDate: "5 червня 2020 року",
     description: "Місце поховання українського композитора, музикознавця, педагога та Героя України Мирослава Скорика.",
     history: "Мирослав Скорик (1938–2020) був одним із провідних українських композиторів XX–XXI століть. Серед його найвідоміших творів — «Мелодія» та музика до фільму «Тіні забутих предків». Після смерті 1 червня 2020 року його поховали на Личаківському кладовищі у Львові.",
@@ -3987,6 +4785,10 @@ const monuments = [
       {
         title: "philharmonia.lviv.ua",
         url: "https://philharmonia.lviv.ua/media/pokladannia-kvitiv-do-mohyly-myroslava-skoryka/"
+      },
+      {
+        title: "Вікіпедія: Скорик Мирослав Михайлович",
+        url: "https://uk.wikipedia.org/wiki/Скорик_Мирослав_Михайлович"
       }
     ]
   },
@@ -4003,6 +4805,8 @@ const monuments = [
     lat: 49.8375,
     lng: 24.056,
     year: 1979,
+    eraYear: 1949,
+    eraYearEnd: 1979,
     eventDate: "22 травня 1979 року",
     description: "Місце поховання українського композитора, поета та одного із засновників української естрадної музики Володимира Івасюка.",
     history: "Володимир Івасюк (1949–1979) — автор пісень «Червона рута», «Водограй» та багатьох інших творів. Його тіло знайшли у Брюховицькому лісі поблизу Львова 18 травня 1979 року. Похорон відбувся 22 травня на Личаківському кладовищі. У ньому взяли участь тисячі людей.",
@@ -4011,6 +4815,10 @@ const monuments = [
       {
         title: "commons.wikimedia.org",
         url: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%92._%D0%9C._%D0%86%D0%B2%D0%B0%D1%81%D1%8E%D0%BA%D0%B0%2C_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B0.jpg"
+      },
+      {
+        title: "Вікіпедія: Івасюк Володимир Михайлович",
+        url: "https://uk.wikipedia.org/wiki/Івасюк_Володимир_Михайлович"
       }
     ]
   },
@@ -4027,6 +4835,8 @@ const monuments = [
     lat: 50.4167,
     lng: 30.5058,
     year: 2012,
+    eraYear: 1941,
+    eraYearEnd: 2012,
     eventDate: "2012 рік",
     description: "Місце поховання видатного українського театрального та кіноактора Богдана Ступки на Байковому кладовищі.",
     history: "Богдан Ступка (1941–2012) був актором театру і кіно, народним артистом України та лауреатом численних нагород. Працював у Львівському театрі імені Марії Заньковецької, Київському театрі імені Івана Франка та очолював Міністерство культури України. На його могилі встановлена скульптура бронзового дерева з корінням, спрямованим догори.",
@@ -4035,6 +4845,10 @@ const monuments = [
       {
         title: "kmu.gov.ua",
         url: "https://www.kmu.gov.ua/news/249263692"
+      },
+      {
+        title: "Вікіпедія: Ступка Богдан Сильвестрович",
+        url: "https://uk.wikipedia.org/wiki/Ступка_Богдан_Сильвестрович"
       }
     ]
   },
@@ -4051,6 +4865,8 @@ const monuments = [
     lat: 49.8375,
     lng: 24.056,
     year: 2020,
+    eraYear: 1947,
+    eraYearEnd: 2020,
     eventDate: "2020 рік",
     description: "Місце поховання українського фізика, професора, багаторічного ректора Львівського національного університету імені Івана Франка та міністра освіти і науки України Івана Вакарчука.",
     history: "Іван Вакарчук (1947–2020) був доктором фізико-математичних наук і ректором Львівського університету протягом 1990–2007 та 2010–2013 років. Також обіймав посаду міністра освіти і науки України у 2007–2010 роках. Його поховали на Личаківському кладовищі. У 2025 році на могилі відкрили надмогильний пам'ятник.",
@@ -4059,6 +4875,10 @@ const monuments = [
       {
         title: "loda.gov.ua",
         url: "https://loda.gov.ua/news/132821"
+      },
+      {
+        title: "Вікіпедія: Вакарчук Іван Олександрович",
+        url: "https://uk.wikipedia.org/wiki/Вакарчук_Іван_Олександрович"
       }
     ]
   },
@@ -4075,6 +4895,8 @@ const monuments = [
     lat: 50.4167,
     lng: 30.5058,
     year: 1989,
+    eraYear: 1938,
+    eraYearEnd: 1985,
     eventDate: "19 листопада 1989 року — перепоховання",
     description: "Місце поховання українського поета, перекладача, літературознавця та правозахисника Василя Стуса на Байковому кладовищі.",
     history: "Василь Стус помер у ніч із 3 на 4 вересня 1985 року в радянському таборі особливого режиму в селищі Кучино Пермської області. Спочатку його поховали на табірному кладовищі. У листопаді 1989 року останки Стуса, Олекси Тихого та Юрія Литвина перепоховали в Києві на Байковому кладовищі, на ділянці №33.",
@@ -4083,6 +4905,10 @@ const monuments = [
       {
         title: "localhistory.org.ua",
         url: "https://localhistory.org.ua/texts/statti/mistsia-pamiati-vasilia-stusa/"
+      },
+      {
+        title: "Вікіпедія: Стус Василь Семенович",
+        url: "https://uk.wikipedia.org/wiki/Стус_Василь_Семенович"
       }
     ]
   },
@@ -4099,6 +4925,8 @@ const monuments = [
     lat: 50.4167,
     lng: 30.5058,
     year: 1979,
+    eraYear: 1928,
+    eraYearEnd: 1979,
     eventDate: "13 квітня 1979 року",
     description: "Місце поховання українського актора, кінорежисера та сценариста Леоніда Бикова на Байковому кладовищі, ділянка №33.",
     history: "Леонід Биков (1928–1979) відомий за фільмами «В бій ідуть тільки старики», «Максим Перепелиця» та «Ати-бати, йшли солдати…». Загинув 11 квітня 1979 року в автомобільній аварії на трасі Київ — Мінськ. Похований на Байковому кладовищі в Києві. На його могилі встановлено надгробок, присвячений пам'яті актора.",
@@ -4107,6 +4935,10 @@ const monuments = [
       {
         title: "vue.gov.ua",
         url: "https://vue.gov.ua/Биков,_Леонід_Федорович"
+      },
+      {
+        title: "Вікіпедія: Биков Леонід Федорович",
+        url: "https://uk.wikipedia.org/wiki/Биков_Леонід_Федорович"
       }
     ]
   },
@@ -4123,6 +4955,8 @@ const monuments = [
     lat: 49.8375,
     lng: 24.056,
     year: 2025,
+    eraYear: 1939,
+    eraYearEnd: 2025,
     eventDate: "1 липня 2025 року",
     description: "Місце поховання українського поета-шістдесятника, письменника та дисидента Ігоря Калинця на Личаківському кладовищі.",
     history: "Ігор Калинець (1939–2025) був одним із представників покоління українських шістдесятників. За свою громадянську та літературну діяльність зазнав переслідувань радянської влади, був засуджений до ув'язнення та заслання. Помер 28 червня 2025 року. Його поховали 1 липня на полі почесних поховань №67 Личаківського кладовища, поруч із дружиною Іриною Калинець.",
@@ -4131,6 +4965,10 @@ const monuments = [
       {
         title: "istpravda.com.ua",
         url: "https://www.istpravda.com.ua/short/2025/06/29/165110/"
+      },
+      {
+        title: "Вікіпедія: Калинець Ігор Миронович",
+        url: "https://uk.wikipedia.org/wiki/Калинець_Ігор_Миронович"
       }
     ]
   },
@@ -4147,6 +4985,8 @@ const monuments = [
     lat: 49.8375,
     lng: 24.056,
     year: 2000,
+    eraYear: 1955,
+    eraYearEnd: 2000,
     eventDate: "28 травня 2000 року",
     description: "Місце поховання українського композитора, співака та керівника вокально-інструментального ансамблю «Ватра» Ігоря Білозіра на Личаківському кладовищі, поле №2.",
     history: "Ігор Білозір (1955–2000) був автором багатьох популярних українських пісень. 8 травня 2000 року його жорстоко побили у львівському кафе після конфлікту, пов'язаного з виконанням українських пісень. Від отриманих травм він помер 28 травня 2000 року в лікарні. Похований на Личаківському кладовищі у Львові.",
@@ -4155,6 +4995,10 @@ const monuments = [
       {
         title: "old.loda.gov.ua",
         url: "https://old.loda.gov.ua/news?id=51634&news_departments=17%2C24"
+      },
+      {
+        title: "Вікіпедія: Білозір Ігор Йосипович",
+        url: "https://uk.wikipedia.org/wiki/Білозір_Ігор_Йосипович"
       }
     ]
   },
@@ -4171,6 +5015,8 @@ const monuments = [
     lat: 49.73234,
     lng: 31.51179,
     year: 1861,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     eventDate: "22 травня 1861 року",
     description: "Місце поховання Тараса Григоровича Шевченка на Тарасовій горі в Каневі.",
     history: "Після смерті в Санкт-Петербурзі 10 березня 1861 року Шевченка спочатку поховали на Смоленському кладовищі. Згодом, відповідно до його заповіту, домовину перевезли в Україну. 22 травня 1861 року поета перепоховали на Чернечій горі поблизу Канева. Відтоді вона отримала назву Тарасова гора. У 1939 році тут відкрили сучасний пам'ятник роботи скульптора Матвія Манізера.",
@@ -4187,6 +5033,10 @@ const monuments = [
       {
         title: "shevchenko-museum.com.ua",
         url: "https://shevchenko-museum.com.ua/default/static/view/9/"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -4203,6 +5053,8 @@ const monuments = [
     lat: 50.416111,
     lng: 30.512222,
     year: 1913,
+    eraYear: 1871,
+    eraYearEnd: 1913,
     eventDate: "7 серпня 1913 року",
     description: "Місце поховання української поетеси, драматургині та перекладачки Лесі Українки на Байковому кладовищі.",
     history: "Леся Українка померла 1 серпня 1913 року в Сурамі, Грузія. Її тіло перевезли до Києва та поховали 7 серпня на Байковому кладовищі, на старій ділянці №3. У 1939 році на могилі встановили бронзовий надгробний пам'ятник роботи скульпторки Галини Петрашевич.",
@@ -4219,6 +5071,10 @@ const monuments = [
       {
         title: "lesyaukrainka.com",
         url: "https://lesyaukrainka.com/ua/vshanuvannya-pamyati/pamyatniki/21_kiyiv-nadgrobniy-pam-yatnik-lesi-ukrayinci-na-baykovomu-kladovishci"
+      },
+      {
+        title: "Вікіпедія: Леся Українка",
+        url: "https://uk.wikipedia.org/wiki/Леся_Українка"
       }
     ]
   },
@@ -4235,6 +5091,8 @@ const monuments = [
     lat: 49.833104,
     lng: 24.052873,
     year: 1916,
+    eraYear: 1856,
+    eraYearEnd: 1916,
     eventDate: "1916 рік; перепоховання 1921 року",
     description: "Місце поховання українського письменника, поета, перекладача, науковця та громадського діяча Івана Франка на Личаківському цвинтарі.",
     history: "Іван Франко помер 28 травня 1916 року у Львові. Спочатку його поховали у склепі родини Мотичинських. У 1921 році останки перенесли до окремої могили на Личаківському цвинтарі. У 1933 році над нею встановили пам'ятник роботи скульптора Сергія Литвиненка, що зображає Франка-каменяра.",
@@ -4251,6 +5109,10 @@ const monuments = [
       {
         title: "swr.lnu.edu.ua",
         url: "https://swr.lnu.edu.ua/memory/monument/view?id=4886&type=1"
+      },
+      {
+        title: "Вікіпедія: Франко Іван Якович",
+        url: "https://uk.wikipedia.org/wiki/Франко_Іван_Якович"
       }
     ]
   },
@@ -4267,6 +5129,8 @@ const monuments = [
     lat: 50.418599,
     lng: 30.510178,
     year: 1934,
+    eraYear: 1866,
+    eraYearEnd: 1934,
     eventDate: "29 листопада 1934 року",
     description: "Місце поховання українського історика, академіка та першого голови Української Центральної Ради Михайла Грушевського.",
     history: "Михайло Грушевський помер 24 листопада 1934 року в Кисловодську. Його тіло перевезли до Києва. Похорон відбувся 29 листопада 1934 року. Могила розташована на Байковому кладовищі, ділянка №8. Поховання має статус пам'ятки історії національного значення.",
@@ -4283,6 +5147,10 @@ const monuments = [
       {
         title: "hrushevsky.history.org.ua",
         url: "https://hrushevsky.history.org.ua/item/0006211"
+      },
+      {
+        title: "Вікіпедія: Грушевський Михайло Сергійович",
+        url: "https://uk.wikipedia.org/wiki/Грушевський_Михайло_Сергійович"
       }
     ]
   },
@@ -4299,6 +5167,7 @@ const monuments = [
     lat: 50.4547,
     lng: 30.5266,
     year: 1899,
+    eraYear: 1899,
     eventDate: "Заснований у 1899 році",
     description: "Один із провідних історичних музеїв України, розташований на Старокиївській горі біля Десятинної церкви. Його колекції охоплюють історію українських земель від найдавніших часів до сучасності.",
     history: "Музей виник наприкінці XIX століття як Київський художньо-промисловий і науковий музей. Його сучасна будівля на вулиці Володимирській була споруджена на початку XX століття. У фондах зберігаються археологічні знахідки, стародавні прикраси, зброя, монети, документи, рукописи, предмети побуту та мистецтва.",
@@ -4331,6 +5200,8 @@ const monuments = [
     lat: 50.4458,
     lng: 30.5104,
     year: 1940,
+    eraYear: 1814,
+    eraYearEnd: 1861,
     eventDate: "Заснований у 1940 році",
     description: "Музей присвячений життю, творчості та культурній спадщині Тараса Григоровича Шевченка. Тут зберігаються особисті речі поета, його рукописи, документи, малярські роботи та видання творів.",
     history: "Музейна колекція формувалася на основі матеріалів про життя і творчість Шевченка, зокрема предметів, переданих із приватних зібрань та інших установ. Експозиція знайомить із дитинством поета, його викупом із кріпацтва, навчанням у Петербурзі, творчістю, засланням та останніми роками життя.",
@@ -4347,6 +5218,10 @@ const monuments = [
       {
         title: "museumshevchenko.org.ua",
         url: "https://museumshevchenko.org.ua/"
+      },
+      {
+        title: "Вікіпедія: Шевченко Тарас Григорович",
+        url: "https://uk.wikipedia.org/wiki/Шевченко_Тарас_Григорович"
       }
     ]
   },
@@ -4363,6 +5238,7 @@ const monuments = [
     lat: 50.4388,
     lng: 30.5147,
     year: 1919,
+    eraYear: 1919,
     eventDate: "Музей заснований у 1919 році",
     description: "Один із найвідоміших художніх музеїв України, створений на основі колекції меценатів Богдана та Варвари Ханенків. Музей розташований у двох історичних будівлях на вулиці Терещенківській.",
     history: "Богдан і Варвара Ханенки протягом життя збирали твори мистецтва різних країн та епох. Після смерті Богдана Ханенка Варвара передала їхню колекцію Києву разом із будинком та іншими цінностями. У зібранні представлені твори західноєвропейського живопису, візантійські ікони, японська графіка, китайське мистецтво та інші цінні експонати.",
@@ -4395,6 +5271,7 @@ const monuments = [
     lat: 50.467077,
     lng: 30.520465,
     year: 1993,
+    eraYear: 1993,
     eventDate: "Заснований у 1993 році",
     description: "Музей, присвячений історії українського козацтва, Гетьманщини та гетьманської державної традиції. Розташований у старовинній кам'яниці на Подолі, відомій як Будинок Мазепи.",
     history: "Музей було засновано в незалежній Україні у 1993 році. Його експозиції розповідають про добу Богдана Хмельницького, державотворчу діяльність Івана Мазепи, спадщину Пилипа Орлика, а також Українську Державу Павла Скоропадського. У колекції представлені документи, козацька зброя, печатки, предмети побуту та матеріали про українських гетьманів.",
@@ -4427,6 +5304,7 @@ const monuments = [
     lat: 49.841944,
     lng: 24.032778,
     year: 1892,
+    eraYear: 1892,
     eventDate: "22 грудня 1892 року",
     description: "Один із найстаріших історичних музеїв України. Його колекції охоплюють історію Львова, Галичини та українських земель від найдавніших часів до сучасності.",
     history: "Історія музею почалася 22 грудня 1892 року, коли львівський магістрат оголосив про створення Історичного музею міста Львова. У 1908 році для музейних потреб придбали кам'яницю Корнякта на площі Ринок, 6. Ця будівля стала однією з найвідоміших музейних локацій Львова. У фондах музею зберігаються археологічні матеріали, зброя, монети, документи, предмети побуту та мистецтва.",
@@ -4451,6 +5329,7 @@ const monuments = [
     lat: 46.485,
     lng: 30.743889,
     year: 1825,
+    eraYear: 1825,
     eventDate: "Заснований у 1825 році",
     description: "Найстаріший археологічний музей України. Його колекції розповідають про історію Північного Причорномор'я від кам'яної доби до середньовіччя.",
     history: "Музей заснований у 1825 році. У його зібраннях представлені матеріали трипільської, скіфської, сарматської, грецької та інших стародавніх культур. Окрему цінність становлять колекції античних старожитностей, єгипетських предметів, монет і скульптур. Перед будівлею музею розташована копія знаменитої скульптурної композиції «Лаокоон».",
@@ -4483,6 +5362,7 @@ const monuments = [
     lat: 49.9923,
     lng: 36.2305,
     year: 1920,
+    eraYear: 1920,
     eventDate: "21 січня 1920 року",
     description: "Один із найбільших історичних музеїв України, присвячений історії Харкова, Слобожанщини та українських земель.",
     history: "Музей веде свою історію від Музею Слобідської України імені Григорія Сковороди, заснованого 21 січня 1920 року за участю академіка Миколи Сумцова. До його колекції увійшли матеріали попередніх музейних установ Харкова. У 2015 році закладу присвоїли ім'я Миколи Сумцова. Сучасна будівля музею — колишній Харківський міський ломбард, споруджений у 1908 році.",
@@ -4515,6 +5395,7 @@ const monuments = [
     lat: 49.583476,
     lng: 34.561381,
     year: 1891,
+    eraYear: 1891,
     eventDate: "Заснований у 1891 році",
     description: "Один із найвідоміших регіональних музеїв України, розташований у будівлі колишнього Полтавського губернського земства — видатній пам'ятці українського архітектурного модерну.",
     history: "Музей заснований у 1891 році як природничо-історичний музей Полтавського губернського земства. Важливу роль у створенні його колекцій відіграв учений Василь Докучаєв. Будівлю музею спроєктував архітектор і художник Василь Кричевський. Споруда стала одним із найвідоміших прикладів українського архітектурного стилю.",
@@ -4547,6 +5428,8 @@ const monuments = [
     lat: 49.8412,
     lng: 24.0265,
     year: 1905,
+    eraYear: 1905,
+    eraYearEnd: 1913,
     eventDate: "Заснований у 1905 році; переданий українському народові у 1913 році",
     description: "Один із найбільших художніх музеїв України, що зберігає виняткову колекцію українського сакрального мистецтва, іконопису, рукописів, графіки та живопису.",
     history: "Музей заснований митрополитом Андреєм Шептицьким у 1905 році як приватна фундація під назвою «Церковний музей». 13 грудня 1913 року його урочисто передали в дар українському народові. Зібрання музею поступово розширювалося та стало одним із найважливіших центрів дослідження українського мистецтва.",
@@ -4579,6 +5462,7 @@ const monuments = [
     lat: 49.8695,
     lng: 24.0556,
     year: 1971,
+    eraYear: 1971,
     eventDate: "Заснований у 1971 році",
     description: "Відомий як Шевченківський гай або Львівський скансен. Музей просто неба представляє традиційну архітектуру, побут і культуру західних регіонів України.",
     history: "Музей заснований у 1971 році. На його території площею близько 36,6 гектара розміщено понад 100 архітектурних об'єктів, перевезених із різних куточків Західної України. Серед них — дерев'яні церкви, дзвіниці, селянські хати, господарські споруди та традиційні садиби. Експозиція представляє Бойківщину, Лемківщину, Гуцульщину, Буковину, Покуття, Поділля та інші етнографічні регіони.",
@@ -4611,6 +5495,7 @@ const monuments = [
     lat: 48.6215,
     lng: 22.3055,
     year: 1970,
+    eraYear: 1970,
     eventDate: "Відкритий 27 червня 1970 року",
     description: "Ужгородський скансен — один із перших музеїв просто неба в Україні. Він відтворює традиційне закарпатське село з житловими будинками, господарськими спорудами, церквою та іншими архітектурними пам'ятками.",
     history: "Музей відкрили для відвідувачів у червні 1970 року на схилі Замкової гори поруч з Ужгородським замком. Експозиція відображає традиційну архітектуру різних етнографічних груп Закарпаття: долинян, бойків і гуцулів, а також угорського та румунського населення краю. Тут представлені садиби, дерев'яна церква, дзвіниця, школа, кузня, млин і корчма.",
@@ -4643,6 +5528,7 @@ const monuments = [
     lat: 50.0594,
     lng: 31.4783,
     year: 1964,
+    eraYear: 1964,
     eventDate: "Створення розпочалося у 1964 році",
     description: "Один із перших музеїв просто неба в Україні. На території відтворено традиційне українське село Середньої Наддніпрянщини з житловими будинками, церквами, вітряками, майстернями та господарськими спорудами.",
     history: "Створення музею розпочалося у 1964 році на Татарській горі в Переяславі. Його концепція передбачає відтворення еволюції українського житла та сільського побуту від найдавніших часів до XX століття. На території розташовано численні архітектурні пам'ятки XVII–XIX століть, традиційні садиби, ремісничі майстерні, вітряки та дерев'яні церкви. Музей є частиною Національного історико-етнографічного заповідника «Переяслав».",
@@ -4675,6 +5561,8 @@ const monuments = [
     lat: 48.2884,
     lng: 25.9817,
     year: 1977,
+    eraYear: 1977,
+    eraYearEnd: 1986,
     eventDate: "Заснований у 1977 році; відкритий для відвідувачів у 1986 році",
     description: "Етнографічний музей просто неба, який відтворює традиційне буковинське село XIX — першої половини XX століття.",
     history: "Музей заснований у 1977 році, а першу експозицію відкрили для відвідувачів у липні 1986 року. На території представлені житлові та господарські споруди, церква, дзвіниця, кузня, корчма, сільська управа та інші об'єкти. Будівлі перевезені з різних районів Буковини й облаштовані відповідно до традиційного сільського середовища.",
