@@ -22,6 +22,16 @@ const personColors = {
   'Марко Вовчок': '#e11d48',
   default: '#334155'
 }
+const categoryColors = {
+  'Літературні діячі': '#2563eb',
+  'Історичні діячі': '#dc2626',
+  'Військова історія': '#d97706',
+  'Національно-визвольний рух': '#7c3aed',
+  'Культурні діячі': '#db2777',
+  'Науковці': '#0891b2',
+  'Історичні місця': '#16a34a',
+  default: '#64748b'
+}
 
 const objectTypes = {
   monument: 'Пам’ятник',
@@ -191,6 +201,8 @@ function OsmButton({ setOsmObjects, setShowOsmObjects, setOsmLoading, setOsmErro
 export default function App() {
   const [filtersOpen, setFiltersOpen] = useState(true)
   const [selectedObject, setSelectedObject] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState('Усі')
+  const [searchQuery, setSearchQuery] = useState('')
 
   const [selectedPerson, setSelectedPerson] = useState('Усі')
   const [selectedCountry, setSelectedCountry] = useState('Усі')
@@ -203,11 +215,24 @@ export default function App() {
   const [osmLoading, setOsmLoading] = useState(false)
   const [osmError, setOsmError] = useState('')
 
+
+
   const allObjects = useMemo(() => {
     return showOsmObjects
     ? [...literaryObjects, ...osmObjects]
     : literaryObjects
   }, [osmObjects, showOsmObjects])
+
+  const categories = useMemo(() => {
+  return [
+    'Усі',
+    ...new Set(
+      allObjects.map(item =>
+        item.category || 'Літературні діячі'
+      )
+    )
+  ]
+}, [allObjects])
 
   const persons = useMemo(() => {
     return ['Усі', ...new Set(allObjects.map(item => item.person).filter(Boolean))]
@@ -221,26 +246,74 @@ export default function App() {
     return ['Усі', ...new Set(allObjects.map(item => item.type || 'object'))]
   }, [allObjects])
 
-  const filtered = useMemo(() => {
-    return allObjects.filter(item => {
-      const matchPerson =
-      selectedPerson === 'Усі' || item.person === selectedPerson
+const filtered = useMemo(() => {
+  const query = searchQuery.trim().toLocaleLowerCase('uk')
 
-      const matchCountry =
-      selectedCountry === 'Усі' || item.country === selectedCountry
+  return allObjects.filter(item => {
+    const category = item.category || 'Літературні діячі'
 
-      const matchType =
-      selectedType === 'Усі' || (item.type || 'object') === selectedType
+    const matchesSearch =
+      !query ||
+      [
+        item.name,
+        item.person,
+        item.city,
+        item.region,
+        item.country,
+        item.description,
+        category
+      ]
+        .filter(Boolean)
+        .some(value =>
+          String(value).toLocaleLowerCase('uk').includes(query)
+        )
 
-      const matchYearFrom =
-      yearFrom === '' || !item.year || Number(item.year) >= Number(yearFrom)
+    const matchCategory =
+      selectedCategory === 'Усі' ||
+      category === selectedCategory
 
-      const matchYearTo =
-      yearTo === '' || !item.year || Number(item.year) <= Number(yearTo)
+    const matchPerson =
+      selectedPerson === 'Усі' ||
+      item.person === selectedPerson
 
-      return matchPerson && matchCountry && matchType && matchYearFrom && matchYearTo
-    })
-  }, [allObjects, selectedPerson, selectedCountry, selectedType, yearFrom, yearTo])
+    const matchCountry =
+      selectedCountry === 'Усі' ||
+      item.country === selectedCountry
+
+    const matchType =
+      selectedType === 'Усі' ||
+      (item.type || 'object') === selectedType
+
+    const matchYearFrom =
+      yearFrom === '' ||
+      !item.year ||
+      Number(item.year) >= Number(yearFrom)
+
+    const matchYearTo =
+      yearTo === '' ||
+      !item.year ||
+      Number(item.year) <= Number(yearTo)
+
+    return (
+      matchesSearch &&
+      matchCategory &&
+      matchPerson &&
+      matchCountry &&
+      matchType &&
+      matchYearFrom &&
+      matchYearTo
+    )
+  })
+}, [
+  allObjects,
+  searchQuery,
+  selectedCategory,
+  selectedPerson,
+  selectedCountry,
+  selectedType,
+  yearFrom,
+  yearTo
+])
 
   return (
     <div style={{ height: '100vh', width: '100%', position: 'relative' }}>
@@ -263,6 +336,31 @@ export default function App() {
     >
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
     <h3 style={{ margin: 0 }}>Фільтри</h3>
+    <label>
+  Пошук пам'яток:
+  <input
+    type="search"
+    value={searchQuery}
+    onChange={e => setSearchQuery(e.target.value)}
+    placeholder="Назва, діяч, місто..."
+    style={controlStyle}
+  />
+</label>
+
+<label>
+  Категорія:
+  <select
+    value={selectedCategory}
+    onChange={e => setSelectedCategory(e.target.value)}
+    style={controlStyle}
+  >
+    {categories.map(category => (
+      <option key={category} value={category}>
+        {category}
+      </option>
+    ))}
+  </select>
+</label>
 
     <button
     type="button"
@@ -375,6 +473,8 @@ export default function App() {
         setSelectedPerson('Усі')
         setSelectedCountry('Усі')
         setSelectedType('Усі')
+        setSelectedCategory('Усі')
+        setSearchQuery('')
         setYearFrom('')
         setYearTo('')
       }}
@@ -427,24 +527,32 @@ export default function App() {
     />
 
     <MarkerClusterGroup
-    chunkedLoading
-    showCoverageOnHover={false}
-    spiderfyOnMaxZoom={true}
-    maxClusterRadius={(zoom) => {
-      if (zoom <= 4) return 130
-        if (zoom <= 6) return 100
-          if (zoom <= 8) return 70
-            return 35
-    }}
-    iconCreateFunction={createClusterIcon}
+      chunkedLoading
+      chunkInterval={100}
+      chunkDelay={50}
+      showCoverageOnHover={false}
+      spiderfyOnMaxZoom
+      removeOutsideVisibleBounds
+      animateAddingMarkers={false}
+      disableClusteringAtZoom={13}
+      maxClusterRadius={(zoom) => {
+        if (zoom <= 4) return 120
+        if (zoom <= 6) return 90
+        if (zoom <= 8) return 60
+        return 35
+      }}
+      iconCreateFunction={createClusterIcon}
     >
     {filtered.map(item => {
-      const color = personColors[item.person] || personColors.default
+const category = item.category || 'Літературні діячі'
+
+const color =
+  categoryColors[category] || categoryColors.default
       const icon = createCustomIcon(item.type, color)
 
       return (
         <Marker
-        key={item.id}
+        key={`${item.isOsm ? 'osm' : 'local'}-${item.id}`}
         position={[item.lat, item.lng]}
         icon={icon}
         >
