@@ -34,41 +34,44 @@ export default function FilterPanel({
 }) {
   return (
     <aside className={`filter-panel${open ? ' is-open' : ''}`} aria-label="Фільтри">
-      <div className="filter-panel__header">
-        <h3 className="filter-panel__title">Фільтри</h3>
+      <button
+        type="button"
+        className="filter-panel__header"
+        onClick={onToggle}
+        aria-expanded={open}
+        aria-controls="filter-panel-body"
+      >
+        <span className="filter-panel__handle" aria-hidden="true" />
+        <span className="filter-panel__title">Фільтри</span>
         <span className="filter-panel__count">
           Знайдено: <strong>{foundCount}</strong>
         </span>
-        <button
-          type="button"
-          className="icon-button"
-          onClick={onToggle}
-          aria-expanded={open}
-          aria-controls="filter-panel-body"
-          aria-label={open ? 'Згорнути фільтри' : 'Розгорнути фільтри'}
-        >
+        <span className="filter-panel__chevron" aria-hidden="true">
           {open ? '−' : '+'}
-        </button>
-      </div>
+        </span>
+        <span className="visually-hidden">{open ? 'Згорнути фільтри' : 'Розгорнути фільтри'}</span>
+      </button>
 
-      <label className="field">
-        <span className="field__label">Пошук пам’яток</span>
-        <input
-          className="field__control"
-          type="search"
-          value={filters.search}
-          onChange={(e) => setFilter('search', e.target.value)}
-          placeholder="Назва, діяч, місто…"
+      <div className="filter-panel__quick">
+        <label className="field">
+          <span className="field__label">Пошук пам’яток</span>
+          <input
+            className="field__control"
+            type="search"
+            value={filters.search}
+            onChange={(e) => setFilter('search', e.target.value)}
+            placeholder="Назва, діяч, місто…"
+          />
+        </label>
+
+        <SelectField
+          label="Категорія"
+          value={filters.category}
+          onChange={(v) => setFilter('category', v)}
+          options={options.categories}
+          renderLabel={(key) => getCategoryInfo(key).label}
         />
-      </label>
-
-      <SelectField
-        label="Категорія"
-        value={filters.category}
-        onChange={(v) => setFilter('category', v)}
-        options={options.categories}
-        renderLabel={(key) => getCategoryInfo(key).label}
-      />
+      </div>
 
       {open && (
         <div id="filter-panel-body" className="filter-panel__body">

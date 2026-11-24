@@ -21,18 +21,18 @@ export const TYPES = {
 
 export const DEFAULT_TYPE = 'monument'
 
-// category → українська назва + колір маркера
+// category → українська назва + колір маркера (приглушена «музейна» палітра)
 export const CATEGORIES = {
-  literature: { label: 'Література', color: '#2f5d8a' },
-  music_theatre: { label: 'Музика й театр', color: '#9b4d6e' },
-  cinema: { label: 'Кіно', color: '#5b4a8a' },
-  art: { label: 'Мистецтво й архітектура', color: '#b3643b' },
-  science: { label: 'Наука, освіта й техніка', color: '#2f7a7a' },
-  ancient: { label: 'Археологія й давня історія', color: '#8a6d3b' },
-  cossack: { label: 'Козацтво, замки й фортеці', color: '#a33b3b' },
-  independence: { label: 'Державність і визвольні змагання', color: '#c49a2c' },
-  tragedies: { label: 'Війни, трагедії й пам’ять', color: '#4d4d4d' },
-  folk: { label: 'Музеї й народна культура', color: '#5d7a3a' }
+  literature: { label: 'Література', color: '#3d5370' },
+  music_theatre: { label: 'Музика й театр', color: '#8a4a62' },
+  cinema: { label: 'Кіно', color: '#6a5a8c' },
+  art: { label: 'Мистецтво й архітектура', color: '#b5653b' },
+  science: { label: 'Наука, освіта й техніка', color: '#3b7a74' },
+  ancient: { label: 'Археологія й давня історія', color: '#8c7343' },
+  cossack: { label: 'Козацтво, замки й фортеці', color: '#9e3b33' },
+  independence: { label: 'Державність і визвольні змагання', color: '#2e6f9e' },
+  tragedies: { label: 'Війни, трагедії й пам’ять', color: '#4a4540' },
+  folk: { label: 'Музеї й народна культура', color: '#5f7f3c' }
 }
 
 export const OSM_CATEGORY_KEY = 'osm'

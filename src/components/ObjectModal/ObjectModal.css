@@ -1,3 +1,4 @@
+/* Модалка як музейна етикетка: велике фото ліворуч, текст праворуч */
 .object-overlay {
   position: fixed;
   inset: 0;
@@ -6,64 +7,53 @@
   justify-content: center;
   align-items: center;
   padding: 24px;
-  background: rgba(12, 15, 20, 0.72);
+  background: rgba(31, 26, 20, 0.62);
   backdrop-filter: blur(6px);
 }
 
 .object-modal {
   position: relative;
-  width: min(100%, 1000px);
-  max-height: 90vh;
+  width: min(100%, 1180px);
+  max-height: 92vh;
   overflow-y: auto;
-  background: var(--paper, #f7f6f2);
-  color: var(--ink, #20211f);
-  border-radius: 16px;
-  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+  background: var(--paper, #f5efe3);
+  color: var(--ink, #1f1a14);
+  border-radius: 18px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
   animation: modalAppear 0.22s ease;
-}
-
-@keyframes modalAppear {
-  from {
-    opacity: 0;
-    transform: translateY(15px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
 }
 
 .object-close {
   position: sticky;
-  top: 12px;
+  top: 14px;
   float: right;
-  margin: 12px 12px -56px 0;
+  margin: 14px 14px -62px 0;
   z-index: 2;
-  width: 44px;
-  height: 44px;
-  border: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--line, #dfd4c0);
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.92);
-  color: #222;
+  background: rgba(251, 248, 241, 0.95);
+  color: var(--ink, #1f1a14);
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
 }
 
 .object-close:hover {
-  background: #e8e5dd;
+  background: #f1e9d8;
 }
 
 .object-close:focus-visible,
 .object-thumb:focus-visible,
 .object-link:focus-visible {
-  outline: 3px solid var(--accent, #b08a3e);
+  outline: 3px solid var(--accent-ink, #1e3a5f);
   outline-offset: 2px;
 }
 
 .object-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   align-items: start;
 }
 
@@ -71,7 +61,7 @@
 .object-gallery {
   position: sticky;
   top: 0;
-  background: #e6e3dc;
+  background: #e6ddcb;
 }
 
 .object-figure {
@@ -82,17 +72,17 @@
   display: block;
   width: 100%;
   height: auto;
-  max-height: 70vh;
+  max-height: 78vh;
   object-fit: contain;
-  background: #e6e3dc;
+  background: #e6ddcb;
 }
 
 .object-credit {
-  padding: 8px 14px;
+  padding: 8px 16px;
   font-size: 12px;
   line-height: 1.4;
-  color: #5f605a;
-  background: #efece5;
+  color: var(--muted, #62584b);
+  background: #efe7d6;
 }
 
 .object-credit a {
@@ -101,16 +91,16 @@
 
 .object-thumbs {
   display: flex;
-  gap: 6px;
-  padding: 8px 14px 12px;
+  gap: 8px;
+  padding: 8px 16px 14px;
   overflow-x: auto;
-  background: #efece5;
+  background: #efe7d6;
 }
 
 .object-thumb {
   flex: 0 0 auto;
-  width: 64px;
-  height: 48px;
+  width: 72px;
+  height: 52px;
   padding: 0;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -135,9 +125,12 @@
   gap: 8px;
   align-items: center;
   justify-content: center;
-  min-height: 280px;
-  color: #77766f;
+  min-height: 320px;
+  color: var(--muted, #62584b);
   font-size: 14px;
+  background:
+    repeating-linear-gradient(45deg, transparent 0 14px, rgba(176, 138, 62, 0.07) 14px 28px),
+    #ece4d3;
 }
 
 .object-image-placeholder span[aria-hidden] {
@@ -145,114 +138,123 @@
   opacity: 0.5;
 }
 
-/* --- Текст --- */
+/* --- Етикетка --- */
 .object-info {
-  padding: 40px 36px 36px;
+  padding: 48px 44px 44px;
 }
 
 .object-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 18px;
-  padding-right: 40px;
+  margin-bottom: 20px;
+  padding-right: 48px;
 }
 
 .object-tag {
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: color-mix(in srgb, var(--tag-color, #8a8778) 16%, white);
-  color: color-mix(in srgb, var(--tag-color, #55564f) 80%, black);
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--tag-color, #8a8070) 35%, transparent);
+  background: color-mix(in srgb, var(--tag-color, #8a8070) 12%, #fbf8f1);
+  color: color-mix(in srgb, var(--tag-color, #4d453a) 85%, black);
   font-size: 12px;
   font-weight: 600;
 }
 
 .object-tag--plain {
-  background: #e8e5dc;
-  color: #55564f;
+  border-color: var(--line, #dfd4c0);
+  background: #fbf8f1;
+  color: var(--muted, #62584b);
 }
 
 .object-tag--forgotten {
-  background: #f6e7b8;
-  color: #5c4410;
+  border-color: rgba(176, 138, 62, 0.6);
+  background: #fbf1d6;
+  color: #5a4210;
+}
+
+.object-tag--warning {
+  border-color: #e7c983;
+  background: #fbecc8;
+  color: #6b4d0b;
+}
+
+.object-info h2 {
+  margin: 0 0 10px;
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: clamp(32px, 3.4vw, 52px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+/* Рік і місце — дрібним капітелем, як на музейній етикетці */
+.object-meta {
+  margin: 0 0 8px;
+  color: var(--muted, #62584b);
+  font-size: 15px;
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.08em;
+}
+
+.object-person {
+  margin: 0;
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: 21px;
+  font-style: italic;
+  color: #3d352b;
+}
+
+.object-section {
+  margin-top: 26px;
+}
+
+.object-section h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-heading, Georgia, serif);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.object-section p {
+  margin: 0;
+  color: #3d352b;
+  font-size: 16px;
+  line-height: 1.7;
+  white-space: pre-line;
 }
 
 .object-forgotten {
-  padding: 14px 16px;
-  border-left: 4px solid var(--gold, #c9a227);
-  border-radius: 0 8px 8px 0;
-  background: #fbf4df;
+  padding: 16px 18px;
+  border-left: 4px solid var(--gold-bright, #c9a227);
+  border-radius: 0 10px 10px 0;
+  background: #fbf1d6;
 }
 
 .object-forgotten h3 {
   color: #6b4f0e;
 }
 
-.object-tag--warning {
-  background: #fbecc8;
-  color: #6b4d0b;
-}
-
-.object-info h2 {
-  margin: 0 0 8px;
-  font-family: var(--font-heading, Georgia, serif);
-  font-size: clamp(26px, 3.6vw, 38px);
-  line-height: 1.15;
-}
-
-.object-meta {
-  margin: 0 0 6px;
-  color: #6c6a62;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.object-person {
-  margin: 0;
-  color: #4d4c46;
-  font-size: 15px;
-  font-style: italic;
-}
-
-.object-section {
-  margin-top: 24px;
-}
-
-.object-section h3 {
-  margin: 0 0 8px;
-  font-family: var(--font-heading, Georgia, serif);
-  font-size: 19px;
-}
-
-.object-section p {
-  margin: 0;
-  color: #4f504a;
-  font-size: 15px;
-  line-height: 1.7;
-  white-space: pre-line;
-}
-
 .object-facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px 20px;
-  margin: 24px 0 0;
-  padding: 16px 0 0;
-  border-top: 1px solid #e0dcd2;
+  gap: 14px 24px;
+  margin: 28px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line, #dfd4c0);
 }
 
 .object-fact dt {
   font-size: 11px;
-  letter-spacing: 0.08em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #77766f;
+  color: var(--muted, #62584b);
 }
 
 .object-fact dd {
-  margin: 2px 0 0;
-  font-size: 14px;
-  color: #2d2e2a;
+  margin: 3px 0 0;
+  font-size: 15px;
+  color: var(--ink, #1f1a14);
 }
 
 .object-videos {
@@ -267,7 +269,7 @@
 .object-video__frame {
   position: relative;
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   background: #000;
 }
@@ -283,14 +285,14 @@
 .object-video figcaption {
   margin-top: 6px;
   font-size: 13px;
-  color: #5f605a;
+  color: var(--muted, #62584b);
 }
 
 .object-sources {
   margin: 0;
   padding-left: 20px;
   display: grid;
-  gap: 6px;
+  gap: 8px;
 }
 
 .object-link {
@@ -325,10 +327,23 @@
   }
 
   .object-image {
-    max-height: 50vh;
+    max-height: 52vh;
+  }
+
+  .object-image-placeholder {
+    min-height: 180px;
   }
 
   .object-info {
-    padding: 24px 18px 40px;
+    padding: 22px 16px calc(40px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .object-tags {
+    padding-right: 52px;
+  }
+
+  .object-close {
+    top: calc(10px + env(safe-area-inset-top, 0px));
+    margin: 10px 10px -58px 0;
   }
 }
