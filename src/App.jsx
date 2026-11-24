@@ -1,11 +1,9 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import MarkerClusterGroup from 'react-leaflet-cluster'
+import { useCallback, useMemo, useState } from 'react'
 import literaryObjects from './Data/literaryObjects'
 import { CATEGORIES, TYPES, getCategoryInfo, getTypeInfo } from './Data/schema'
-import { fetchOsmObjects, isAbortError, OSM_MIN_ZOOM } from './api/fetchOsmLiteraryObjects'
-import { getMarkerIcon, createClusterIcon } from './map/markerIcons'
-import { MAX_YEAR, MIN_YEAR, formatYear, inEra } from './map/timeScale'
+import { MAX_YEAR, MIN_YEAR, inEra } from './map/timeScale'
+import MapView from './components/MapView'
+import MapActions from './components/MapActions'
 import FilterPanel from './components/FilterPanel'
 import Timeline from './components/Timeline'
 import ObjectModal from './components/ObjectModal/ObjectModal'
@@ -13,7 +11,6 @@ import StatsModal from './components/StatsModal'
 import AboutModal from './components/AboutModal'
 
 const ALL = 'Усі'
-const INITIAL_ZOOM = 4
 
 const INITIAL_FILTERS = {
   search: '',
@@ -25,74 +22,8 @@ const INITIAL_FILTERS = {
 
 const uniqueSorted = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'uk'))
 
-function clusterRadius(zoom) {
-  if (zoom <= 4) return 120
-  if (zoom <= 6) return 90
-  if (zoom <= 8) return 60
-  return 35
-}
-
-function markerVariant(item) {
-  if (item.isOsm) return 'osm'
-  if (item.forgotten) return 'forgotten'
-  return ''
-}
-
-function OsmButton({ map, onLoaded, setLoading, setError, loading }) {
-  const [zoom, setZoom] = useState(INITIAL_ZOOM)
-  useEffect(() => {
-    if (!map) return undefined
-    const update = () => setZoom(map.getZoom())
-    map.on('zoomend', update)
-    return () => map.off('zoomend', update)
-  }, [map])
-  const tooFar = zoom < OSM_MIN_ZOOM
-
-  async function load() {
-    if (tooFar || !map) return
-    try {
-      setLoading(true)
-      setError('')
-      const b = map.getBounds()
-      const items = await fetchOsmObjects({
-        south: b.getSouth(),
-        west: b.getWest(),
-        north: b.getNorth(),
-        east: b.getEast()
-      })
-      onLoaded(items)
-      if (!items.length) setError('У цій області OSM-точок, пов’язаних із людьми з карти, не знайдено.')
-    } catch (e) {
-      if (isAbortError(e)) return
-      console.error(e)
-      setError('OSM не відповів. Спробуй ще раз трохи пізніше.')
-    } finally {
-      setLoading(false)
-    }
-  }
-
-  return (
-    <button
-      type="button"
-      className="map-button"
-      onClick={load}
-      disabled={loading || tooFar}
-      title={tooFar ? 'Наблизь карту, щоб завантажити точки OpenStreetMap' : 'Завантажити точки OpenStreetMap у видимій області'}
-    >
-      {loading ? (
-        '…'
-      ) : (
-        <>
-          <span className="label-long">{tooFar ? 'OSM: наблизь карту' : 'Завантажити OSM'}</span>
-          <span className="label-short">{tooFar ? 'OSM ⌕' : 'OSM'}</span>
-        </>
-      )}
-    </button>
-  )
-}
-
 export default function App() {
-  const [filtersOpen, setFiltersOpen] = useState(() => window.innerWidth > 600)
+  const [filtersOpen, setFiltersOpen] = useState(() => window.matchMedia('(min-width: 761px)').matches)
   const [selectedObject, setSelectedObject] = useState(null)
   const [filters, setFilters] = useState(INITIAL_FILTERS)
   const [forgottenOnly, setForgottenOnly] = useState(false)
@@ -169,6 +100,11 @@ export default function App() {
     [matched, eraActive, eraRange]
   )
   const undatedCount = useMemo(() => matched.filter((item) => item.eraYear === undefined).length, [matched])
+  // Ключ для автонаведення карти: змінюється лише з фільтрами (порожній — якщо фільтри скинуті)
+  const fitKey = useMemo(() => {
+    const active = forgottenOnly || Object.entries(filters).some(([key, value]) => value !== INITIAL_FILTERS[key])
+    return active ? JSON.stringify([filters, forgottenOnly]) : ''
+  }, [filters, forgottenOnly])
   const forgottenCount = useMemo(() => literaryObjects.filter((item) => item.forgotten).length, [])
 
   return (
@@ -190,92 +126,17 @@ export default function App() {
         osmError={osmError}
       />
 
-      <MapContainer
-        className="map"
-        zoomControl={false}
-        center={[49.0, 31.4]}
-        zoom={INITIAL_ZOOM}
-        minZoom={3}
-        maxZoom={18}
-        maxBounds={[
-          [-85, -180],
-          [85, 180]
-        ]}
-        maxBoundsViscosity={1}
-        ref={setMap}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          noWrap
-        />
+      <MapView objects={filtered} onSelect={setSelectedObject} onMapReady={setMap} fitKey={fitKey} />
 
-        <MarkerClusterGroup
-          chunkedLoading
-          chunkInterval={100}
-          chunkDelay={50}
-          showCoverageOnHover={false}
-          spiderfyOnMaxZoom
-          removeOutsideVisibleBounds
-          animateAddingMarkers={false}
-          disableClusteringAtZoom={13}
-          maxClusterRadius={clusterRadius}
-          iconCreateFunction={createClusterIcon}
-        >
-          {filtered.map((item) => (
-            <Marker
-              key={`${item.isOsm ? 'osm' : 'local'}-${item.id}`}
-              position={[item.lat, item.lng]}
-              icon={getMarkerIcon(item.type, getCategoryInfo(item.category).color, markerVariant(item))}
-            >
-              <Popup>
-                <div className="map-popup">
-                  <p className="map-popup__type">
-                    {item.forgotten && <span className="map-popup__forgotten">★ Забутий герой · </span>}
-                    {item.subtype || getTypeInfo(item.type).label}
-                  </p>
-                  <h3>{item.name}</h3>
-                  {item.person && <p>{item.person}</p>}
-                  <p className="map-popup__place">
-                    {[item.city, item.year != null ? `${formatYear(item.year)} р.` : null].filter(Boolean).join(' · ')}
-                  </p>
-                  <button type="button" className="map-popup__button" onClick={() => setSelectedObject(item)}>
-                    Детальніше
-                  </button>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
-        </MarkerClusterGroup>
-      </MapContainer>
-
-      <div className="map-actions">
-        <button
-          type="button"
-          className={`map-button map-button--forgotten${forgottenOnly ? ' is-on' : ''}`}
-          onClick={() => setForgottenOnly((on) => !on)}
-          aria-pressed={forgottenOnly}
-          disabled={!forgottenCount}
-          title={forgottenCount ? undefined : 'Список забутих героїв ще готується'}
-        >
-          <span aria-hidden="true">★</span>{' '}
-          <span className="label-long">{forgottenOnly ? 'Показати всіх' : 'Лише забуті герої'}</span>
-          <span className="label-short">{forgottenOnly ? 'Усі' : 'Забуті'}</span>
-        </button>
-        <button type="button" className="map-button map-button--light" onClick={() => setDialog('stats')}>
-          Цифри
-        </button>
-        <button type="button" className="map-button map-button--light" onClick={() => setDialog('about')}>
-          Про проєкт
-        </button>
-        <OsmButton
-          map={map}
-          onLoaded={handleOsmLoaded}
-          setLoading={setOsmLoading}
-          setError={setOsmError}
-          loading={osmLoading}
-        />
-      </div>
+      <MapActions
+        map={map}
+        forgottenOnly={forgottenOnly}
+        onForgottenToggle={() => setForgottenOnly((on) => !on)}
+        forgottenCount={forgottenCount}
+        onOpenStats={() => setDialog('stats')}
+        onOpenAbout={() => setDialog('about')}
+        osm={{ onLoaded: handleOsmLoaded, setLoading: setOsmLoading, setError: setOsmError, loading: osmLoading }}
+      />
 
       <Timeline
         range={eraRange}
