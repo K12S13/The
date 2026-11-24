@@ -1414,7 +1414,7 @@ const monuments = [
     sourceUrl: "https://www.kby.kiev.ua/komitet/ua/reserve/art00099.html"
   },
   {
-    id: 1017,
+    id: 1948,
     name: "Будинок Української Центральної Ради",
     type: "historical_site",
     category: "Історичні події",
@@ -1431,7 +1431,7 @@ const monuments = [
     sourceUrl: "https://guide.kyivcity.gov.ua/places/budynok-pedahohichnoho-muzeyu-v-yakomu-pratsyuvala-ukrayinska-tsentralna-rada-pedahohichnyy-muzey"
   },
   {
-    id: 1018,
+    id: 1949,
     name: "Пам’ятник Михайлу Грушевському",
     type: "monument",
     category: "Історичні діячі",
@@ -1447,7 +1447,7 @@ const monuments = [
     sourceUrl: "https://hrushevsky.history.org.ua/item/0008104"
   },
   {
-    id: 1019,
+    id: 1950,
     name: "Історико-меморіальний музей Михайла Грушевського",
     type: "historical_site",
     category: "Історичні діячі",
@@ -2580,7 +2580,7 @@ const monuments = [
     sourceUrl: "https://www.sq.com.ua/ukr/news/kultura/02.03.2010/v_harkovskom_teatre_opery_i_baleta_otkroyut_muzej"
   },
   {
-    id: 1076,
+    id: 1951,
     name: "Меморіальний будинок Миколи Лисенка",
     type: "Меморіальний музей",
     category: "Музичне та театральне мистецтво",
@@ -2597,7 +2597,7 @@ const monuments = [
     sourceUrl: "https://mvduk.com.ua/"
   },
   {
-    id: 1077,
+    id: 1952,
     name: "Музично-меморіальний музей Соломії Крушельницької",
     type: "Меморіальний музей",
     category: "Музичне та театральне мистецтво",
@@ -2614,7 +2614,7 @@ const monuments = [
     sourceUrl: "https://www.lvivmusic.museum/"
   },
   {
-    id: 1078,
+    id: 1953,
     name: "Музей-квартира Миколи Леонтовича",
     type: "Меморіальний музей",
     category: "Музичне та театральне мистецтво",
@@ -2631,7 +2631,7 @@ const monuments = [
     sourceUrl: "https://museum.vinnytsia.ua/branches/leontovych-museum"
   },
   {
-    id: 1079,
+    id: 1954,
     name: "Історична будівля театру «Березіль»",
     type: "Історичний театр",
     category: "Музичне та театральне мистецтво",
@@ -3315,7 +3315,7 @@ const monuments = [
     sourceUrl: "https://hrushevsky.history.org.ua/item/0006211"
   },
   {
-    id: 1114,
+    id: 1955,
     name: "Національний музей історії України",
     type: "Національний історичний музей",
     category: "Музеї та місця національної пам'яті",
@@ -3334,7 +3334,7 @@ const monuments = [
     sourceUrl: "https://nmiu.org/"
   },
   {
-    id: 1115,
+    id: 1956,
     name: "Національний музей Тараса Шевченка",
     type: "Літературно-меморіальний музей",
     category: "Музеї та місця національної пам'яті",
@@ -3353,7 +3353,7 @@ const monuments = [
     sourceUrl: "https://museumshevchenko.org.ua/"
   },
   {
-    id: 1116,
+    id: 1957,
     name: "Національний музей мистецтв імені Богдана та Варвари Ханенків",
     type: "Художній музей",
     category: "Українське мистецтво та архітектура",
@@ -3372,7 +3372,7 @@ const monuments = [
     sourceUrl: "https://khanenko.museum/"
   },
   {
-    id: 1117,
+    id: 1958,
     name: "Музей гетьманства",
     type: "Історичний музей",
     category: "Козацька історія",
