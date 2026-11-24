@@ -9,43 +9,28 @@ const monuments = [
     lat: 50.4423,
     lng: 30.5144,
     year: 1939,
-    openingDate: "1939",
-    description: "Короткий опис пам'ятника.",
-    history: "Розширена історія створення та встановлення.",
-    author: "Ім'я скульптора",
-    architect: "Ім'я архітектора",
+    description: "Пам’ятник у парку Шевченка навпроти Червоного корпусу Київського університету. Встановлений 1939 року до 125-річчя від дня народження поета; один із символів Києва.",
+    history: "Встановленню передували п’ять невдалих спроб за часів Російської імперії та Української революції. Кошти на пам’ятник почали збирати ще 1904 року; до комітету зі спорудження входили, зокрема, Михайло Коцюбинський, Микола Лисенко, Борис Грінченко та Євген Чикаленко. 1910 року оголосили міжнародний конкурс проєктів, але задум удалося втілити лише 1939 року. Після початку повномасштабного вторгнення 2022 року пам’ятник укрили, щоб захистити від можливого руйнування під час обстрілів.",
+    author: "Матвій Манізер",
+    architect: "Євген Левінсон",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Taras_Shevchenko_Monument_in_Kyiv%2C_May_2022.jpg/1280px-Taras_Shevchenko_Monument_in_Kyiv%2C_May_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Taras_Shevchenko_Monument_in_Kyiv%2C_May_2022.jpg/1280px-Taras_Shevchenko_Monument_in_Kyiv%2C_May_2022.jpg",
         author: "Milana Sribniak",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Taras_Shevchenko_Monument_in_Kyiv,_May_2022.jpg"
       },
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Monument_to_Taras_Shevchenko%2C_sheltered_from_Russian_shelling._Kyiv%2C_2022.jpg/1280px-Monument_to_Taras_Shevchenko%2C_sheltered_from_Russian_shelling._Kyiv%2C_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Monument_to_Taras_Shevchenko%2C_sheltered_from_Russian_shelling._Kyiv%2C_2022.jpg/1280px-Monument_to_Taras_Shevchenko%2C_sheltered_from_Russian_shelling._Kyiv%2C_2022.jpg",
         author: "Ввласенко",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Monument_to_Taras_Shevchenko,_sheltered_from_Russian_shelling._Kyiv,_2022.jpg"
       }
     ],
-    videos: [
-      {
-        title: "Історія пам'ятника",
-        url: "https://www.youtube.com/watch?v=VIDEO_ID"
-      },
-      {
-        title: "Відеоекскурсія",
-        url: "https://vimeo.com/VIDEO_ID"
-      }
-    ],
     sources: [
       {
-        title: "Вікіпедія: /",
-        url: "https://uk.wikipedia.org/"
-      },
-      {
-        title: "Історична довідка",
-        url: "https://example.com/article"
+        title: "Вікіпедія: Пам’ятник Тарасові Шевченку (Київ)",
+        url: "https://uk.wikipedia.org/wiki/Пам%27ятник_Тарасові_Шевченку_(Київ)"
       }
     ]
   },
@@ -1224,7 +1209,7 @@ const monuments = [
     significance: "Цей монумент є прикладом радянської меморіальної політики. Його первісне призначення було прославленням учасників більшовицького повстання. Сьогодні він також є матеріальним свідченням складної історії Української революції.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg/1280px-%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg/1280px-%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg",
         author: "Prymasal",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D1%97%D0%B2,_%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BF%D0%BB.,_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B1%D1%96%D1%82%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%B7%D0%B0%D0%B2%D0%BE%D0%B4%D1%83_%C2%AB%D0%90%D1%80%D1%81%D0%B5%D0%BD%D0%B0%D0%BB%C2%BB.jpg"
@@ -1991,7 +1976,7 @@ const monuments = [
     significance: "Одна з найвизначніших археологічних пам'яток України, що зберігає сліди духовного життя давніх суспільств.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/ac/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/a/ac/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0.jpg",
         author: "Pavel dp",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F-%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0.jpg"
@@ -2021,7 +2006,7 @@ const monuments = [
     significance: "Надзвичайно важлива пам'ятка для дослідження життя, мистецтва й технологій людей пізнього палеоліту на території України.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg/1280px-%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg/1280px-%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg",
         author: "Inishche",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B0_%C2%AB%D0%9C%D0%B5%D0%B7%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B0%C2%BB.jpg"
@@ -2051,7 +2036,7 @@ const monuments = [
     significance: "Одна з найбільших археологічних пам'яток ранньої залізної доби у Східній Європі. Важливий центр дослідження скіфського світу та населення лісостепу.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bilske_gorogische.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Bilske_gorogische.JPG",
         author: "Mpas",
         license: "CC BY-SA 1.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Bilske_gorogische.JPG"
@@ -2170,7 +2155,7 @@ const monuments = [
     significance: "Фортеця є важливим свідченням військової історії Східної Європи та ролі українського козацтва у Хотинській кампанії.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/73-250-0001_Khotyn_Fortress_RB_18.jpg/1280px-73-250-0001_Khotyn_Fortress_RB_18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/73-250-0001_Khotyn_Fortress_RB_18.jpg/1280px-73-250-0001_Khotyn_Fortress_RB_18.jpg",
         author: "Rbrechko",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:73-250-0001_Khotyn_Fortress_RB_18.jpg"
@@ -2200,7 +2185,7 @@ const monuments = [
     significance: "Сікорський є однією з найвідоміших постатей українського походження в історії світової авіації.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/6/62/Sikorskiy_2_by_Igor_Palamarchuk.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/6/62/Sikorskiy_2_by_Igor_Palamarchuk.png",
         author: "IgorPalamarchuk",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Sikorskiy_2_by_Igor_Palamarchuk.png"
@@ -2230,7 +2215,7 @@ const monuments = [
     significance: "Музей зберігає пам'ять про розвиток ракетної техніки та внесок Корольова в історію космонавтики.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Korolev-museum-zhytomyr.jpg/1280px-Korolev-museum-zhytomyr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Korolev-museum-zhytomyr.jpg/1280px-Korolev-museum-zhytomyr.jpg",
         author: "Texnik",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Korolev-museum-zhytomyr.jpg"
@@ -2395,7 +2380,7 @@ const monuments = [
     significance: "Музей відіграє важливу роль у збереженні української художньої спадщини, зокрема іконопису, живопису та скульптури.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/National_Art_Museum_of_Ukraine_20190505.jpg/1280px-National_Art_Museum_of_Ukraine_20190505.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/National_Art_Museum_of_Ukraine_20190505.jpg/1280px-National_Art_Museum_of_Ukraine_20190505.jpg",
         author: "Suicasmo",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:National_Art_Museum_of_Ukraine_20190505.jpg"
@@ -2426,7 +2411,7 @@ const monuments = [
     significance: "Будинок є визначною пам'яткою київського архітектурного модерну та прикладом незвичайного використання скульптурного декору в архітектурі.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%2C_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg",
         author: "Олійник Богдан",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D1%96%D0%B7_%D1%85%D0%B8%D0%BC%D0%B5%D1%80%D0%B0%D0%BC%D0%B8,_%D0%B2_%D1%8F%D0%BA%D0%BE%D0%BC%D1%83_%D0%B6%D0%B8%D0%B2_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D0%BE%D1%80_%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D0%B5%D1%86%D1%8C%D0%BA%D0%B8%D0%B9.jpg"
@@ -2457,7 +2442,7 @@ const monuments = [
     significance: "Музей зберігає матеріальну спадщину українського народу та демонструє регіональні особливості традиційного будівництва.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kiev_Pyrogiv_Podillya_070628.jpg/1280px-Kiev_Pyrogiv_Podillya_070628.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kiev_Pyrogiv_Podillya_070628.jpg/1280px-Kiev_Pyrogiv_Podillya_070628.jpg",
         author: "Dgri",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Kiev_Pyrogiv_Podillya_070628.jpg"
@@ -2603,7 +2588,7 @@ const monuments = [
     significance: "Замок є важливою пам'яткою оборонної архітектури та історії Галичини.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Olesko_Castle.jpg/1280px-Olesko_Castle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Olesko_Castle.jpg/1280px-Olesko_Castle.jpg",
         author: "Mykola Swarnyk",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Olesko_Castle.jpg"
@@ -2634,7 +2619,7 @@ const monuments = [
     significance: "Підгорецький замок є одним із найяскравіших прикладів поєднання палацової та оборонної архітектури в Україні.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Podhorce_-_Zamek_01A.jpg/1280px-Podhorce_-_Zamek_01A.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Podhorce_-_Zamek_01A.jpg/1280px-Podhorce_-_Zamek_01A.jpg",
         author: "Lestat (Jan Mehlich)",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Podhorce_-_Zamek_01A.jpg"
@@ -2665,7 +2650,7 @@ const monuments = [
     significance: "Свірзький замок демонструє розвиток фортифікаційної архітектури Галичини та поєднання оборонних і житлових функцій.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/46-233-0009_Svirzh_Castle_RB.jpg/1280px-46-233-0009_Svirzh_Castle_RB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/46-233-0009_Svirzh_Castle_RB.jpg/1280px-46-233-0009_Svirzh_Castle_RB.jpg",
         author: "Rbrechko",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:46-233-0009_Svirzh_Castle_RB.jpg"
@@ -2696,7 +2681,7 @@ const monuments = [
     significance: "Замок є одним із найкраще збережених середньовічних укріплень України та символом історії Луцька.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Lutsk_Lubarts%27_Castle_02_%28YDS_5502%29.jpg/1280px-Lutsk_Lubarts%27_Castle_02_%28YDS_5502%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Lutsk_Lubarts%27_Castle_02_%28YDS_5502%29.jpg/1280px-Lutsk_Lubarts%27_Castle_02_%28YDS_5502%29.jpg",
         author: "Nataliya Shestakova",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Lutsk_Lubarts%27_Castle_02_(YDS_5502).jpg"
@@ -2727,7 +2712,7 @@ const monuments = [
     significance: "Пам'ятка символізує боротьбу Гетьманщини за політичну самостійність та трагічні події 1708 року.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg/1280px-%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg/1280px-%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg",
         author: "NSayenko",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%90%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%A6%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C.jpg"
@@ -2758,7 +2743,7 @@ const monuments = [
     significance: "Одна з найважливіших пам'яток козацької доби та української сакральної архітектури.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E%2C_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg/1280px-%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E%2C_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E%2C_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg/1280px-%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E%2C_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg",
         author: "Kiyanka",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%86%D0%BB%D0%BB%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D1%96%D0%B7_%D0%B4%D0%B7%D0%B2%D1%96%D0%BD%D0%B8%D1%86%D0%B5%D1%8E,_%D0%A1%D1%83%D0%B1%D0%BE%D1%82%D1%96%D0%B2.jpg"
@@ -2789,7 +2774,7 @@ const monuments = [
     significance: "Замкова гора є одним із головних символів формування української козацької державності.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Zamkova_gora_Cherk-517.jpg/1280px-Zamkova_gora_Cherk-517.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Zamkova_gora_Cherk-517.jpg/1280px-Zamkova_gora_Cherk-517.jpg",
         author: "Сергій Криниця (Haidamac)",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Zamkova_gora_Cherk-517.jpg"
@@ -2820,7 +2805,7 @@ const monuments = [
     significance: "Палац є важливим свідченням європейських культурних впливів та архітектурних амбіцій останнього українського гетьмана.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg/1280px-%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg/1280px-%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg",
         author: "NSayenko",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BB%D0%B0%D1%86_%D0%9A._%D0%A0%D0%BE%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg"
@@ -3034,7 +3019,7 @@ const monuments = [
     significance: "ДніпроГЕС стала однією з ключових споруд української енергетичної інфраструктури та важливим об'єктом історії інженерії.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg/1280px-%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg/1280px-%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg",
         author: "Anatoliy Volkov",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BD%D1%96%D0%BF%D1%80%D0%BE%D0%B3%D0%B5%D1%81_%D0%B7_%D0%B2%D0%B8%D1%81%D0%BE%D1%82%D0%B8.jpg"
@@ -3065,7 +3050,7 @@ const monuments = [
     significance: "Шахти є важливою частиною історії української гірничої промисловості та промислового розвитку Донбасу.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Soledar_salt_mine_%28Sep_2020%29_9.jpg/1280px-Soledar_salt_mine_%28Sep_2020%29_9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Soledar_salt_mine_%28Sep_2020%29_9.jpg/1280px-Soledar_salt_mine_%28Sep_2020%29_9.jpg",
         author: "Visem",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Soledar_salt_mine_(Sep_2020)_9.jpg"
@@ -3096,7 +3081,7 @@ const monuments = [
     significance: "Комплекс поєднує історію військового виробництва, архітектури Києва та драматичних подій Української революції.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Arsenal_Factory%2C_Kyiv_%2852672804299%29.jpg/1280px-Arsenal_Factory%2C_Kyiv_%2852672804299%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Arsenal_Factory%2C_Kyiv_%2852672804299%29.jpg/1280px-Arsenal_Factory%2C_Kyiv_%2852672804299%29.jpg",
         author: "Svvyatoslav Igorevich",
         license: "CC0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Arsenal_Factory,_Kyiv_(52672804299).jpg"
@@ -3127,7 +3112,7 @@ const monuments = [
     significance: "Вокзал є важливою пам'яткою транспортної інфраструктури та символом інтеграції українських земель у європейську залізничну мережу.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Lviv_railway_station2.png/1280px-Lviv_railway_station2.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Lviv_railway_station2.png/1280px-Lviv_railway_station2.png",
         author: "Юрій Коберник",
         license: "CC BY 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Lviv_railway_station2.png"
@@ -3250,7 +3235,7 @@ const monuments = [
     significance: "Музей зберігає пам'ять про засновника української національної композиторської школи, який зробив величезний внесок у розвиток опери, хорової та інструментальної музики.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kyiv%2C_Saksaganskogo_str.%2C_95.JPG/1280px-Kyiv%2C_Saksaganskogo_str.%2C_95.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kyiv%2C_Saksaganskogo_str.%2C_95.JPG/1280px-Kyiv%2C_Saksaganskogo_str.%2C_95.JPG",
         author: "Xsandriel",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyiv,_Saksaganskogo_str.,_95.JPG"
@@ -3281,7 +3266,7 @@ const monuments = [
     significance: "Музей увічнює пам'ять про українську співачку світового рівня, яка виступала на найвідоміших оперних сценах Європи та Америки й прославила українську вокальну школу.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Musicmuseumlviv2.jpg/1280px-Musicmuseumlviv2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Musicmuseumlviv2.jpg/1280px-Musicmuseumlviv2.jpg",
         author: "Георг Фридрих Зандерлинг",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Musicmuseumlviv2.jpg"
@@ -3335,7 +3320,7 @@ const monuments = [
     significance: "Це важливе місце в історії музичного життя Харкова, пов'язане зі становленням професійної опери та розвитком міської концертної культури.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG/1280px-Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG/1280px-Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG",
         author: "Сергій Криниця (Haidamac)",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Kharkiv_Rymarska_21_Opera_SAM_9266_63-101-0540.JPG"
@@ -4254,7 +4239,7 @@ const monuments = [
     significance: "Могила Шевченка стала одним із головних місць національної пам'яті України. Територія входить до Шевченківського національного заповідника.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_%28%D0%9A%D0%B0%D0%BD%D1%96%D0%B2%29.jpg/1280px-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_%28%D0%9A%D0%B0%D0%BD%D1%96%D0%B2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_%28%D0%9A%D0%B0%D0%BD%D1%96%D0%B2%29.jpg/1280px-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_%28%D0%9A%D0%B0%D0%BD%D1%96%D0%B2%29.jpg",
         author: "Куннова Олена",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%B0_(%D0%9A%D0%B0%D0%BD%D1%96%D0%B2).jpg"
@@ -4286,7 +4271,7 @@ const monuments = [
     significance: "Могила є місцем вшанування однієї з найважливіших постатей української літератури та жіночого інтелектуального руху.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg/1280px-%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg/1280px-%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg",
         author: "Половко Сергей Николаевич",
         license: "Public domain",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D1%81%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B0_%D0%91%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D0%BE_%D0%BA%D0%BB%D0%B0%D0%B4%D0%B1%D0%B8%D1%89%D0%B5.jpg"
@@ -4318,7 +4303,7 @@ const monuments = [
     significance: "Могила Франка є однією з найвідоміших пам'яток Личаківського цвинтаря та місцем вшанування його літературної, наукової та громадської спадщини.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/1/18/IwanFrankoLwow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/1/18/IwanFrankoLwow.jpg",
         author: "Stanisław Kosiedowski",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:IwanFrankoLwow.jpg"
@@ -4350,7 +4335,7 @@ const monuments = [
     significance: "Грушевський був одним із ключових українських істориків і політичних діячів початку XX століття. Його наукові праці та діяльність Центральної Ради мають фундаментальне значення для історії української державності.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9C._%D0%A1.%2C_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0%2C_%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%97_%D0%A0%D0%B0%D0%B4%D0%B8.JPG/1280px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9C._%D0%A1.%2C_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0%2C_%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%97_%D0%A0%D0%B0%D0%B4%D0%B8.JPG/1280px-thumbnail.jpg",
         author: "Kiyanka",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D0%9C._%D0%A1.,_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%B0,_%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE_%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%B8_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%A6%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%97_%D0%A0%D0%B0%D0%B4%D0%B8.JPG"
@@ -4382,7 +4367,7 @@ const monuments = [
     significance: "Музей є важливим центром збереження матеріальної історії України. Його археологічні, етнографічні та історичні колекції дозволяють простежити розвиток суспільства на українських землях протягом тисячоліть.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Building_of_National_Museum_of_the_History_of_Ukraine_%282018-10-13%29.jpg/1280px-Building_of_National_Museum_of_the_History_of_Ukraine_%282018-10-13%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Building_of_National_Museum_of_the_History_of_Ukraine_%282018-10-13%29.jpg/1280px-Building_of_National_Museum_of_the_History_of_Ukraine_%282018-10-13%29.jpg",
         author: "Oleh Kushch",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Building_of_National_Museum_of_the_History_of_Ukraine_(2018-10-13).jpg"
@@ -4414,7 +4399,7 @@ const monuments = [
     significance: "Це один із головних осередків збереження спадщини Тараса Шевченка. Музей допомагає досліджувати його не лише як поета, а і як художника, мислителя та важливу постать українського національного руху.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG/1280px-%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG/1280px-%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG",
         author: "AMY",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%BB%D1%8C%D0%B2%D0%B0%D1%80_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%B0_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D0%BE_12_%D0%9A%D0%B8%D0%B5%D0%B2_2012_01.JPG"
@@ -4446,7 +4431,7 @@ const monuments = [
     significance: "Музей є одним із найважливіших центрів збереження світового мистецтва в Україні. Його історія також є прикладом масштабного меценатства та приватного колекціонування.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Khanenko_Museum_01.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Khanenko_Museum_01.png",
         author: "Museum of Bogdan and Varvara Khanenko",
         license: "Public domain",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Khanenko_Museum_01.png"
@@ -4478,7 +4463,7 @@ const monuments = [
     significance: "Музей зберігає пам'ять про українську козацьку державність та розвиток традицій українського державотворення.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Budynok_Mazepy_Kyiv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Budynok_Mazepy_Kyiv.jpg",
         author: "Невідомий автор",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Budynok_Mazepy_Kyiv.jpg"
@@ -4534,7 +4519,7 @@ const monuments = [
     significance: "Музей є одним із провідних наукових центрів дослідження стародавньої історії Північного Причорномор'я. Його колекції мають значення для вивчення античних міст Півдня України.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg/1280px-51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg/1280px-51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg",
         author: "Haidamac",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:51-101-0551_Odesa_Lanzheronivska_DSC_0287.jpg"
@@ -4566,7 +4551,7 @@ const monuments = [
     significance: "Фонди музею налічують понад 330 тисяч предметів: археологічні знахідки, документи, твори мистецтва, зброю та предмети повсякденного життя. Це один із головних осередків дослідження історії Слобожанщини.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Kharkiv_Historical_Museum_1.JPG/1280px-Kharkiv_Historical_Museum_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Kharkiv_Historical_Museum_1.JPG/1280px-Kharkiv_Historical_Museum_1.JPG",
         author: "Kharkivian (Сергій Петров)",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Kharkiv_Historical_Museum_1.JPG"
@@ -4598,7 +4583,7 @@ const monuments = [
     significance: "Музей зберігає природничу, археологічну, етнографічну та історичну спадщину Полтавщини. Його будівля є важливим зразком українського архітектурного модерну.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97%2C_2.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97%2C_2.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97%2C_2.jpg",
         author: "Posterrr",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B7%D0%B5%D0%BC%D1%81%D1%82%D0%B2%D0%B0_P1230868_%D0%BF%D0%BB._%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%86%D1%96%D1%97,_2.jpg"
@@ -4630,7 +4615,7 @@ const monuments = [
     significance: "Музей зберігає унікальні пам'ятки української культури, зокрема давній іконопис, сакральне мистецтво та твори українських художників. Його колекції мають національне та міжнародне значення.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg/1280px-%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg/1280px-%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg",
         author: "Wereskowa",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%8C%D0%B2%D1%96%D0%B2_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8_20.jpg"
@@ -4662,7 +4647,7 @@ const monuments = [
     significance: "Музей зберігає унікальні зразки дерев'яної народної архітектури та сакрального мистецтва. Його колекція дерев'яних церков є однією з найцінніших музейних збірок такого типу в Україні.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_%2811%29.jpg/1280px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_%2811%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_%2811%29.jpg/1280px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_%2811%29.jpg",
         author: "Дмитрий Ванькевич",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE%D1%97_%D0%B0%D1%80%D1%85%D1%96%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B8_%D1%82%D0%B0_%D0%BF%D0%BE%D0%B1%D1%83%D1%82%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96._-_panoramio_(11).jpg"
@@ -4694,7 +4679,7 @@ const monuments = [
     significance: "Музей зберігає багатокультурну спадщину Закарпаття та демонструє особливості народної архітектури й побуту різних етнічних спільнот регіону.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/1/17/Panorama_uschhorod_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/1/17/Panorama_uschhorod_museum.jpg",
         author: "Elya",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Panorama_uschhorod_museum.jpg"
@@ -4726,7 +4711,7 @@ const monuments = [
     significance: "Комплекс дозволяє досліджувати традиційну архітектуру, ремесла, господарство та повсякденне життя населення Середньої Наддніпрянщини.",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Windmill_-_Museum_of_folk_architecture_and_way_of_life_of_Middle_Naddnipryanschina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Windmill_-_Museum_of_folk_architecture_and_way_of_life_of_Middle_Naddnipryanschina.jpg",
         author: "Uk-Kamelot",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Windmill_-_Museum_of_folk_architecture_and_way_of_life_of_Middle_Naddnipryanschina.jpg"
@@ -4758,7 +4743,7 @@ const monuments = [
     significance: "Музей зберігає матеріальну спадщину Буковини, демонструє регіональні особливості дерев'яного будівництва, традиційного одягу, ремесел і побуту.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg/1280px-%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg/1280px-%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg",
         author: "Dmytro37",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%B0%D0%B4%D0%B8%D0%B1%D0%B0_%D1%81%D0%B5%D0%BB%D1%8F%D0%BD%D0%B8%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B3%D0%B0%D1%87%D0%B0_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%D1%81%D0%BA%D0%B0%D0%BD%D1%81%D0%B5%D0%BD%D1%96.jpg"
