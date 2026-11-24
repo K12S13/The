@@ -92,31 +92,6 @@ export default function FilterPanel({
             renderLabel={(key) => TYPES[key]?.label || key}
           />
 
-          <div className="field-row">
-            <label className="field">
-              <span className="field__label">Рік від</span>
-              <input
-                className="field__control"
-                type="number"
-                inputMode="numeric"
-                value={filters.yearFrom}
-                onChange={(e) => setFilter('yearFrom', e.target.value)}
-                placeholder="1900"
-              />
-            </label>
-            <label className="field">
-              <span className="field__label">Рік до</span>
-              <input
-                className="field__control"
-                type="number"
-                inputMode="numeric"
-                value={filters.yearTo}
-                onChange={(e) => setFilter('yearTo', e.target.value)}
-                placeholder="2000"
-              />
-            </label>
-          </div>
-
           <label className="checkbox">
             <input type="checkbox" checked={showOsm} onChange={(e) => onShowOsmChange(e.target.checked)} />
             Показати OSM-точки

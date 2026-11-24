@@ -1,23 +1,26 @@
-import { useCallback, useMemo, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import MarkerClusterGroup from 'react-leaflet-cluster'
 import literaryObjects from './Data/literaryObjects'
 import { CATEGORIES, TYPES, getCategoryInfo, getTypeInfo } from './Data/schema'
-import { fetchOsmLiteraryObjectsByBbox } from './api/fetchOsmLiteraryObjects'
+import { fetchOsmObjects, isAbortError, OSM_MIN_ZOOM } from './api/fetchOsmLiteraryObjects'
 import { getMarkerIcon, createClusterIcon } from './map/markerIcons'
+import { MAX_YEAR, MIN_YEAR, formatYear, inEra } from './map/timeScale'
 import FilterPanel from './components/FilterPanel'
+import Timeline from './components/Timeline'
 import ObjectModal from './components/ObjectModal/ObjectModal'
+import StatsModal from './components/StatsModal'
+import AboutModal from './components/AboutModal'
 
 const ALL = 'Усі'
+const INITIAL_ZOOM = 4
 
 const INITIAL_FILTERS = {
   search: '',
   category: ALL,
   person: ALL,
   country: ALL,
-  type: ALL,
-  yearFrom: '',
-  yearTo: ''
+  type: ALL
 }
 
 const uniqueSorted = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'uk'))
@@ -29,30 +32,59 @@ function clusterRadius(zoom) {
   return 35
 }
 
-function OsmButton({ onLoaded, setLoading, setError, loading }) {
-  const map = useMap()
+function markerVariant(item) {
+  if (item.isOsm) return 'osm'
+  if (item.forgotten) return 'forgotten'
+  return ''
+}
+
+function OsmButton({ map, onLoaded, setLoading, setError, loading }) {
+  const [zoom, setZoom] = useState(INITIAL_ZOOM)
+  useEffect(() => {
+    if (!map) return undefined
+    const update = () => setZoom(map.getZoom())
+    map.on('zoomend', update)
+    return () => map.off('zoomend', update)
+  }, [map])
+  const tooFar = zoom < OSM_MIN_ZOOM
 
   async function load() {
+    if (tooFar || !map) return
     try {
       setLoading(true)
       setError('')
       const b = map.getBounds()
-      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`
-      onLoaded(await fetchOsmLiteraryObjectsByBbox(bbox))
+      const items = await fetchOsmObjects({
+        south: b.getSouth(),
+        west: b.getWest(),
+        north: b.getNorth(),
+        east: b.getEast()
+      })
+      onLoaded(items)
+      if (!items.length) setError('У цій області OSM-точок, пов’язаних із людьми з карти, не знайдено.')
     } catch (e) {
+      if (isAbortError(e)) return
       console.error(e)
-      setError('OSM не відповів або область завелика. Наблизь карту і спробуй ще раз.')
+      setError('OSM не відповів. Спробуй ще раз трохи пізніше.')
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <button type="button" className="map-button osm-button" onClick={load} disabled={loading}>
-      {loading ? '…' : (
+    <button
+      type="button"
+      className="map-button"
+      onClick={load}
+      disabled={loading || tooFar}
+      title={tooFar ? 'Наблизь карту, щоб завантажити точки OpenStreetMap' : 'Завантажити точки OpenStreetMap у видимій області'}
+    >
+      {loading ? (
+        '…'
+      ) : (
         <>
-          <span className="osm-button__long">Завантажити OSM</span>
-          <span className="osm-button__short">OSM</span>
+          <span className="label-long">{tooFar ? 'OSM: наблизь карту' : 'Завантажити OSM'}</span>
+          <span className="label-short">{tooFar ? 'OSM ⌕' : 'OSM'}</span>
         </>
       )}
     </button>
@@ -63,6 +95,11 @@ export default function App() {
   const [filtersOpen, setFiltersOpen] = useState(() => window.innerWidth > 600)
   const [selectedObject, setSelectedObject] = useState(null)
   const [filters, setFilters] = useState(INITIAL_FILTERS)
+  const [forgottenOnly, setForgottenOnly] = useState(false)
+  const [eraRange, setEraRange] = useState([MIN_YEAR, MAX_YEAR])
+  const [eraActive, setEraActive] = useState(false)
+  const [dialog, setDialog] = useState(null) // 'stats' | 'about' | null
+  const [map, setMap] = useState(null)
 
   const [osmObjects, setOsmObjects] = useState([])
   const [showOsmObjects, setShowOsmObjects] = useState(false)
@@ -71,6 +108,7 @@ export default function App() {
 
   const setFilter = useCallback((key, value) => setFilters((prev) => ({ ...prev, [key]: value })), [])
   const closeModal = useCallback(() => setSelectedObject(null), [])
+  const closeDialog = useCallback(() => setDialog(null), [])
 
   const handleOsmLoaded = useCallback((data) => {
     setOsmObjects((prev) => {
@@ -100,18 +138,15 @@ export default function App() {
     }
   }, [allObjects])
 
-  const filtered = useMemo(() => {
+  // Усі фільтри, крім часової шкали
+  const matched = useMemo(() => {
     const query = filters.search.trim().toLocaleLowerCase('uk')
-    const from = filters.yearFrom === '' ? null : Number(filters.yearFrom)
-    const to = filters.yearTo === '' ? null : Number(filters.yearTo)
-
     return allObjects.filter((item) => {
+      if (forgottenOnly && !item.forgotten) return false
       if (filters.category !== ALL && item.category !== filters.category) return false
       if (filters.person !== ALL && item.person !== filters.person) return false
       if (filters.country !== ALL && item.country !== filters.country) return false
       if (filters.type !== ALL && item.type !== filters.type) return false
-      if (from !== null && item.year != null && item.year < from) return false
-      if (to !== null && item.year != null && item.year > to) return false
       if (!query) return true
       return [
         item.name,
@@ -127,7 +162,14 @@ export default function App() {
         .filter(Boolean)
         .some((value) => String(value).toLocaleLowerCase('uk').includes(query))
     })
-  }, [allObjects, filters])
+  }, [allObjects, filters, forgottenOnly])
+
+  const filtered = useMemo(
+    () => (eraActive ? matched.filter((item) => inEra(item, eraRange[0], eraRange[1])) : matched),
+    [matched, eraActive, eraRange]
+  )
+  const undatedCount = useMemo(() => matched.filter((item) => item.eraYear === undefined).length, [matched])
+  const forgottenCount = useMemo(() => literaryObjects.filter((item) => item.forgotten).length, [])
 
   return (
     <div className="app">
@@ -136,7 +178,10 @@ export default function App() {
         onToggle={() => setFiltersOpen((open) => !open)}
         filters={filters}
         setFilter={setFilter}
-        onReset={() => setFilters(INITIAL_FILTERS)}
+        onReset={() => {
+          setFilters(INITIAL_FILTERS)
+          setForgottenOnly(false)
+        }}
         options={options}
         foundCount={filtered.length}
         showOsm={showOsmObjects}
@@ -148,8 +193,8 @@ export default function App() {
       <MapContainer
         className="map"
         zoomControl={false}
-        center={[50.45, 30.52]}
-        zoom={4}
+        center={[49.0, 31.4]}
+        zoom={INITIAL_ZOOM}
         minZoom={3}
         maxZoom={18}
         maxBounds={[
@@ -157,18 +202,12 @@ export default function App() {
           [85, 180]
         ]}
         maxBoundsViscosity={1}
+        ref={setMap}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           noWrap
-        />
-
-        <OsmButton
-          onLoaded={handleOsmLoaded}
-          setLoading={setOsmLoading}
-          setError={setOsmError}
-          loading={osmLoading}
         />
 
         <MarkerClusterGroup
@@ -187,17 +226,18 @@ export default function App() {
             <Marker
               key={`${item.isOsm ? 'osm' : 'local'}-${item.id}`}
               position={[item.lat, item.lng]}
-              icon={getMarkerIcon(item.type, getCategoryInfo(item.category).color, item.isOsm ? 'osm' : '')}
+              icon={getMarkerIcon(item.type, getCategoryInfo(item.category).color, markerVariant(item))}
             >
               <Popup>
                 <div className="map-popup">
-                  <p className="map-popup__type">{item.subtype || getTypeInfo(item.type).label}</p>
+                  <p className="map-popup__type">
+                    {item.forgotten && <span className="map-popup__forgotten">★ Забутий герой · </span>}
+                    {item.subtype || getTypeInfo(item.type).label}
+                  </p>
                   <h3>{item.name}</h3>
                   {item.person && <p>{item.person}</p>}
                   <p className="map-popup__place">
-                    {[item.city, item.year != null ? (item.year < 0 ? `${-item.year} р. до н. е.` : `${item.year} р.`) : null]
-                      .filter(Boolean)
-                      .join(' · ')}
+                    {[item.city, item.year != null ? `${formatYear(item.year)} р.` : null].filter(Boolean).join(' · ')}
                   </p>
                   <button type="button" className="map-popup__button" onClick={() => setSelectedObject(item)}>
                     Детальніше
@@ -209,7 +249,46 @@ export default function App() {
         </MarkerClusterGroup>
       </MapContainer>
 
+      <div className="map-actions">
+        <button
+          type="button"
+          className={`map-button map-button--forgotten${forgottenOnly ? ' is-on' : ''}`}
+          onClick={() => setForgottenOnly((on) => !on)}
+          aria-pressed={forgottenOnly}
+          disabled={!forgottenCount}
+          title={forgottenCount ? undefined : 'Список забутих героїв ще готується'}
+        >
+          <span aria-hidden="true">★</span>{' '}
+          <span className="label-long">{forgottenOnly ? 'Показати всіх' : 'Лише забуті герої'}</span>
+          <span className="label-short">{forgottenOnly ? 'Усі' : 'Забуті'}</span>
+        </button>
+        <button type="button" className="map-button map-button--light" onClick={() => setDialog('stats')}>
+          Цифри
+        </button>
+        <button type="button" className="map-button map-button--light" onClick={() => setDialog('about')}>
+          Про проєкт
+        </button>
+        <OsmButton
+          map={map}
+          onLoaded={handleOsmLoaded}
+          setLoading={setOsmLoading}
+          setError={setOsmError}
+          loading={osmLoading}
+        />
+      </div>
+
+      <Timeline
+        range={eraRange}
+        onChange={setEraRange}
+        active={eraActive}
+        onActiveChange={setEraActive}
+        undatedCount={undatedCount}
+        shownCount={filtered.length}
+      />
+
       {selectedObject && <ObjectModal object={selectedObject} onClose={closeModal} />}
+      {dialog === 'stats' && <StatsModal objects={literaryObjects} onClose={closeDialog} />}
+      {dialog === 'about' && <AboutModal onClose={closeDialog} />}
     </div>
   )
 }
