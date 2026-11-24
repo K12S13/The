@@ -1,7 +1,7 @@
 // Єдине джерело правди для типів і категорій.
 // Використовується маркерами, легендою, фільтрами та скриптом `npm run check-data`.
 
-// type → українська назва + форма маркера (див. .marker__shape--* у App.css)
+// type → українська назва + форма маркера (див. .marker__shape--* у styles.css)
 export const TYPES = {
   monument: { label: 'Пам’ятник', shape: 'circle' },
   memorial: { label: 'Меморіал', shape: 'star' },
@@ -35,14 +35,18 @@ export const CATEGORIES = {
   folk: { label: 'Музеї й народна культура', color: '#5d7a3a' }
 }
 
+export const OSM_CATEGORY_KEY = 'osm'
 export const OSM_CATEGORY = { label: 'Дані OpenStreetMap', color: '#6b7280' }
+const UNKNOWN_CATEGORY_COLOR = '#6b7280'
 
 export function getTypeInfo(type) {
   return TYPES[type] || TYPES[DEFAULT_TYPE]
 }
 
 export function getCategoryInfo(category) {
-  return CATEGORIES[category] || OSM_CATEGORY
+  if (CATEGORIES[category]) return CATEGORIES[category]
+  if (category === OSM_CATEGORY_KEY) return OSM_CATEGORY
+  return { label: category || 'Без категорії', color: UNKNOWN_CATEGORY_COLOR }
 }
 
 // Межі координат: уся Земля, але без полюсів (Leaflet обмежений ±85°)

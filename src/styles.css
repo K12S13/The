@@ -1,0 +1,451 @@
+/* ============ Токени ============ */
+:root {
+  --paper: #f7f6f2;
+  --ink: #20211f;
+  --muted: #6c6a62;
+  --line: #e0dcd2;
+  --panel-bg: rgba(250, 249, 245, 0.97);
+  --accent: #b08a3e;
+  --accent-ink: #1e3a5f;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+  --radius: 12px;
+  --font-body: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --tap: 44px;
+
+  color-scheme: light;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* ============ Каркас ============ */
+.app {
+  position: relative;
+  height: 100dvh;
+  width: 100%;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+  background: #e8e4da;
+}
+
+/* ============ Кнопки ============ */
+.button,
+.map-button,
+.icon-button {
+  min-height: var(--tap);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  padding: 8px 14px;
+  font-weight: 600;
+}
+
+.button:hover,
+.icon-button:hover {
+  background: #f1eee6;
+}
+
+.icon-button {
+  flex: 0 0 auto;
+  width: var(--tap);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.map-button {
+  position: absolute;
+  z-index: 1000;
+  padding: 8px 14px;
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
+  color: white;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.map-button:disabled {
+  opacity: 0.7;
+  cursor: progress;
+}
+
+.osm-button {
+  top: 15px;
+  right: 15px;
+}
+
+.osm-button__short {
+  display: none;
+}
+
+:is(.button, .map-button, .icon-button, .field__control, .checkbox input):focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ============ Панель фільтрів ============ */
+.filter-panel {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: min(320px, calc(100vw - 30px));
+  max-height: calc(100dvh - 30px);
+  overflow-y: auto;
+  padding: 14px;
+  border-radius: var(--radius);
+  background: var(--panel-bg);
+  box-shadow: var(--shadow);
+}
+
+.filter-panel__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-panel__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 20px;
+}
+
+.filter-panel__count {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.filter-panel__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-panel__status {
+  margin: 0;
+  font-size: 13px;
+}
+
+.filter-panel__status--error {
+  color: #a3261c;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.field__label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
+.field__control {
+  width: 100%;
+  min-height: var(--tap);
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+  font-size: 16px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent-ink);
+}
+
+/* ============ Легенда ============ */
+.legend {
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.legend__title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.legend__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  line-height: 1.2;
+}
+
+.legend__icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  align-items: center;
+  justify-content: center;
+}
+
+.legend__note {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ============ Маркери ============ */
+.marker-icon {
+  background: none;
+  border: 0;
+}
+
+.marker {
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  /* білий контур + тінь навколо будь-якої clip-path форми */
+  filter: drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 0 1px #fff)
+    drop-shadow(0 1px 3px rgba(0, 0, 0, 0.55));
+}
+
+.legend .marker {
+  transform: scale(0.8);
+}
+
+.marker__shape {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: var(--marker-color, #4b5563);
+}
+
+.marker__shape--circle {
+  border-radius: 50%;
+}
+
+.marker__shape--star {
+  width: 24px;
+  height: 24px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.marker__shape--plaque {
+  width: 24px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.marker__shape--diamond {
+  width: 17px;
+  height: 17px;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+.marker__shape--cross {
+  width: 20px;
+  height: 22px;
+  clip-path: polygon(35% 0, 65% 0, 65% 28%, 100% 28%, 100% 55%, 65% 55%, 65% 100%, 35% 100%, 35% 55%, 0 55%, 0 28%, 35% 28%);
+}
+
+.marker__shape--square {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+.marker__shape--triangle {
+  width: 22px;
+  height: 20px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.marker__shape--castle {
+  width: 22px;
+  height: 20px;
+  clip-path: polygon(0 0, 20% 0, 20% 22%, 40% 22%, 40% 0, 60% 0, 60% 22%, 80% 22%, 80% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.marker__shape--hexagon {
+  width: 22px;
+  height: 20px;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+.marker__shape--octagon {
+  width: 21px;
+  height: 21px;
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+}
+
+.marker__shape--house {
+  width: 22px;
+  height: 20px;
+  clip-path: polygon(50% 0, 100% 40%, 100% 100%, 0 100%, 0 40%);
+}
+
+.marker__shape--leaf {
+  width: 22px;
+  height: 16px;
+  border-radius: 50% 0 50% 0;
+}
+
+.marker__shape--film {
+  width: 24px;
+  height: 16px;
+  clip-path: polygon(22% 0, 100% 0, 78% 100%, 0 100%);
+}
+
+.marker__shape--trapezoid {
+  width: 22px;
+  height: 18px;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+}
+
+/* OSM: напівпрозорий маркер з пунктирним обідком */
+.marker--osm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px dashed #374151;
+  border-radius: 50%;
+}
+
+.marker--osm .marker__shape {
+  opacity: 0.75;
+}
+
+.cluster {
+  display: flex;
+  width: var(--size);
+  height: var(--size);
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  background: var(--accent-ink);
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+}
+
+/* ============ Попап ============ */
+.map-popup h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-heading);
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.map-popup p {
+  margin: 0 0 4px;
+}
+
+.map-popup__type,
+.map-popup__place {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.map-popup__button {
+  margin-top: 8px;
+  min-height: var(--tap);
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  background: var(--accent-ink);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ============ Мобільна версія ============ */
+@media (max-width: 600px) {
+  .osm-button__long {
+    display: none;
+  }
+
+  .osm-button__short {
+    display: inline;
+  }
+
+  .filter-panel {
+    top: 10px;
+    left: 10px;
+    width: calc(100vw - 92px);
+    max-height: calc(100dvh - 20px);
+  }
+
+  .osm-button {
+    top: 10px;
+    right: 10px;
+  }
+}

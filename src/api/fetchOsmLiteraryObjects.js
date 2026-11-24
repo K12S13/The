@@ -1,4 +1,5 @@
 import { poetKeywords } from '../Data/poets'
+import { OSM_CATEGORY_KEY } from '../Data/schema'
 
 const OVERPASS_URL = 'https://overpass-api.de/api/interpreter'
 
@@ -53,7 +54,7 @@ function detectType(tags = {}) {
                                     if (tags.leisure === 'park') return 'park'
                                         if (tags.building) return 'building'
 
-                                            return 'object'
+                                            return 'historical_site'
 }
 
 function osmToLiteraryObject(element) {
@@ -65,6 +66,7 @@ function osmToLiteraryObject(element) {
     return {
         id: `osm-${element.type}-${element.id}`,
         type: detectType(tags),
+        category: OSM_CATEGORY_KEY,
         name:
         tags['name:uk'] ||
         tags.name ||
@@ -86,9 +88,12 @@ function osmToLiteraryObject(element) {
         tags.description ||
         tags.inscription ||
         'Об’єкт знайдено через OpenStreetMap.',
-        source: 'OpenStreetMap',
-        sourceUrl: `https://www.openstreetmap.org/${element.type}/${element.id}`,
-        sourceType: 'osm',
+        sources: [
+            {
+                title: 'OpenStreetMap',
+                url: `https://www.openstreetmap.org/${element.type}/${element.id}`
+            }
+        ],
         isOsm: true
     }
 }
@@ -145,10 +150,6 @@ export async function fetchOsmLiteraryObjectsByBbox(bbox) {
     .filter((item) => item.lat && item.lng)
 
     const filtered = mapped.filter((item) => item.person)
-
-    console.log('OSM bbox:', bbox)
-    console.log('OSM all:', mapped.length)
-    console.log('OSM filtered:', filtered.length, filtered.slice(0, 10))
 
     return filtered
 }
