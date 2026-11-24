@@ -171,6 +171,7 @@ export default function ObjectModal({ object, onClose }) {
                 {categoryInfo.label}
               </span>
               <span className="object-tag object-tag--plain">{object.subtype || typeInfo.label}</span>
+              {object.forgotten && <span className="object-tag object-tag--forgotten">★ Забутий герой</span>}
               {object.isOsm && <span className="object-tag object-tag--warning">Дані з OpenStreetMap, не перевірено</span>}
             </div>
 
@@ -181,6 +182,13 @@ export default function ObjectModal({ object, onClose }) {
             </p>
 
             {object.person && <p className="object-person">{object.person}</p>}
+
+            {object.forgotten && object.whyForgotten && (
+              <section className="object-section object-forgotten">
+                <h3>Чому забуті</h3>
+                <p>{object.whyForgotten}</p>
+              </section>
+            )}
 
             {object.description && (
               <section className="object-section">

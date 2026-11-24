@@ -172,6 +172,22 @@
   color: #55564f;
 }
 
+.object-tag--forgotten {
+  background: #f6e7b8;
+  color: #5c4410;
+}
+
+.object-forgotten {
+  padding: 14px 16px;
+  border-left: 4px solid var(--gold, #c9a227);
+  border-radius: 0 8px 8px 0;
+  background: #fbf4df;
+}
+
+.object-forgotten h3 {
+  color: #6b4f0e;
+}
+
 .object-tag--warning {
   background: #fbecc8;
   color: #6b4d0b;
