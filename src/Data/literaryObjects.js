@@ -2123,7 +2123,7 @@ const monuments = [
     id: 1013,
     name: "Стіна пам’яті полеглих захисників України",
     type: "memorial",
-    category: "independence",
+    category: "war_heroes",
     person: "Загиблі захисники України",
     city: "Київ",
     country: "Україна",
@@ -5623,7 +5623,7 @@ const monuments = [
     description: "Урочище в Карелії, де НКВС розстріляв тисячі в'язнів, серед них — Лесь Курбас, Микола Куліш, Микола Зеров і Валер'ян Підмогильний. Тут стоїть гранітний козацький хрест «Убієнним синам України».",
     images: [
       {
-        url: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hrest.2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Hrest.2007.jpg",
         author: "Mediafond",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Hrest.2007.jpg"
@@ -5665,7 +5665,7 @@ const monuments = [
     description: "Будинок письменників на вулиці Культури, 9, у Харкові. Більшість його мешканців стали жертвами репресій 1930-х років.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Slovo3.jpg/1280px-Slovo3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Slovo3.jpg/1280px-Slovo3.jpg",
         author: "Victor Vizu",
         license: "CC BY-SA 3.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:Slovo3.jpg"
@@ -5904,7 +5904,7 @@ const monuments = [
     description: "Музей у будинку колишньої полтавської пожежної команди; названий на честь уродженця Полтави Юрія Кондратюка.",
     images: [
       {
-        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BE%D0%B6%D0%B5%D0%B6%D0%BD%D0%BE%D1%97_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8_-_%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%B0%D0%B2%D1%96%D0%B0%D1%86%D1%96%D1%97_%D0%B9_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BE%D0%B6%D0%B5%D0%B6%D0%BD%D0%BE%D1%97_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8_-_%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%B0%D0%B2%D1%96%D0%B0%D1%86%D1%96%D1%97_%D0%B9_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BE%D0%B6%D0%B5%D0%B6%D0%BD%D0%BE%D1%97_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8_-_%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%B0%D0%B2%D1%96%D0%B0%D1%86%D1%96%D1%97_%D0%B9_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8.jpg/1280px-%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BE%D0%B6%D0%B5%D0%B6%D0%BD%D0%BE%D1%97_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8_-_%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%B0%D0%B2%D1%96%D0%B0%D1%86%D1%96%D1%97_%D0%B9_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8.jpg",
         author: "Бондар Володимир",
         license: "CC BY-SA 4.0",
         sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%BF%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D1%97_%D0%BF%D0%BE%D0%B6%D0%B5%D0%B6%D0%BD%D0%BE%D1%97_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B8_-_%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%B0%D0%B2%D1%96%D0%B0%D1%86%D1%96%D1%97_%D0%B9_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8.jpg"
@@ -6033,6 +6033,306 @@ const monuments = [
       {
         title: "Офіційний сайт УВУ",
         url: "http://www.ufu-muenchen.de/"
+      }
+    ]
+  },
+  {
+    id: 1973,
+    name: "Національне військове меморіальне кладовище",
+    type: "grave",
+    subtype: "Військове меморіальне кладовище",
+    category: "war_heroes",
+    person: "Полеглі захисники та захисниці України",
+    city: "Гатненська громада",
+    region: "Київська область",
+    country: "Україна",
+    lat: 50.2881,
+    lng: 30.3592,
+    year: 2025,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    openingDate: "29 серпня 2025 року",
+    description: "Державне військове меморіальне кладовище для поховання полеглих захисників і захисниць України на території Гатненської громади під Києвом.",
+    sources: [
+      {
+        title: "Вікіпедія: Національне військове меморіальне кладовище",
+        url: "https://uk.wikipedia.org/wiki/Національне_військове_меморіальне_кладовище"
+      },
+      {
+        title: "АрміяInform: відкрили Національне військове меморіальне кладовище (29.08.2025)",
+        url: "https://armyinform.com.ua/2025/08/29/tut-spochyvatymut-geroyi-vidkryly-naczionalne-memorialne-vijskove-kladovyshhe/"
+      }
+    ]
+  },
+  {
+    id: 1974,
+    name: "Донецький аеропорт — місце оборони «кіборгів»",
+    type: "historical_site",
+    subtype: "Місце оборони",
+    category: "war_heroes",
+    person: "Кіборги — захисники Донецького аеропорту",
+    occupied: true,
+    city: "Донецьк",
+    region: "Донецька область",
+    country: "Україна",
+    lat: 48.0736,
+    lng: 37.7397,
+    year: null,
+    eraYear: 2014,
+    eraYearEnd: 2015,
+    eventDate: "2014–2015 роки, 242 дні оборони",
+    description: "Українські військові 242 дні обороняли Донецький аеропорт; їх назвали «кіборгами». Зараз це тимчасово окупована територія.",
+    sources: [
+      {
+        title: "Вікіпедія: Кіборги (захисники Донецького аеропорту)",
+        url: "https://uk.wikipedia.org/wiki/Кіборги_(захисники_Донецького_аеропорту)"
+      },
+      {
+        title: "Вікіпедія: Донецьк (аеропорт)",
+        url: "https://uk.wikipedia.org/wiki/Донецьк_(аеропорт)"
+      }
+    ]
+  },
+  {
+    id: 1975,
+    name: "Острів Зміїний",
+    type: "historical_site",
+    subtype: "Місце боїв",
+    category: "war_heroes",
+    person: "Захисники острова Зміїний",
+    city: "Острів Зміїний",
+    region: "Одеська область",
+    country: "Україна",
+    lat: 45.255,
+    lng: 30.2042,
+    year: null,
+    eraYear: 2022,
+    eventDate: "2022 рік",
+    description: "Острів у Чорному морі, за який точилися бої в перші місяці повномасштабного вторгнення 2022 року.",
+    sources: [
+      {
+        title: "Вікіпедія: Бої за острів Зміїний",
+        url: "https://uk.wikipedia.org/wiki/Бої_за_острів_Зміїний"
+      },
+      {
+        title: "Вікіпедія: Зміїний (острів)",
+        url: "https://uk.wikipedia.org/wiki/Зміїний_(острів)"
+      }
+    ]
+  },
+  {
+    id: 1976,
+    name: "Завод «Азовсталь» — місце оборони Маріуполя",
+    type: "historical_site",
+    subtype: "Місце оборони",
+    category: "war_heroes",
+    person: "Захисники Маріуполя",
+    occupied: true,
+    city: "Маріуполь",
+    region: "Донецька область",
+    country: "Україна",
+    lat: 47.098,
+    lng: 37.61,
+    year: null,
+    eraYear: 2022,
+    eventDate: "2022 рік",
+    description: "Металургійний комбінат, на території якого 2022 року тривали бої за Маріуполь. Зараз це тимчасово окупована територія.",
+    sources: [
+      {
+        title: "Вікіпедія: Бої за Азовсталь",
+        url: "https://uk.wikipedia.org/wiki/Бої_за_Азовсталь"
+      },
+      {
+        title: "Вікіпедія: Битва за Маріуполь (2022)",
+        url: "https://uk.wikipedia.org/wiki/Битва_за_Маріуполь_(2022)"
+      }
+    ]
+  },
+  {
+    id: 1977,
+    name: "Буча — пам’ять про жертв окупації",
+    type: "historical_site",
+    subtype: "Місце пам’яті",
+    category: "war_heroes",
+    person: "Жертви російської окупації Бучі",
+    city: "Буча",
+    region: "Київська область",
+    country: "Україна",
+    lat: 50.5374,
+    lng: 30.2188,
+    year: null,
+    eraYear: 2022,
+    eventDate: "2022 рік",
+    description: "Після відходу російських військ навесні 2022 року в Бучі виявили братську могилу, де, за словами міського голови, поховали близько 280 людей. Масові вбивства цивільних стали відомі світові як Бучанська різанина.",
+    sources: [
+      {
+        title: "Вікіпедія: Бучанська різанина",
+        url: "https://uk.wikipedia.org/wiki/Бучанська_різанина"
+      },
+      {
+        title: "Українська правда: у Бучі в «братських могилах» поховали майже 300 людей (02.04.2022)",
+        url: "https://www.pravda.com.ua/news/2022/04/2/7336702/"
+      }
+    ]
+  },
+  {
+    id: 1978,
+    name: "Марсове поле — Личаківський військовий цвинтар",
+    type: "grave",
+    subtype: "Військовий цвинтар",
+    category: "war_heroes",
+    person: "Полеглі захисники України",
+    city: "Львів",
+    region: "Львівська область",
+    country: "Україна",
+    lat: 49.8351,
+    lng: 24.056,
+    year: null,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    description: "Військовий цвинтар на вулиці Мечникова. 20 травня 2022 року Львівська міська рада вирішила облаштувати тут Меморіальний комплекс Героїв України.",
+    sources: [
+      {
+        title: "Вікіпедія: Личаківський військовий цвинтар",
+        url: "https://uk.wikipedia.org/wiki/Личаківський_військовий_цвинтар"
+      },
+      {
+        title: "Центр міської історії: Марсове поле",
+        url: "https://lia.lvivcenter.org/uk/objects/marsove-pole/"
+      }
+    ]
+  },
+  {
+    id: 1979,
+    name: "Меморіал пам’яті 45 полеглих захисників у Сквері Героїв",
+    type: "memorial",
+    subtype: "Меморіальний простір",
+    category: "war_heroes",
+    person: "45 полеглих воїнів Сил оборони України",
+    city: "Дніпро",
+    region: "Дніпропетровська область",
+    country: "Україна",
+    lat: 48.4654,
+    lng: 35.0304,
+    year: 2025,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    openingDate: "Грудень 2025 року",
+    description: "У Сквері Героїв поблизу військової адміністрації розмістили портрети й історії 45 полеглих воїнів (проєкт «Історії Героїв»; ініціатори — 128-ма окрема важка механізована бригада «Дике Поле» та міська рада). Координати приблизні, за OpenStreetMap.",
+    sources: [
+      {
+        title: "АрміяInform: у Дніпрі відкрили меморіал пам’яті 45 полеглих захисників (26.12.2025)",
+        url: "https://armyinform.com.ua/2025/12/26/istoriyi-vykarbuvani-v-serczyah-nazavzhdy-u-dnipri-vidkryly-memorial-pamyati-45-poleglyh-zahysnykiv/"
+      },
+      {
+        title: "Ukraine Memorial: у Дніпрі урочисто відкрили Алею Героїв",
+        url: "https://ukraine-memorial.org/ua/news/u-dnipri-urochisto-vidkrili-aleyu-geroyiv/"
+      }
+    ]
+  },
+  {
+    id: 1980,
+    name: "Меморіал українським воєнним розвідникам",
+    type: "memorial",
+    category: "war_heroes",
+    person: "Полеглі воєнні розвідники та іноземні добровольці",
+    city: "Київ",
+    country: "Україна",
+    lat: 50.4563,
+    lng: 30.5227,
+    year: 2025,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    openingDate: "17 червня 2025 року",
+    description: "Перший в Україні меморіал воєнним розвідникам: дві стели, слово «Aeternitas» («Вічність») та імена загиблих на пам’ятних табличках. Розташований поблизу Михайлівського Золотоверхого собору; координати приблизні.",
+    author: "Назар Білик",
+    architect: "Андрій Лесюк",
+    sources: [
+      {
+        title: "Еспресо: у Києві відкрили перший в Україні меморіал українським розвідникам (17.06.2025)",
+        url: "https://espreso.tv/suspilstvo-u-kievi-vidkrili-pershiy-v-ukraini-memorial-ukrainskim-rozvidnikam"
+      },
+      {
+        title: "Укрінформ: у Києві відкрили меморіал українським розвідникам",
+        url: "https://www.ukrinform.ua/rubric-society/4005232-u-kievi-vidkrili-memorial-ukrainskim-rozvidnikam.html"
+      },
+      {
+        title: "Censor.net: меморіал на честь полеглих розвідників (біля Михайлівського собору)",
+        url: "https://censor.net/en/photonews/3507383/memorial_na_chest_poleglyh_rozvidnykiv"
+      }
+    ]
+  },
+  {
+    id: 1981,
+    name: "Меморіал «Небесний дозор»",
+    type: "memorial",
+    subtype: "Меморіальна скульптура",
+    category: "war_heroes",
+    person: "Полеглі воїни 10-го мобільного прикордонного загону «Дозор»",
+    city: "Київ",
+    country: "Україна",
+    lat: 50.4036,
+    lng: 30.7048,
+    year: 2024,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    openingDate: "1 жовтня 2024 року",
+    description: "Меморіальна скульптура в новоствореному сквері Героїв-прикордонників у Дарницькому районі Києва. Точна адреса в джерелах не вказана, тому координати — центр Дарницького району.",
+    sources: [
+      {
+        title: "Kyiv Post: у Києві відкрили меморіал на честь загиблих прикордонників (01.10.2024)",
+        url: "https://www.kyivpost.com/uk/post/39875"
+      },
+      {
+        title: "Interfax-Ukraine (Дарницький район)",
+        url: "https://en.interfax.com.ua/news/general/1017650.html"
+      }
+    ]
+  },
+  {
+    id: 1982,
+    name: "Меморіал полеглим військовим морякам",
+    type: "memorial",
+    category: "war_heroes",
+    person: "Полеглі воїни Військово-Морських сил ЗСУ",
+    city: "Одеса",
+    region: "Одеська область",
+    country: "Україна",
+    lat: 46.4452,
+    lng: 30.7541,
+    year: 2023,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    openingDate: "1 жовтня 2023 року",
+    description: "Меморіал у дендропарку Перемоги; його основа має вигляд синьо-білого гюйса з якорем і тризубом, на постаменті — емблеми всіх родів ВМС. Координати — центр парку.",
+    sources: [
+      {
+        title: "Еспресо: в Одесі відкрили меморіал у пам’ять полеглих військових моряків (02.10.2023)",
+        url: "https://espreso.tv/v-odesi-vidkrili-memorial-u-pamyat-poleglikh-viyskovikh-moryakiv"
+      }
+    ]
+  },
+  {
+    id: 1983,
+    name: "Алея Слави (Алея Героїв) у Каневі",
+    type: "memorial",
+    subtype: "Алея пам’яті",
+    category: "war_heroes",
+    person: "Загиблі захисники",
+    city: "Канів",
+    region: "Черкаська область",
+    country: "Україна",
+    lat: 49.7503,
+    lng: 31.4694,
+    year: 2026,
+    eraYear: 2014,
+    eraYearEnd: 2026,
+    openingDate: "23 травня 2026 року",
+    description: "Меморіал на центральній площі Канева з портретами загиблих захисників; на відкриття прийшли родини понад 100 полеглих.",
+    sources: [
+      {
+        title: "Суспільне Черкаси: Алея Слави у Каневі (23.05.2026)",
+        url: "https://suspilne.media/cherkasy/1314583-alea-geroiv-u-kanevi/"
       }
     ]
   }

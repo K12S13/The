@@ -74,6 +74,7 @@ for (const o of objects) {
 
   if (o.forgotten !== undefined && typeof o.forgotten !== 'boolean') err(o, 'forgotten має бути true/false')
   if (o.forgotten && !o.whyForgotten) err(o, 'forgotten: true потребує whyForgotten')
+  if (o.occupied !== undefined && typeof o.occupied !== 'boolean') err(o, 'occupied має бути true/false')
 
   for (const field of LEGACY_FIELDS) {
     if (field in o) err(o, `застаріле поле «${field}» — перенеси в images/videos/sources`)
