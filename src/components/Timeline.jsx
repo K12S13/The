@@ -84,7 +84,7 @@ export default function Timeline({ range, onChange, active, onActiveChange, unda
             <span>
               {active ? (
                 <>
-                  <strong>{formatYear(range[0])}</strong> — <strong>{formatYear(range[1])}</strong>
+                  <strong translate="no">{formatYear(range[0])}</strong> — <strong translate="no">{formatYear(range[1])}</strong>
                 </>
               ) : (
                 'Усі епохи'
@@ -125,7 +125,7 @@ export default function Timeline({ range, onChange, active, onActiveChange, unda
             />
           </div>
 
-          <div className="timeline__ticks" aria-hidden="true">
+          <div className="timeline__ticks" aria-hidden="true" translate="no">
             {TICKS.map((year) => (
               <span key={year} style={{ left: `${(yearToPos(year) / SLIDER_MAX) * 100}%` }}>
                 {year < 0 ? `${Math.abs(year) / 1000} тис. до н. е.` : year}

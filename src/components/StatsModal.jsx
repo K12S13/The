@@ -5,6 +5,15 @@ import Modal from './Modal'
 
 const HOME_COUNTRY = 'Україна'
 
+// Узгодження іменника з числом: 1 країна, 2 країни, 5 країн, 21 країна
+function plural(n, [one, few, many]) {
+  const mod10 = n % 10
+  const mod100 = n % 100
+  if (mod10 === 1 && mod100 !== 11) return one
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return few
+  return many
+}
+
 function Bars({ rows }) {
   const max = Math.max(1, ...rows.map((row) => row.value))
   return (
@@ -18,7 +27,9 @@ function Bars({ rows }) {
               style={{ width: `${(row.value / max) * 100}%`, background: row.color || 'var(--accent-ink)' }}
             />
           </span>
-          <span className="bars__value">{row.value}</span>
+          <span className="bars__value" translate="no">
+            {row.value}
+          </span>
         </li>
       ))}
     </ul>
@@ -66,16 +77,24 @@ export default function StatsModal({ objects, onClose }) {
     <Modal title="Цифри" onClose={onClose} className="modal--wide">
       <div className="stats-big">
         <div className="stat">
-          <span className="stat__value">{stats.total}</span>
-          <span className="stat__label">пам’яток на карті</span>
+          <span className="stat__value" translate="no">
+            {stats.total}
+          </span>
+          <span className="stat__label">{plural(stats.total, ['пам’ятка', 'пам’ятки', 'пам’яток'])} на карті</span>
         </div>
         <div className="stat stat--gold">
-          <span className="stat__value">{stats.forgotten}</span>
-          <span className="stat__label">забутих героїв</span>
+          <span className="stat__value" translate="no">
+            {stats.forgotten}
+          </span>
+          <span className="stat__label">{plural(stats.forgotten, ['забутий герой', 'забуті герої', 'забутих героїв'])}</span>
         </div>
         <div className="stat">
-          <span className="stat__value">{stats.countries.length}</span>
-          <span className="stat__label">країн за кордоном з українськими слідами</span>
+          <span className="stat__value" translate="no">
+            {stats.countries.length}
+          </span>
+          <span className="stat__label">
+            {plural(stats.countries.length, ['країна', 'країни', 'країн'])} за кордоном з українськими слідами
+          </span>
         </div>
       </div>
 
@@ -84,7 +103,9 @@ export default function StatsModal({ objects, onClose }) {
         <ul className="countries">
           {stats.countries.map((row) => (
             <li key={row.country}>
-              <strong>{row.country}</strong> <span className="countries__count">{row.count}</span>
+              <strong>{row.country}</strong> <span className="countries__count" translate="no">
+                {row.count}
+              </span>
               <span className="countries__cities">{row.cities.join(', ')}</span>
             </li>
           ))}

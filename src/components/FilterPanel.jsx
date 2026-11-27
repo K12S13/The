@@ -44,7 +44,7 @@ export default function FilterPanel({
         <span className="filter-panel__handle" aria-hidden="true" />
         <span className="filter-panel__title">Фільтри</span>
         <span className="filter-panel__count">
-          Знайдено: <strong>{foundCount}</strong>
+          Знайдено: <strong translate="no">{foundCount}</strong>
         </span>
         <span className="filter-panel__chevron" aria-hidden="true">
           {open ? '−' : '+'}
