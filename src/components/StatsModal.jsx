@@ -86,7 +86,7 @@ export default function StatsModal({ objects, onClose }) {
           <span className="stat__value" translate="no">
             {stats.forgotten}
           </span>
-          <span className="stat__label">{plural(stats.forgotten, ['забутий герой', 'забуті герої', 'забутих героїв'])}</span>
+          <span className="stat__label">{plural(stats.forgotten, ['пам’ятка', 'пам’ятки', 'пам’яток'])} у Червоній книзі</span>
         </div>
         <div className="stat">
           <span className="stat__value" translate="no">

@@ -104,7 +104,7 @@ export default function MapView({ objects, onSelect, onMapReady, fitKey }) {
             <Popup>
               <div className="map-popup">
                 <p className="map-popup__type">
-                  {item.forgotten && <span className="map-popup__forgotten">★ Забутий герой · </span>}
+                  {item.forgotten && <span className="map-popup__forgotten">★ Червона книга · </span>}
                   {item.subtype || getTypeInfo(item.type).label}
                 </p>
                 <h3>{item.name}</h3>

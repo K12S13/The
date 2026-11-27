@@ -74,8 +74,8 @@ export default function MapActions({
         disabled={!forgottenCount}
       >
         <span aria-hidden="true">★</span>{' '}
-        <span className="label-long">{forgottenOnly ? 'Показати всіх' : 'Лише забуті герої'}</span>
-        <span className="label-short">{forgottenOnly ? 'Усі' : 'Забуті'}</span>
+        <span className="label-long">{forgottenOnly ? 'Показати всі' : 'Червона книга пам’яток'}</span>
+        <span className="label-short">{forgottenOnly ? 'Усі' : 'Червона книга'}</span>
       </button>
       <button type="button" className="map-button map-button--light" onClick={onOpenStats}>
         Цифри
