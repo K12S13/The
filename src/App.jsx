@@ -1,597 +1,155 @@
-import ObjectModal from './components/ObjectModal/ObjectModal'
-import { useMemo, useState, useEffect } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
-import MarkerClusterGroup from 'react-leaflet-cluster'
-import L from 'leaflet'
+import { useCallback, useMemo, useState } from 'react'
 import literaryObjects from './Data/literaryObjects'
-import { fetchOsmLiteraryObjectsByBbox } from './api/fetchOsmLiteraryObjects'
+import { CATEGORIES, TYPES, getCategoryInfo, getTypeInfo } from './Data/schema'
+import { MAX_YEAR, MIN_YEAR, inEra } from './map/timeScale'
+import MapView from './components/MapView'
+import MapActions from './components/MapActions'
+import FilterPanel from './components/FilterPanel'
+import Timeline from './components/Timeline'
+import ObjectModal from './components/ObjectModal/ObjectModal'
+import StatsModal from './components/StatsModal'
+import AboutModal from './components/AboutModal'
 
-const personColors = {
-  'Тарас Шевченко': '#2563eb',
-  'Леся Українка': '#facc15',
-  'Іван Франко': '#f97316',
-  'Ліна Костенко': '#16a34a',
-  'Григорій Сковорода': '#7c3aed',
-  'Іван Котляревський': '#ec4899',
-  'Михайло Коцюбинський': '#14b8a6',
-  'Василь Стус': '#ef4444',
-  'Олена Теліга': '#8b5cf6',
-  'Пантелеймон Куліш': '#a16207',
-  'Павло Тичина': '#0ea5e9',
-  'Максим Рильський': '#22c55e',
-  'Марко Вовчок': '#e11d48',
-  default: '#334155'
-}
-const categoryColors = {
-  'Літературні діячі': '#2563eb',
-  'Історичні діячі': '#dc2626',
-  'Військова історія': '#d97706',
-  'Національно-визвольний рух': '#7c3aed',
-  'Культурні діячі': '#db2777',
-  'Науковці': '#0891b2',
-  'Історичні місця': '#16a34a',
-  default: '#64748b'
+const ALL = 'Усі'
+
+const INITIAL_FILTERS = {
+  search: '',
+  category: ALL,
+  person: ALL,
+  country: ALL,
+  type: ALL
 }
 
-const objectTypes = {
-  monument: 'Пам’ятник',
-  memorial: 'Меморіал',
-  plaque: 'Меморіальна дошка',
-  museum: 'Музей',
-  university: 'Університет',
-  grave: 'Могила',
-  park: 'Парк',
-  building: 'Будівля',
-  composition: 'Композиція',
-  object: 'Об’єкт'
-}
-
-const controlStyle = {
-  width: '100%',
-  marginTop: '4px',
-  boxSizing: 'border-box'
-}
-
-function getMarkerShape(type, color) {
-  const base = `
-  background: ${color};
-  border: 3px solid white;
-  box-shadow: 0 0 7px rgba(0,0,0,0.45);
-  `
-
-  switch (type) {
-    case 'university':
-      return `<div style="width:20px;height:20px;${base}border-radius:4px;"></div>`
-    case 'plaque':
-      return `<div style="width:26px;height:16px;${base}border-radius:4px;"></div>`
-    case 'museum':
-      return `<div style="width:20px;height:20px;${base}transform:rotate(45deg);border-radius:4px;"></div>`
-    case 'grave':
-      return `
-      <div style="position:relative;width:22px;height:22px;">
-      <div style="position:absolute;left:8px;top:0;width:6px;height:22px;${base}border-radius:2px;"></div>
-      <div style="position:absolute;left:0;top:7px;width:22px;height:6px;${base}border-radius:2px;"></div>
-      </div>
-      `
-    case 'park':
-      return `<div style="width:24px;height:16px;${base}border-radius:50% 50% 50% 0;transform:rotate(-35deg);"></div>`
-    case 'building':
-      return `
-      <div style="
-      width:22px;
-      height:18px;
-      ${base}
-      border-radius:2px;
-      clip-path: polygon(50% 0%, 100% 35%, 100% 100%, 0 100%, 0 35%);
-      "></div>
-      `
-    case 'composition':
-      return `
-      <div style="
-      width:22px;
-      height:22px;
-      ${base}
-      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-      "></div>
-      `
-    case 'monument':
-    case 'memorial':
-    default:
-      return `<div style="width:20px;height:20px;${base}border-radius:50%;"></div>`
-  }
-}
-
-function createCustomIcon(type, color) {
-  return L.divIcon({
-    className: '',
-    html: getMarkerShape(type, color),
-                   iconSize: [28, 28],
-                   iconAnchor: [14, 14],
-                   popupAnchor: [0, -12]
-  })
-}
-
-function createClusterIcon(cluster) {
-  const count = cluster.getChildCount()
-
-  return L.divIcon({
-    className: '',
-    html: `
-    <div style="
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #2563eb;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 15px;
-    border: 3px solid white;
-    box-shadow: 0 0 12px rgba(0,0,0,0.5);
-    ">
-    ${count}
-    </div>
-    `,
-    iconSize: [44, 44],
-    iconAnchor: [22, 22]
-  })
-}
-
-function OsmButton({ setOsmObjects, setShowOsmObjects, setOsmLoading, setOsmError, osmLoading }) {
-  const map = useMap()
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600)
-
-  useEffect(() => {
-    const resize = () => setIsMobile(window.innerWidth <= 600)
-    window.addEventListener('resize', resize)
-    return () => window.removeEventListener('resize', resize)
-  }, [])
-
-  async function load() {
-    try {
-      setOsmLoading(true)
-      setOsmError('')
-
-      const b = map.getBounds()
-      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`
-      const data = await fetchOsmLiteraryObjectsByBbox(bbox)
-
-      setOsmObjects((prev) => {
-        const unique = new Map(prev.map((item) => [item.id, item]))
-        data.forEach((item) => unique.set(item.id, item))
-        return [...unique.values()]
-      })
-
-      setShowOsmObjects(true)
-    } catch (e) {
-      console.error(e)
-      setOsmError('OSM не відповів або область завелика. Наблизь карту і спробуй ще раз.')
-    } finally {
-      setOsmLoading(false)
-    }
-  }
-
-  return (
-    <button
-    type="button"
-    onClick={load}
-    disabled={osmLoading}
-    style={{
-      position: 'absolute',
-      top: '15px',
-      right: '15px',
-      zIndex: 2000,
-      padding: isMobile ? '10px 14px' : '10px 12px',
-      borderRadius: '8px',
-      border: 'none',
-      background: '#171717',
-      color: 'white',
-      cursor: 'pointer',
-      boxShadow: '0 2px 12px rgba(0,0,0,0.35)',
-          fontWeight: 600
-    }}
-    >
-    {osmLoading ? '...' : isMobile ? 'OSM' : 'Завантажити OSM'}
-    </button>
-  )
-}
+const uniqueSorted = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'uk'))
 
 export default function App() {
-  const [filtersOpen, setFiltersOpen] = useState(true)
+  const [filtersOpen, setFiltersOpen] = useState(() => window.matchMedia('(min-width: 761px)').matches)
   const [selectedObject, setSelectedObject] = useState(null)
-  const [selectedCategory, setSelectedCategory] = useState('Усі')
-  const [searchQuery, setSearchQuery] = useState('')
-
-  const [selectedPerson, setSelectedPerson] = useState('Усі')
-  const [selectedCountry, setSelectedCountry] = useState('Усі')
-  const [selectedType, setSelectedType] = useState('Усі')
-  const [yearFrom, setYearFrom] = useState('')
-  const [yearTo, setYearTo] = useState('')
+  const [filters, setFilters] = useState(INITIAL_FILTERS)
+  const [forgottenOnly, setForgottenOnly] = useState(false)
+  const [eraRange, setEraRange] = useState([MIN_YEAR, MAX_YEAR])
+  const [eraActive, setEraActive] = useState(false)
+  const [dialog, setDialog] = useState(null) // 'stats' | 'about' | null
+  const [map, setMap] = useState(null)
 
   const [osmObjects, setOsmObjects] = useState([])
   const [showOsmObjects, setShowOsmObjects] = useState(false)
   const [osmLoading, setOsmLoading] = useState(false)
   const [osmError, setOsmError] = useState('')
 
+  const setFilter = useCallback((key, value) => setFilters((prev) => ({ ...prev, [key]: value })), [])
+  const closeModal = useCallback(() => setSelectedObject(null), [])
+  const closeDialog = useCallback(() => setDialog(null), [])
 
+  const handleOsmLoaded = useCallback((data) => {
+    setOsmObjects((prev) => {
+      const unique = new Map(prev.map((item) => [item.id, item]))
+      data.forEach((item) => unique.set(item.id, item))
+      return [...unique.values()]
+    })
+    setShowOsmObjects(true)
+  }, [])
 
-  const allObjects = useMemo(() => {
-    return showOsmObjects
-    ? [...literaryObjects, ...osmObjects]
-    : literaryObjects
-  }, [osmObjects, showOsmObjects])
+  const allObjects = useMemo(
+    () => (showOsmObjects ? [...literaryObjects, ...osmObjects] : literaryObjects),
+    [osmObjects, showOsmObjects]
+  )
 
-  const categories = useMemo(() => {
-  return [
-    'Усі',
-    ...new Set(
-      allObjects.map(item =>
-        item.category || 'Літературні діячі'
-      )
-    )
-  ]
-}, [allObjects])
-
-  const persons = useMemo(() => {
-    return ['Усі', ...new Set(allObjects.map(item => item.person).filter(Boolean))]
+  const options = useMemo(() => {
+    const presentCategories = new Set(allObjects.map((item) => item.category).filter(Boolean))
+    const presentTypes = new Set(allObjects.map((item) => item.type))
+    return {
+      categories: [
+        ...Object.keys(CATEGORIES).filter((key) => presentCategories.has(key)),
+        ...[...presentCategories].filter((key) => !CATEGORIES[key])
+      ],
+      types: Object.keys(TYPES).filter((key) => presentTypes.has(key)),
+      persons: uniqueSorted(allObjects.map((item) => item.person)),
+      countries: uniqueSorted(allObjects.map((item) => item.country))
+    }
   }, [allObjects])
 
-  const countries = useMemo(() => {
-    return ['Усі', ...new Set(allObjects.map(item => item.country).filter(Boolean))]
-  }, [allObjects])
-
-  const types = useMemo(() => {
-    return ['Усі', ...new Set(allObjects.map(item => item.type || 'object'))]
-  }, [allObjects])
-
-const filtered = useMemo(() => {
-  const query = searchQuery.trim().toLocaleLowerCase('uk')
-
-  return allObjects.filter(item => {
-    const category = item.category || 'Літературні діячі'
-
-    const matchesSearch =
-      !query ||
-      [
+  // Усі фільтри, крім часової шкали
+  const matched = useMemo(() => {
+    const query = filters.search.trim().toLocaleLowerCase('uk')
+    return allObjects.filter((item) => {
+      if (forgottenOnly && !item.forgotten) return false
+      if (filters.category !== ALL && item.category !== filters.category) return false
+      if (filters.person !== ALL && item.person !== filters.person) return false
+      if (filters.country !== ALL && item.country !== filters.country) return false
+      if (filters.type !== ALL && item.type !== filters.type) return false
+      if (!query) return true
+      return [
         item.name,
         item.person,
         item.city,
         item.region,
         item.country,
         item.description,
-        category
+        item.subtype,
+        getCategoryInfo(item.category).label,
+        getTypeInfo(item.type).label
       ]
         .filter(Boolean)
-        .some(value =>
-          String(value).toLocaleLowerCase('uk').includes(query)
-        )
+        .some((value) => String(value).toLocaleLowerCase('uk').includes(query))
+    })
+  }, [allObjects, filters, forgottenOnly])
 
-    const matchCategory =
-      selectedCategory === 'Усі' ||
-      category === selectedCategory
-
-    const matchPerson =
-      selectedPerson === 'Усі' ||
-      item.person === selectedPerson
-
-    const matchCountry =
-      selectedCountry === 'Усі' ||
-      item.country === selectedCountry
-
-    const matchType =
-      selectedType === 'Усі' ||
-      (item.type || 'object') === selectedType
-
-    const matchYearFrom =
-      yearFrom === '' ||
-      !item.year ||
-      Number(item.year) >= Number(yearFrom)
-
-    const matchYearTo =
-      yearTo === '' ||
-      !item.year ||
-      Number(item.year) <= Number(yearTo)
-
-    return (
-      matchesSearch &&
-      matchCategory &&
-      matchPerson &&
-      matchCountry &&
-      matchType &&
-      matchYearFrom &&
-      matchYearTo
-    )
-  })
-}, [
-  allObjects,
-  searchQuery,
-  selectedCategory,
-  selectedPerson,
-  selectedCountry,
-  selectedType,
-  yearFrom,
-  yearTo
-])
+  const filtered = useMemo(
+    () => (eraActive ? matched.filter((item) => inEra(item, eraRange[0], eraRange[1])) : matched),
+    [matched, eraActive, eraRange]
+  )
+  const undatedCount = useMemo(() => matched.filter((item) => item.eraYear === undefined).length, [matched])
+  // Ключ для автонаведення карти: змінюється лише з фільтрами (порожній — якщо фільтри скинуті)
+  const fitKey = useMemo(() => {
+    const active = forgottenOnly || Object.entries(filters).some(([key, value]) => value !== INITIAL_FILTERS[key])
+    return active ? JSON.stringify([filters, forgottenOnly]) : ''
+  }, [filters, forgottenOnly])
+  const forgottenCount = useMemo(() => literaryObjects.filter((item) => item.forgotten).length, [])
 
   return (
-    <div style={{ height: '100vh', width: '100%', position: 'relative' }}>
-    <div
-    style={{
-      position: 'absolute',
-      top: '15px',
-      left: '15px',
-      zIndex: 2000,
-      background: '#171717',
-      color: 'white',
-      padding: '12px',
-      borderRadius: '10px',
-      boxShadow: '0 2px 12px rgba(0,0,0,0.35)',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '8px',
-          width: 'min(280px, calc(100vw - 30px))'
-    }}
-    >
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-    <h3 style={{ margin: 0 }}>Фільтри</h3>
-    <label>
-  Пошук пам'яток:
-  <input
-    type="search"
-    value={searchQuery}
-    onChange={e => setSearchQuery(e.target.value)}
-    placeholder="Назва, діяч, місто..."
-    style={controlStyle}
-  />
-</label>
-
-<label>
-  Категорія:
-  <select
-    value={selectedCategory}
-    onChange={e => setSelectedCategory(e.target.value)}
-    style={controlStyle}
-  >
-    {categories.map(category => (
-      <option key={category} value={category}>
-        {category}
-      </option>
-    ))}
-  </select>
-</label>
-
-    <button
-    type="button"
-    onClick={() => setFiltersOpen(!filtersOpen)}
-    style={{
-      background: '#333',
-      color: 'white',
-      border: 'none',
-      borderRadius: '6px',
-      padding: '4px 10px',
-      cursor: 'pointer'
-    }}
-    >
-    {filtersOpen ? '−' : '+'}
-    </button>
-    </div>
-
-    {filtersOpen && (
-      <>
-      <label>
-      Персона:
-      <select
-      value={selectedPerson}
-      onChange={(e) => setSelectedPerson(e.target.value)}
-      style={controlStyle}
-      >
-      {persons.map(person => (
-        <option key={person} value={person}>
-        {person}
-        </option>
-      ))}
-      </select>
-      </label>
-
-      <label>
-      Країна:
-      <select
-      value={selectedCountry}
-      onChange={(e) => setSelectedCountry(e.target.value)}
-      style={controlStyle}
-      >
-      {countries.map(country => (
-        <option key={country} value={country}>
-        {country}
-        </option>
-      ))}
-      </select>
-      </label>
-
-      <label>
-      Тип об’єкта:
-      <select
-      value={selectedType}
-      onChange={(e) => setSelectedType(e.target.value)}
-      style={controlStyle}
-      >
-      {types.map(type => (
-        <option key={type} value={type}>
-        {type === 'Усі' ? 'Усі' : objectTypes[type] || type}
-        </option>
-      ))}
-      </select>
-      </label>
-
-      <label>
-      Рік від:
-      <input
-      type="number"
-      value={yearFrom}
-      onChange={(e) => setYearFrom(e.target.value)}
-      placeholder="Напр. 1900"
-      style={controlStyle}
+    <div className="app">
+      <FilterPanel
+        open={filtersOpen}
+        onToggle={() => setFiltersOpen((open) => !open)}
+        filters={filters}
+        setFilter={setFilter}
+        onReset={() => {
+          setFilters(INITIAL_FILTERS)
+          setForgottenOnly(false)
+        }}
+        options={options}
+        foundCount={filtered.length}
+        showOsm={showOsmObjects}
+        onShowOsmChange={setShowOsmObjects}
+        osmLoading={osmLoading}
+        osmError={osmError}
       />
-      </label>
 
-      <label>
-      Рік до:
-      <input
-      type="number"
-      value={yearTo}
-      onChange={(e) => setYearTo(e.target.value)}
-      placeholder="Напр. 2000"
-      style={controlStyle}
+      <MapView objects={filtered} onSelect={setSelectedObject} onMapReady={setMap} fitKey={fitKey} />
+
+      <MapActions
+        map={map}
+        forgottenOnly={forgottenOnly}
+        onForgottenToggle={() => setForgottenOnly((on) => !on)}
+        forgottenCount={forgottenCount}
+        onOpenStats={() => setDialog('stats')}
+        onOpenAbout={() => setDialog('about')}
+        osm={{ onLoaded: handleOsmLoaded, setLoading: setOsmLoading, setError: setOsmError, loading: osmLoading }}
       />
-      </label>
 
-      <label style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-      <input
-      type="checkbox"
-      checked={showOsmObjects}
-      onChange={(e) => setShowOsmObjects(e.target.checked)}
+      <Timeline
+        range={eraRange}
+        onChange={setEraRange}
+        active={eraActive}
+        onActiveChange={setEraActive}
+        undatedCount={undatedCount}
+        shownCount={filtered.length}
       />
-      Показати OSM-точки
-      </label>
 
-      {osmLoading && (
-        <p style={{ margin: 0, fontSize: '13px' }}>
-        Завантаження OSM...
-        </p>
-      )}
-
-      {osmError && (
-        <p style={{ margin: 0, color: '#f87171', fontSize: '13px' }}>
-        {osmError}
-        </p>
-      )}
-
-      <button
-      onClick={() => {
-        setSelectedPerson('Усі')
-        setSelectedCountry('Усі')
-        setSelectedType('Усі')
-        setSelectedCategory('Усі')
-        setSearchQuery('')
-        setYearFrom('')
-        setYearTo('')
-      }}
-      style={controlStyle}
-      >
-      Скинути фільтри
-      </button>
-
-      <p style={{ margin: 0 }}>
-      Знайдено: <strong>{filtered.length}</strong>
-      </p>
-
-      <div style={{ fontSize: '12px', opacity: 0.85, lineHeight: '1.5' }}>
-      <div>● пам’ятник / меморіал</div>
-      <div>■ університет</div>
-      <div>▭ дошка</div>
-      <div>◆ музей</div>
-      <div>✚ могила</div>
-      </div>
-      </>
-    )}
-    </div>
-
-    <MapContainer
-    key="main-map"
-    zoomControl={false}
-    center={[50.45, 30.52]}
-    zoom={4}
-    minZoom={3}
-    maxZoom={18}
-    maxBounds={[
-      [-85, -180],
-      [85, 180]
-    ]}
-    maxBoundsViscosity={1}
-    style={{ height: '100%', width: '100%' }}
-    >
-    <TileLayer
-    attribution="&copy; OpenStreetMap contributors"
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    noWrap={true}
-    />
-
-    <OsmButton
-    setOsmObjects={setOsmObjects}
-    setShowOsmObjects={setShowOsmObjects}
-    setOsmLoading={setOsmLoading}
-    setOsmError={setOsmError}
-    osmLoading={osmLoading}
-    />
-
-    <MarkerClusterGroup
-      chunkedLoading
-      chunkInterval={100}
-      chunkDelay={50}
-      showCoverageOnHover={false}
-      spiderfyOnMaxZoom
-      removeOutsideVisibleBounds
-      animateAddingMarkers={false}
-      disableClusteringAtZoom={13}
-      maxClusterRadius={(zoom) => {
-        if (zoom <= 4) return 120
-        if (zoom <= 6) return 90
-        if (zoom <= 8) return 60
-        return 35
-      }}
-      iconCreateFunction={createClusterIcon}
-    >
-    {filtered.map(item => {
-const category = item.category || 'Літературні діячі'
-
-const color =
-  categoryColors[category] || categoryColors.default
-      const icon = createCustomIcon(item.type, color)
-
-      return (
-        <Marker
-        key={`${item.isOsm ? 'osm' : 'local'}-${item.id}`}
-        position={[item.lat, item.lng]}
-        icon={icon}
-        >
-        <Popup>
-          <div className="map-popup">
-            <h3>{item.name}</h3>
-
-            <p>
-              <strong>Персона:</strong> {item.person || 'Невідомо'}
-            </p>
-
-            <p>
-              <strong>Місто:</strong> {item.city || 'Невідомо'}
-            </p>
-
-            <p>
-              <strong>Рік:</strong> {item.year || 'Невідомо'}
-            </p>
-
-            <button
-              type="button"
-              className="map-popup__button"
-              onClick={() => setSelectedObject(item)}
-            >
-              Детальніше про об'єкт
-            </button>
-          </div>
-        </Popup>
-        </Marker>
-      )
-    })}
-    </MarkerClusterGroup>
-    </MapContainer>
-    {selectedObject && (
-  <ObjectModal
-    object={selectedObject}
-    onClose={() => setSelectedObject(null)}
-  />
-)}
+      {selectedObject && <ObjectModal object={selectedObject} onClose={closeModal} />}
+      {dialog === 'stats' && <StatsModal objects={literaryObjects} onClose={closeDialog} />}
+      {dialog === 'about' && <AboutModal onClose={closeDialog} />}
     </div>
   )
 }
