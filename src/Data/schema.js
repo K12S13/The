@@ -32,6 +32,7 @@ export const CATEGORIES = {
   cossack: { label: 'Козацтво, замки й фортеці', color: '#9e3b33' },
   independence: { label: 'Державність і визвольні змагання', color: '#2e6f9e' },
   tragedies: { label: 'Війни, трагедії й пам’ять', color: '#4a4540' },
+  war_heroes: { label: 'Герої України: війна з 2014', color: '#5b6b2f' },
   folk: { label: 'Музеї й народна культура', color: '#5f7f3c' }
 }
 
