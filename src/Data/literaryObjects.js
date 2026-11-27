@@ -80,6 +80,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Монумент на проспекті Свободи в центрі Львова.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Statue_of_Taras_Shevchenko_in_Lviv_%2801%29.jpg/1280px-Statue_of_Taras_Shevchenko_in_Lviv_%2801%29.jpg",
+        author: "Michał Bulsa",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Statue_of_Taras_Shevchenko_in_Lviv_(01).jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Львів)",
@@ -213,6 +221,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Пам’ятник перед Волинським національним університетом.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2._%D0%93._%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83%2C_%D0%9B%D1%83%D1%86%D1%8C%D0%BA.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2._%D0%93._%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83%2C_%D0%9B%D1%83%D1%86%D1%8C%D0%BA.jpg",
+        author: "Yurii Fetysov",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2._%D0%93._%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83,_%D0%9B%D1%83%D1%86%D1%8C%D0%BA.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Луцьк)",
@@ -292,6 +308,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Пам’ятник у місті, пов’язаному з шевченківською спадщиною.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2.%D0%93.%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B0%D1%85.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2.%D0%93.%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B0%D1%85.jpg",
+        author: "Bohdan Yaresko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2.%D0%93.%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%D0%B2_%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B0%D1%85.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Тарасові Шевченку (Черкаси)",
@@ -317,6 +341,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Пам’ятник молодому Шевченку на Валу.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%28%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%2C_%D0%92%D0%B0%D0%BB%D0%B8%29.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%28%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2%2C_%D0%92%D0%B0%D0%BB%D0%B8%29.jpg",
+        author: "Olga Loboda 0806",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_(%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D1%96%D0%B2,_%D0%92%D0%B0%D0%BB%D0%B8).jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Шевченко Тарас Григорович",
@@ -338,6 +370,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Пам’ятник біля театру на Театральній площі.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE%D0%B5%D1%82%D1%83%2C_%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D1%83%2C_%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA%D1%83_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83.jpg/1280px-thumbnail.jpg",
+        author: "Еколог Світлана",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%BF%D0%BE%D0%B5%D1%82%D1%83,_%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA%D1%83,_%D1%85%D1%83%D0%B4%D0%BE%D0%B6%D0%BD%D0%B8%D0%BA%D1%83_%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Шевченко Тарас Григорович",
@@ -480,6 +520,14 @@ const monuments = [
     eraYear: 1871,
     eraYearEnd: 1913,
     description: "Пам’ятник у Центральному парку культури і відпочинку.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/%D0%9B%D1%83%D1%86%D1%8C%D0%BA_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D0%B2_%D0%BF%D0%B0%D1%80%D0%BA%D1%83.jpg/1280px-%D0%9B%D1%83%D1%86%D1%8C%D0%BA_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D0%B2_%D0%BF%D0%B0%D1%80%D0%BA%D1%83.jpg",
+        author: "Domalchuk",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%83%D1%86%D1%8C%D0%BA_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D0%B2_%D0%BF%D0%B0%D1%80%D0%BA%D1%83.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Леся Українка",
@@ -501,6 +549,14 @@ const monuments = [
     eraYear: 1871,
     eraYearEnd: 1913,
     description: "Пам’ятник біля парку імені Лесі Українки.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%2C_%D0%9A%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%2C_%D0%9A%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C.jpg",
+        author: "Yurii Fetysov",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96,_%D0%9A%D0%BE%D0%B2%D0%B5%D0%BB%D1%8C.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Леся Українка",
@@ -522,6 +578,14 @@ const monuments = [
     eraYear: 1871,
     eraYearEnd: 1913,
     description: "Погруддя на території музею-садиби Лесі Українки.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/8/81/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96%2C_%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D1%8F%D0%B6%D0%BD%D0%B5%2C_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8.jpg",
+        author: "Yurii Fetysov",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96,_%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D1%8F%D0%B6%D0%BD%D0%B5,_%D0%BD%D0%B0_%D1%82%D0%B5%D1%80%D0%B8%D1%82%D0%BE%D1%80%D1%96%D1%97_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Леся Українка",
@@ -543,6 +607,14 @@ const monuments = [
     eraYear: 1871,
     eraYearEnd: 1913,
     description: "Пам’ятник у Ялті біля місць, пов’язаних із перебуванням поетеси.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D0%B1%D1%96%D0%BB%D1%8F_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%B2_%D0%AF%D0%BB%D1%82%D1%96-2012.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D0%B1%D1%96%D0%BB%D1%8F_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%B2_%D0%AF%D0%BB%D1%82%D1%96-2012.jpg",
+        author: "MUDRIST",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D0%B1%D1%96%D0%BB%D1%8F_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%B2_%D0%AF%D0%BB%D1%82%D1%96-2012.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Леся Українка",
@@ -564,6 +636,14 @@ const monuments = [
     eraYear: 1871,
     eraYearEnd: 1913,
     description: "Пам’ятник у рідному місті Лесі Українки.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/d/d1/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D1%83_%D0%97%D0%B2%D1%8F%D0%B3%D0%B5%D0%BB%D1%96.jpg",
+        author: "Mukolka Ohorodnyk",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_%D1%83_%D0%97%D0%B2%D1%8F%D0%B3%D0%B5%D0%BB%D1%96.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Леся Українка",
@@ -606,6 +686,14 @@ const monuments = [
     eraYear: 1871,
     eraYearEnd: 1913,
     description: "Погруддя біля сільського будинку культури.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96%D0%B9_%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D1%86%D1%96_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_1967%D1%80.%D1%81._%D0%91%D1%96%D0%BB%D0%BE%D0%B1%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8F.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96%D0%B9_%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D1%86%D1%96_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_1967%D1%80.%D1%81._%D0%91%D1%96%D0%BB%D0%BE%D0%B1%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8F.jpg",
+        author: "Петро Грушко",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96%D0%B9_%D0%BF%D0%B8%D1%81%D1%8C%D0%BC%D0%B5%D0%BD%D0%BD%D0%B8%D1%86%D1%96_%D0%9B%D0%B5%D1%81%D1%96_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%86%D1%96_1967%D1%80.%D1%81._%D0%91%D1%96%D0%BB%D0%BE%D0%B1%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8F.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Леся Українка",
@@ -673,6 +761,14 @@ const monuments = [
     eraYear: 1856,
     eraYearEnd: 1916,
     description: "Монумент перед головним корпусом Львівського університету.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D1%83_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96_2022.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D1%83_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96_2022.jpg",
+        author: "СЕРП75ДНІПРО",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D1%83_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_%D1%83_%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%96_2022.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Львів)",
@@ -723,6 +819,14 @@ const monuments = [
     eraYear: 1856,
     eraYearEnd: 1916,
     description: "Пам’ятник Іванові Франку в обласному центрі.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_%D0%BD%D0%B0_%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%B0_28.jpg/1280px-%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%2C_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_%D0%BD%D0%B0_%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%B0_28.jpg",
+        author: "ЯдвигаВереск",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA,_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_%D0%BD%D0%B0_%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%B0_28.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Іванові Франку (Івано-Франківськ)",
@@ -907,6 +1011,14 @@ const monuments = [
     eraYear: 1856,
     eraYearEnd: 1916,
     description: "Монумент, де поруч зображені Шевченко, Франко та Леся Українка.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B1%D1%83%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D0%BC_%28%D0%A1%D1%82%D1%80%D0%B8%D0%B9%29_01.JPG/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B1%D1%83%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D0%BC_%28%D0%A1%D1%82%D1%80%D0%B8%D0%B9%29_01.JPG",
+        author: "Елвіс",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%B1%D1%83%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8F%D0%BC_(%D0%A1%D1%82%D1%80%D0%B8%D0%B9)_01.JPG"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Франко Іван Якович",
@@ -949,6 +1061,14 @@ const monuments = [
     eraYear: 1856,
     eraYearEnd: 1916,
     description: "Пам’ятник у сквері на вулиці Сагайдачного.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C_-_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_-_4154.jpg/1280px-%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C_-_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_-_4154.jpg",
+        author: "Olkko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B5%D1%80%D0%BD%D0%BE%D0%BF%D1%96%D0%BB%D1%8C_-_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83_-_4154.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Франко Іван Якович",
@@ -970,6 +1090,14 @@ const monuments = [
     eraYear: 1856,
     eraYearEnd: 1916,
     description: "Пам’ятник Франкові в Борщеві.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%AF%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D1%83_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83._%D0%BC._%D0%91%D0%BE%D1%80%D1%89%D1%96%D0%B2.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%AF%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D1%83_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83._%D0%BC._%D0%91%D0%BE%D1%80%D1%89%D1%96%D0%B2.jpg",
+        author: "Педагог Світлана",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%AF%D0%BA%D0%BE%D0%B2%D0%B8%D1%87%D1%83_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83._%D0%BC._%D0%91%D0%BE%D1%80%D1%89%D1%96%D0%B2.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Франко Іван Якович",
@@ -1012,6 +1140,14 @@ const monuments = [
     eraYear: 1856,
     eraYearEnd: 1916,
     description: "Погруддя Івана Франка в Теребовлі.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/%D0%A2%D0%B5%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%BB%D1%8F_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83.jpg/1280px-%D0%A2%D0%B5%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%BB%D1%8F_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83.jpg",
+        author: "Еколог Світлана",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B5%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%BB%D1%8F_%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%96_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%83.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Франко Іван Якович",
@@ -1108,6 +1244,14 @@ const monuments = [
     eraYear: 1722,
     eraYearEnd: 1794,
     description: "Один із ранніх пам’ятників Григорію Сковороді.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D1%96%D1%8E_%D0%A1%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D1%96_%28%D0%9B%D0%BE%D1%85%D0%B2%D0%B8%D1%86%D1%8F%29.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D1%96%D1%8E_%D0%A1%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D1%96_%28%D0%9B%D0%BE%D1%85%D0%B2%D0%B8%D1%86%D1%8F%29.jpg",
+        author: "Igorpysh",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%93%D1%80%D0%B8%D0%B3%D0%BE%D1%80%D1%96%D1%8E_%D0%A1%D0%BA%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D0%B4%D1%96_(%D0%9B%D0%BE%D1%85%D0%B2%D0%B8%D1%86%D1%8F).jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Сковорода Григорій Савич",
@@ -1162,6 +1306,14 @@ const monuments = [
     eraYear: 1938,
     eraYearEnd: 1985,
     description: "Пам’ятник українському поету-дисиденту.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Vinnytsia_Monument_V_Stus_3.jpg/1280px-Vinnytsia_Monument_V_Stus_3.jpg",
+        author: "Dgho",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Vinnytsia_Monument_V_Stus_3.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Василю Стусу (Вінниця)",
@@ -1436,6 +1588,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Пам’ятник Шевченку в столиці української громади Канади.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Winnipeg_Shevchenko_Sculpture.jpg/1280px-Winnipeg_Shevchenko_Sculpture.jpg",
+        author: "Dan McKay from Winnipeg, Canada",
+        license: "CC BY 2.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Winnipeg_Shevchenko_Sculpture.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Шевченко Тарас Григорович",
@@ -1549,6 +1709,14 @@ const monuments = [
     eraYear: 1814,
     eraYearEnd: 1861,
     description: "Пам’ятник у сквері біля української греко-католицької церкви.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%28%D0%9C%D0%B8%D0%BA%D0%B8%D1%82%D1%8E%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87%29%2C_2019_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82.jpg/1280px-%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_%28%D0%9C%D0%B8%D0%BA%D0%B8%D1%82%D1%8E%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87%29%2C_2019_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82.jpg",
+        author: "Globetrotter19",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B0%D1%80%D0%B0%D1%81%D0%BE%D0%B2%D1%96_%D0%A8%D0%B5%D0%B2%D1%87%D0%B5%D0%BD%D0%BA%D1%83_(%D0%9C%D0%B8%D0%BA%D0%B8%D1%82%D1%8E%D0%BA_%D0%86%D0%B2%D0%B0%D0%BD_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8C%D0%BE%D0%B2%D0%B8%D1%87),_2019_%D0%91%D1%83%D0%B4%D0%B0%D0%BF%D0%B5%D1%88%D1%82.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Шевченко Тарас Григорович",
@@ -1960,6 +2128,14 @@ const monuments = [
     eraYear: 1722,
     eraYearEnd: 1794,
     description: "Скульптура в Парку Книги на Алеї митців.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Hryhoriy_Skovoroda_monument_in_Ljubliana.jpg/1280px-Hryhoriy_Skovoroda_monument_in_Ljubliana.jpg",
+        author: "The Presidential Administration of Ukraine",
+        license: "CC BY 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Hryhoriy_Skovoroda_monument_in_Ljubliana.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Сковорода Григорій Савич",
@@ -2186,6 +2362,14 @@ const monuments = [
     description: "Місце масштабного студентського протесту та голодування проти політики радянської влади.",
     history: "2 жовтня 1990 року студенти розпочали голодування на тодішній площі Жовтневої революції. Вони висунули політичні вимоги, зокрема щодо відставки уряду та демократичних змін. Акція завершилася 17 жовтня.",
     significance: "Революція на граніті стала важливим етапом боротьби за незалежність України та прикладом організованого ненасильницького протесту.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%96%2C_%D0%9A%D0%B8%D1%97%D0%B2.JPG/1280px-%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%96%2C_%D0%9A%D0%B8%D1%97%D0%B2.JPG",
+        author: "Avaness",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%B9%D0%B4%D0%B0%D0%BD_%D0%9D%D0%B5%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%96,_%D0%9A%D0%B8%D1%97%D0%B2.JPG"
+      }
+    ],
     sources: [
       {
         title: "maidanmuseum.org",
@@ -2304,6 +2488,14 @@ const monuments = [
     description: "Монументальна скульптура на території Національного музею історії України у Другій світовій війні.",
     history: "Монумент відкрили у 1981 році як центральну частину меморіального комплексу. Спочатку він мав радянську назву та ідеологічне оформлення. У 2023 році на щиті замінили радянський герб на український тризуб.",
     significance: "Один із найвідоміших монументів Києва. Сьогодні він є символом української державності та пам’яті про війну.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%D0%91%D0%B0%D1%82%D1%8C%D0%BA%D1%96%D0%B2%D1%89%D0%B8%D0%BD%D0%B0-%D0%BC%D0%B0%D1%82%D0%B8.jpg/1280px-%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%D0%91%D0%B0%D1%82%D1%8C%D0%BA%D1%96%D0%B2%D1%89%D0%B8%D0%BD%D0%B0-%D0%BC%D0%B0%D1%82%D0%B8.jpg",
+        author: "Yana Leonenko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%D0%91%D0%B0%D1%82%D1%8C%D0%BA%D1%96%D0%B2%D1%89%D0%B8%D0%BD%D0%B0-%D0%BC%D0%B0%D1%82%D0%B8.jpg"
+      }
+    ],
     sources: [
       {
         title: "guide.kyivcity.gov.ua",
@@ -2353,6 +2545,14 @@ const monuments = [
     description: "Національний меморіальний заповідник у Биківнянському лісі — місце поховання людей, розстріляних НКВС під час сталінських репресій.",
     history: "У 1937–1941 роках Биківнянський ліс використовувався НКВС для таємного поховання жертв політичних репресій. Меморіальний комплекс почали створювати у 1994 році, а заповідник заснували у 2001 році.",
     significance: "Одне з найбільших в Україні місць поховання жертв сталінського терору. Важливий об'єкт для збереження пам'яті про репресованих.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%22%D0%91%D0%B8%D0%BA%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B8%22_16.jpg/1280px-%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%22%D0%91%D0%B8%D0%BA%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B8%22_16.jpg",
+        author: "Волтарс",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%22%D0%91%D0%B8%D0%BA%D1%96%D0%B2%D0%BD%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B8%22_16.jpg"
+      }
+    ],
     sources: [
       {
         title: "bykivnia.org.ua",
@@ -2454,6 +2654,14 @@ const monuments = [
     description: "Меморіальна скульптура, присвячена дітям, убитим нацистами в Бабиному Яру.",
     history: "Пам’ятник відкрили 30 вересня 2001 року, біля виходу зі станції метро «Дорогожичі». Скульптор — Володимир Медведєв, архітектори — Роман Кухаренко та Юрій Мельничук.",
     significance: "Окремо вшановує дітей серед численних жертв нацистських злочинів у Бабиному Яру.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/c/cb/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B7%D1%81%D1%82%D1%80%D1%96%D0%BB%D1%8F%D0%BD%D0%B8%D0%BC_%D0%B4%D1%96%D1%82%D1%8F%D0%BC_%2C_%D1%83_%D0%91%D0%B0%D0%B1%D0%B8%D0%BD%D0%BE%D0%BC%D1%83_%D1%8F%D1%80%D1%83.jpg",
+        author: "ОленаСугак",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D1%80%D0%BE%D0%B7%D1%81%D1%82%D1%80%D1%96%D0%BB%D1%8F%D0%BD%D0%B8%D0%BC_%D0%B4%D1%96%D1%82%D1%8F%D0%BC_,_%D1%83_%D0%91%D0%B0%D0%B1%D0%B8%D0%BD%D0%BE%D0%BC%D1%83_%D1%8F%D1%80%D1%83.jpg"
+      }
+    ],
     sources: [
       {
         title: "babynyar.gov.ua",
@@ -2527,6 +2735,14 @@ const monuments = [
     description: "Бронзова скульптура Михайла Грушевського, який сидить на лаві біля Будинку вчителя.",
     history: "Пам’ятник відкрили 1 грудня 1998 року. Скульптор — Володимир Чепелик, архітектори — Микола Кислий, Руслан Кухаренко та Юрій Мельничук.",
     significance: "Вшановує першого голову Української Центральної Ради, історика та одного з провідних діячів українського державотворення.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D1%83_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%28%D0%9A%D0%B8%D1%97%D0%B2%29.JPG/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D1%83_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_%28%D0%9A%D0%B8%D1%97%D0%B2%29.JPG",
+        author: "Kiyanka",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D1%83_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%BC%D1%83_(%D0%9A%D0%B8%D1%97%D0%B2).JPG"
+      }
+    ],
     sources: [
       {
         title: "hrushevsky.history.org.ua",
@@ -2554,6 +2770,14 @@ const monuments = [
     description: "Меморіальна садиба на Паньківській, 9, де мешкала родина Михайла Грушевського. Сьогодні тут працює історико-меморіальний музей.",
     history: "У 1908 році Михайло Грушевський разом із родиною придбав садибу. Тут зберігалися його особисті речі, документи, рукописи та родинна бібліотека. Музей створили у 1992 році, а експозицію відкрили для відвідувачів у 2006 році.",
     significance: "Місце дозволяє дослідити не лише політичну діяльність Грушевського, а й його наукове, культурне та сімейне життя.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/%D0%86%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_01.jpg/1280px-%D0%86%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_01.jpg",
+        author: "Kiyanka",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%86%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%B0_%D0%93%D1%80%D1%83%D1%88%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE_01.jpg"
+      }
+    ],
     sources: [
       {
         title: "immh.kyiv.ua",
@@ -2579,6 +2803,14 @@ const monuments = [
     description: "Мотронинський монастир розташований на території історичного урочища Холодний Яр — одного з важливих осередків українського повстанського руху.",
     history: "Монастир відігравав важливу роль під час Коліївщини 1768 року. У 1918–1922 роках Холодний Яр став одним із центрів українського повстанського руху проти більшовицької та інших окупаційних влад. На території монастиря розташована Троїцька церква, споруджена у 1804 році.",
     significance: "Місце пов'язане з кількома етапами українського визвольного руху та історією козацької доби.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/%D0%9C%D0%BE%D1%82%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%2C_%D0%9C%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8.jpg/1280px-%D0%9C%D0%BE%D1%82%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80%2C_%D0%9C%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8.jpg",
+        author: "Shev.vl.vas",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D1%82%D1%80%D0%BE%D0%BD%D0%B8%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80,_%D0%9C%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%B8.jpg"
+      }
+    ],
     sources: [
       {
         title: "ck-oda.gov.ua",
@@ -2636,6 +2868,14 @@ const monuments = [
     description: "Історико-архітектурний комплекс у Чигирині, присвячений резиденції гетьмана Богдана Хмельницького.",
     history: "Чигирин був столицею козацької держави за часів Богдана Хмельницького. У 2006–2009 роках на території Нижнього міста спорудили відтворений комплекс із будинком гетьмана, військовою канцелярією, скарбницею та іншими будівлями.",
     significance: "Комплекс допомагає відтворити уявлення про адміністративний і військовий центр Гетьманщини XVII століття.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/8/81/%D0%A0%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%B3%D0%B5%D1%82%D1%8C%D0%BC%D0%B0%D0%BD%D0%B0_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%B0_%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg",
+        author: "Андрій Скляренко",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F_%D0%B3%D0%B5%D1%82%D1%8C%D0%BC%D0%B0%D0%BD%D0%B0_%D0%91%D0%BE%D0%B3%D0%B4%D0%B0%D0%BD%D0%B0_%D0%A5%D0%BC%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE.jpg"
+      }
+    ],
     sources: [
       {
         title: "chigirinskaotg.gov.ua",
@@ -2761,6 +3001,14 @@ const monuments = [
     description: "Національний історико-меморіальний заповідник на місці Берестецької битви — однієї з найбільших битв Національно-визвольної війни під проводом Богдана Хмельницького.",
     history: "У 1651 році поблизу Берестечка відбулася масштабна битва між козацько-селянським військом Богдана Хмельницького та військами Речі Посполитої. Після битви козацьке військо відступило, а події стали одним із переломних моментів війни.",
     significance: "Місце вшанування полеглих козаків і селян, а також важливе джерело для вивчення військової історії України XVII століття.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/d/d1/%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D1%96%D1%8F._%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%C2%AB%D0%9F%D0%BE%D0%BB%D0%B5_%D0%91%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%B1%D0%B8%D1%82%D0%B2%D0%B8%C2%BB.jpg",
+        author: "Марта Стамбульська",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A6%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%A1%D0%B2%D1%8F%D1%82%D0%BE%D0%B3%D0%BE_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D1%96%D1%8F._%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%BC%D0%B5%D0%BC%D0%BE%D1%80%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%C2%AB%D0%9F%D0%BE%D0%BB%D0%B5_%D0%91%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B5%D1%86%D1%8C%D0%BA%D0%BE%D1%97_%D0%B1%D0%B8%D1%82%D0%B2%D0%B8%C2%BB.jpg"
+      }
+    ],
     sources: [
       {
         title: "berestechko.org",
@@ -2819,6 +3067,14 @@ const monuments = [
     description: "Руїни давньогрецького міста-держави на правому березі Бузького лиману. Тут збереглися залишки житлових кварталів, оборонних споруд, агори та некрополя.",
     history: "Ольвію заснували грецькі переселенці приблизно у VI столітті до н. е. Місто стало важливим торговельним центром, підтримувало зв’язки з іншими грецькими містами та місцевими народами. У IV столітті н. е. поселення занепало після нападів гунів.",
     significance: "Одна з найважливіших археологічних пам’яток античної історії України. Дозволяє досліджувати торгівлю, культуру та повсякденне життя населення Північного Причорномор’я.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%C2%AB%D0%9E%D0%BB%D1%8C%D0%B2%D1%96%D1%8F%C2%BB_2.jpg/1280px-%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%C2%AB%D0%9E%D0%BB%D1%8C%D0%B2%D1%96%D1%8F%C2%BB_2.jpg",
+        author: "Максим Яковчук",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D1%96%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D0%BD%D0%B8%D0%BA_%C2%AB%D0%9E%D0%BB%D1%8C%D0%B2%D1%96%D1%8F%C2%BB_2.jpg"
+      }
+    ],
     sources: [
       {
         title: "olbio.org.ua",
@@ -2844,6 +3100,14 @@ const monuments = [
     description: "Унікальна середньовічна фортеця, побудована серед пісковикових скель Карпат. У скелях збереглися тисячі пазів і вирізів від дерев’яних конструкцій.",
     history: "Тустань була оборонним, митним та адміністративним центром на важливому торговельному шляху через Карпати. Дерев’яні споруди не збереглися, але археологічні сліди дозволили дослідникам відтворити її приблизний вигляд.",
     significance: "Унікальна пам’ятка давньоруської та середньовічної оборонної архітектури. Її конструкція є надзвичайно цінною для дослідження історії фортифікації.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/%D0%A2%D1%83%D1%81%D1%82%D0%B0%D0%BD%D1%8C_%E2%80%93_%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D1%8C%D0%BE%D0%B2%D1%96%D1%87%D0%BD%D0%B0_%D0%BD%D0%B0%D1%81%D0%BA%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F_XIII_%E2%80%93_XVI_%D1%81%D1%82._14.jpg/1280px-%D0%A2%D1%83%D1%81%D1%82%D0%B0%D0%BD%D1%8C_%E2%80%93_%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D1%8C%D0%BE%D0%B2%D1%96%D1%87%D0%BD%D0%B0_%D0%BD%D0%B0%D1%81%D0%BA%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F_XIII_%E2%80%93_XVI_%D1%81%D1%82._14.jpg",
+        author: "Волтарс",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%A2%D1%83%D1%81%D1%82%D0%B0%D0%BD%D1%8C_%E2%80%93_%D1%81%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D1%8C%D0%BE%D0%B2%D1%96%D1%87%D0%BD%D0%B0_%D0%BD%D0%B0%D1%81%D0%BA%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D0%BE%D1%80%D1%82%D0%B5%D1%86%D1%8F_XIII_%E2%80%93_XVI_%D1%81%D1%82._14.jpg"
+      }
+    ],
     sources: [
       {
         title: "tustan.ua",
@@ -3072,6 +3336,14 @@ const monuments = [
     description: "Острів Мала Хортиця, відомий як острів Байда, пов'язаний із заснуванням укріплення князем Дмитром Вишневецьким.",
     history: "У середині XVI століття Дмитро Вишневецький спорудив тут дерев'яно-земляне укріплення. Воно стало одним із попередників Запорозької Січі та важливим осередком козацької військової організації.",
     significance: "Острів є одним із ключових місць ранньої історії українського козацтва.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/%D0%9E%D1%81%D1%82%D1%80%D1%96%D0%B2_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0_%D0%B2_%D1%80%D0%B0%D0%BD%D1%96%D1%88%D0%BD%D1%8C%D0%BE%D0%BC%D1%83_%D1%82%D1%83%D0%BC%D0%B0%D0%BD%D1%96.jpg/1280px-%D0%9E%D1%81%D1%82%D1%80%D1%96%D0%B2_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0_%D0%B2_%D1%80%D0%B0%D0%BD%D1%96%D1%88%D0%BD%D1%8C%D0%BE%D0%BC%D1%83_%D1%82%D1%83%D0%BC%D0%B0%D0%BD%D1%96.jpg",
+        author: "Дмитро Євдокимов",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%81%D1%82%D1%80%D1%96%D0%B2_%D0%91%D0%B0%D0%B9%D0%B4%D0%B0_%D0%B2_%D1%80%D0%B0%D0%BD%D1%96%D1%88%D0%BD%D1%8C%D0%BE%D0%BC%D1%83_%D1%82%D1%83%D0%BC%D0%B0%D0%BD%D1%96.jpg"
+      }
+    ],
     sources: [
       {
         title: "vue.gov.ua",
@@ -3096,6 +3368,14 @@ const monuments = [
     description: "Центральна укріплена частина Стародавнього Києва, розташована на Старокиївській горі. Тут містилися князівські палаци, храми та інші важливі споруди.",
     history: "За князювання Володимира Святославича наприкінці X століття територію давнього городища перебудували та перетворили на князівський дитинець. Тут розташовувалися Десятинна церква та князівські палаци. Під час монгольської навали 1240 року ця частина міста зазнала руйнувань.",
     significance: "Це один із головних археологічних осередків, що дозволяє досліджувати становлення Києва як політичного та культурного центру Русі.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/%D0%9A%D0%B8%D1%97%D0%B2%2C_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B0_%D0%B2%D1%83%D0%BB._2%2C_%D0%9C%D1%96%D1%81%D1%82%D0%BE_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%B0_%E2%80%94_%D0%94%D0%B8%D1%82%D0%B8%D0%BD%D0%B5%D1%86%D1%8C_%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE_%D0%9A%D0%B8%D1%94%D0%B2%D0%B0_%D0%B7_%D1%84%D1%83%D0%BD%D0%B4%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%BC_%D0%94%D0%B5%D1%81%D1%8F%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D1%97_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B8.jpg/1280px-thumbnail.jpg",
+        author: "Prymasal",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D1%97%D0%B2,_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D1%81%D1%8C%D0%BA%D0%B0_%D0%B2%D1%83%D0%BB._2,_%D0%9C%D1%96%D1%81%D1%82%D0%BE_%D0%92%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8%D0%BC%D0%B8%D1%80%D0%B0_%E2%80%94_%D0%94%D0%B8%D1%82%D0%B8%D0%BD%D0%B5%D1%86%D1%8C_%D0%A1%D1%82%D0%B0%D1%80%D0%BE%D0%B4%D0%B0%D0%B2%D0%BD%D1%8C%D0%BE%D0%B3%D0%BE_%D0%9A%D0%B8%D1%94%D0%B2%D0%B0_%D0%B7_%D1%84%D1%83%D0%BD%D0%B4%D0%B0%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%BC_%D0%94%D0%B5%D1%81%D1%8F%D1%82%D0%B8%D0%BD%D0%BD%D0%BE%D1%97_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B8.jpg"
+      }
+    ],
     sources: [
       {
         title: "archkyiv.org.ua",
@@ -3238,6 +3518,14 @@ const monuments = [
     description: "Острозька академія — один із найважливіших освітніх і культурних осередків ранньомодерної України.",
     history: "Академія була заснована князем Василем-Костянтином Острозьким у 1576 році. Тут викладали грецьку, латинську та церковнослов'янську мови, філософію, математику й інші дисципліни. При академії діяла друкарня Івана Федорова, а її середовище було пов'язане з підготовкою Острозької Біблії 1581 року.",
     significance: "Острозька академія стала одним із центрів розвитку української освіти, гуманістичної думки та книгодрукування.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F.jpg/1280px-%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F.jpg",
+        author: "Бондар Володимир",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%81%D1%82%D1%80%D0%BE%D0%B7%D1%8C%D0%BA%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F.jpg"
+      }
+    ],
     sources: [
       {
         title: "oa.edu.ua",
@@ -3262,6 +3550,14 @@ const monuments = [
     description: "Один із найвідоміших історичних освітніх закладів України, що відіграв значну роль у розвитку освіти, богослов'я, філософії та науки.",
     history: "Історія академії починається з Київської братської школи, заснованої 1615 року за підтримки Галшки Гулевичівни. У 1632 році школи об'єднали під опікою митрополита Петра Могили. У 1701 році заклад офіційно отримав статус академії. У 1817 році його закрили, а в 1991 році університет відновив діяльність.",
     significance: "Академія виховала багатьох відомих діячів української культури, науки, церкви та державного управління.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/%D0%9A%D0%B8%D1%94%D0%B2%D0%BE-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F.jpg/1280px-%D0%9A%D0%B8%D1%94%D0%B2%D0%BE-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F.jpg",
+        author: "Бондар Володимир",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D1%94%D0%B2%D0%BE-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F.jpg"
+      }
+    ],
     sources: [
       {
         title: "ukma.edu.ua",
@@ -3286,6 +3582,14 @@ const monuments = [
     description: "Музей присвячений історії української книги — від рукописних видань до сучасного книгодрукування.",
     history: "Музей розташований у будівлі колишньої друкарні Києво-Печерської лаври. Лаврська друкарня була заснована 1615 року архімандритом Єлисеєм Плетенецьким і протягом століть була одним із головних центрів українського книговидання.",
     significance: "Музей зберігає стародруки, рукописи, друкарське обладнання та матеріали про розвиток української видавничої справи.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8_%D1%82%D0%B0_%D0%B4%D1%80%D1%83%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_01.jpg/1280px-%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8_%D1%82%D0%B0_%D0%B4%D1%80%D1%83%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_01.jpg",
+        author: "Шушон",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8_%D1%82%D0%B0_%D0%B4%D1%80%D1%83%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B0_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_01.jpg"
+      }
+    ],
     sources: [
       {
         title: "mkdu.com.ua",
@@ -4158,6 +4462,14 @@ const monuments = [
     description: "Львівська опера — одна з найвідоміших архітектурних і культурних пам'яток Львова. Театр відкрився 4 жовтня 1900 року як Великий міський театр. Сучасну назву він носить на честь видатної української оперної співачки Соломії Крушельницької.",
     history: "Будівництво театру розпочалося в червні 1897 року за проєктом архітектора Зигмунта Горголевського. Споруду звели в стилі неоренесансу з елементами необароко. Від самого початку театр став важливим місцем культурного життя Львова, де виступали українські та європейські артисти.",
     significance: "Театр є однією з головних культурних візитівок Львова та важливим осередком розвитку українського оперного і балетного мистецтва.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D0%B8_%D1%82%D0%B0_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC%D1%96%D1%97_%D0%9A%D1%80%D1%83%D1%88%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D1%97%2C_%D0%BC._%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%2C_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8%2C_28.jpg/1280px-thumbnail.jpg",
+        author: "Педагог Світлана",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BD%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B8%D0%B9_%D1%82%D0%B5%D0%B0%D1%82%D1%80_%D0%BE%D0%BF%D0%B5%D1%80%D0%B8_%D1%82%D0%B0_%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D1%83_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC%D1%96%D1%97_%D0%9A%D1%80%D1%83%D1%88%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D1%86%D1%8C%D0%BA%D0%BE%D1%97,_%D0%BC._%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,_%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82_%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8,_28.jpg"
+      }
+    ],
     sources: [
       {
         title: "opera.lviv.ua",
@@ -4219,6 +4531,14 @@ const monuments = [
     description: "Харківський театр опери та балету — один із найстаріших музичних театрів України. Музичні вистави в Харкові відбувалися ще наприкінці XVIII століття. У 1925 році тут було створено першу в Україні державну оперу.",
     history: "У 1870-х роках у Харкові почалися регулярні стаціонарні оперні сезони. У 1883 році тут відбулася постановка опери Миколи Лисенка «Різдвяна ніч», а згодом — «Утопленої». У 1925 році театр отримав статус державної столичної опери. Сучасна будівля на вулиці Сумській стала його домівкою на початку 1990-х років.",
     significance: "Театр відіграв важливу роль у становленні української опери та популяризації творів українських композиторів. Його історія пов'язана з розвитком музичного мистецтва Слобожанщини.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%D0%86%D0%BD%D1%82%D0%B5%D1%80%27%D1%94%D1%80_%D0%A5%D0%9D%D0%90%D0%A2%D0%9E%D0%91%D1%83.jpg/1280px-%D0%86%D0%BD%D1%82%D0%B5%D1%80%27%D1%94%D1%80_%D0%A5%D0%9D%D0%90%D0%A2%D0%9E%D0%91%D1%83.jpg",
+        author: "Anton Kessler",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%86%D0%BD%D1%82%D0%B5%D1%80%27%D1%94%D1%80_%D0%A5%D0%9D%D0%90%D0%A2%D0%9E%D0%91%D1%83.jpg"
+      }
+    ],
     sources: [
       {
         title: "kharkivopera.com.ua",
@@ -4534,6 +4854,14 @@ const monuments = [
     description: "Національна філармонія України розташована в історичній будівлі колишнього Купецького зібрання на Володимирському узвозі. Її Колонна зала є однією з найвідоміших концертних зал Києва.",
     history: "Будівлю спорудили 1882 року за проєктом архітектора Володимира Ніколаєва. Велика зала мала особливу акустику та використовувалася для музичних вечорів, концертів і громадських заходів. Тут виступав Микола Лисенко, організовувалися квартетні зібрання та симфонічні концерти. У 1962 році Колонній залі присвоїли ім'я Миколи Лисенка.",
     significance: "Це один із найважливіших історичних концертних осередків України, пов'язаний зі становленням професійного музичного життя Києва.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D1%96%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D1%96%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D0%9A%D0%B8%D1%97%D0%B2.jpg/1280px-%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D1%96%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D1%96%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D0%9A%D0%B8%D1%97%D0%B2.jpg",
+        author: "Oleksandr Malyon",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D1%84%D1%96%D0%BB%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D1%96%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D0%9A%D0%B8%D1%97%D0%B2.jpg"
+      }
+    ],
     sources: [
       {
         title: "philarmonia.com.ua",
@@ -4558,6 +4886,14 @@ const monuments = [
     description: "Національна музична академія України — один із провідних закладів вищої музичної освіти країни, відомий також як Київська консерваторія. Розташована на вулиці Архітектора Городецького.",
     history: "Заклад заснували 3 листопада 1913 року на базі музичного училища Київського відділення Російського музичного товариства. Першим директором став піаніст і педагог Володимир Пухальський, а згодом заклад очолив композитор Рейнгольд Глієр. У 1920-х роках структура установи змінювалася, а в 1934 році консерваторію відновили. Сучасне приміщення на вулиці Городецького має власну архітектурну історію та не є датою заснування академії.",
     significance: "Академія підготувала покоління українських композиторів, диригентів, вокалістів та інструменталістів. Вона відіграє ключову роль у збереженні й розвитку професійної музичної освіти.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BC%D1%83%D0%B7%D0%B8%D1%87%D0%BD%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%9F.%D0%86._%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C_%D0%9A%D0%B8%D1%97%D0%B2_%281%29.jpg/1280px-%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BC%D1%83%D0%B7%D0%B8%D1%87%D0%BD%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%9F.%D0%86._%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2C_%D0%9A%D0%B8%D1%97%D0%B2_%281%29.jpg",
+        author: "Дзоз Юлія",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BC%D1%83%D0%B7%D0%B8%D1%87%D0%BD%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%8F_%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8_%D1%96%D0%BC%D0%B5%D0%BD%D1%96_%D0%9F.%D0%86._%D0%A7%D0%B0%D0%B9%D0%BA%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE,_%D0%9A%D0%B8%D1%97%D0%B2_(1).jpg"
+      }
+    ],
     sources: [
       {
         title: "knmau.com.ua",
@@ -4779,6 +5115,14 @@ const monuments = [
     description: "Традиційна гуцульська хата-гражда в присілку Заріччя села Криворівня. Ця історична споруда використовувалася під час зйомок фільму Сергія Параджанова «Тіні забутих предків» 1964 року.",
     history: "Гражду спорудили 1858 року. Це традиційний тип гуцульського житла із замкнутим внутрішнім подвір'ям, оточеним житловими та господарськими будівлями. У 1964 році споруду використовували як знімальний майданчик фільму «Тіні забутих предків». Після тривалого занепаду її відреставрували та відкрили як музей у 1993 році.",
     significance: "Об'єкт поєднує гуцульську архітектурну спадщину з історією українського кінематографа. Фільм Параджанова став одним із найвідоміших творів українського поетичного кіно.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/%D0%95%D0%BA%D0%BF%D0%BE%D0%BD%D0%B0%D1%82%D0%B8_%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%96%D1%87%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%A5%D0%B0%D1%82%D0%B0-_%D0%93%D1%80%D0%B0%D0%B6%D0%B4%D0%B0.jpg/1280px-%D0%95%D0%BA%D0%BF%D0%BE%D0%BD%D0%B0%D1%82%D0%B8_%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%96%D1%87%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%A5%D0%B0%D1%82%D0%B0-_%D0%93%D1%80%D0%B0%D0%B6%D0%B4%D0%B0.jpg",
+        author: "Волтарс",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%95%D0%BA%D0%BF%D0%BE%D0%BD%D0%B0%D1%82%D0%B8_%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%96%D1%87%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BC%D1%83%D0%B7%D0%B5%D1%8E_%D0%A5%D0%B0%D1%82%D0%B0-_%D0%93%D1%80%D0%B0%D0%B6%D0%B4%D0%B0.jpg"
+      }
+    ],
     sources: [
       {
         title: "travels.in.ua",
@@ -4803,6 +5147,14 @@ const monuments = [
     description: "Андріївська церква — одна з найвідоміших архітектурних пам'яток Києва. Її сходи стали місцем зйомок фінальних епізодів культової кінокомедії «За двома зайцями» режисера Віктора Іванова.",
     history: "Фільм «За двома зайцями» вийшов 1961 року та був знятий за мотивами однойменної п'єси Михайла Старицького. У фінальних сценах герої опиняються біля Андріївської церкви. У 1999 році неподалік храму встановили пам'ятник Проні Прокопівні та Свириду Голохвостому.",
     significance: "Локація стала невід'ємною частиною кінематографічного образу Києва. Фільм зберігає популярність і є одним із найвідоміших прикладів української кінокомедії.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%BC._%D0%9A%D0%B8%D1%97%D0%B2_005.jpg",
+        author: "Шушон",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D0%B4%D1%80%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D1%86%D0%B5%D1%80%D0%BA%D0%B2%D0%B0_%D0%BC._%D0%9A%D0%B8%D1%97%D0%B2_005.jpg"
+      }
+    ],
     sources: [
       {
         title: "guide.kyivcity.gov.ua",
@@ -4899,6 +5251,14 @@ const monuments = [
     description: "Витачів на Київщині став одним із головних натурних майданчиків фільму «Вавилон XX», режисерського дебюту Івана Миколайчука.",
     history: "Фільм створювали наприкінці 1970-х років за мотивами роману Василя Земляка «Лебедина зграя». Для зйомок шукали місцевість, яка поєднувала б пагорби, рівнини та характерні українські сільські краєвиди. Зрештою знімальна група обрала Витачів. Стрічка вийшла на екрани 1979 року.",
     significance: "Фільм став однією з найважливіших режисерських робіт Івана Миколайчука та помітним явищем українського поетичного кіно.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/%D0%92%D0%B8%D1%82%D0%B0%D1%87%D1%96%D0%B2._%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%B5%D0%BB%D0%B0.jpg/1280px-%D0%92%D0%B8%D1%82%D0%B0%D1%87%D1%96%D0%B2._%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%B5%D0%BB%D0%B0.jpg",
+        author: "Velyka radist'",
+        license: "Public domain",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%92%D0%B8%D1%82%D0%B0%D1%87%D1%96%D0%B2._%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%B5%D0%BB%D0%B0.jpg"
+      }
+    ],
     sources: [
       {
         title: "obukhiv.info",
@@ -5235,6 +5595,14 @@ const monuments = [
     description: "Місце поховання українського поета, перекладача, літературознавця та правозахисника Василя Стуса на Байковому кладовищі.",
     history: "Василь Стус помер у ніч із 3 на 4 вересня 1985 року в радянському таборі особливого режиму в селищі Кучино Пермської області. Спочатку його поховали на табірному кладовищі. У листопаді 1989 року останки Стуса, Олекси Тихого та Юрія Литвина перепоховали в Києві на Байковому кладовищі, на ділянці №33.",
     significance: "Стус став одним із символів українського дисидентського руху та опору радянським репресіям. У 2005 році йому посмертно присвоїли звання Героя України.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/8/81/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8F_%D0%A1%D1%82%D1%83%D1%81%D0%B0.JPG",
+        author: "Константинъ",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D1%8F_%D0%A1%D1%82%D1%83%D1%81%D0%B0.JPG"
+      }
+    ],
     sources: [
       {
         title: "localhistory.org.ua",
@@ -5265,6 +5633,14 @@ const monuments = [
     description: "Місце поховання українського актора, кінорежисера та сценариста Леоніда Бикова на Байковому кладовищі, ділянка №33.",
     history: "Леонід Биков (1928–1979) відомий за фільмами «В бій ідуть тільки старики», «Максим Перепелиця» та «Ати-бати, йшли солдати…». Загинув 11 квітня 1979 року в автомобільній аварії на трасі Київ — Мінськ. Похований на Байковому кладовищі в Києві. На його могилі встановлено надгробок, присвячений пам'яті актора.",
     significance: "Биков став однією з найвідоміших постатей українського кінематографа. Його фільми та акторські роботи залишили помітний слід в історії кіно.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%9B%D0%B5%D0%BE%D0%BD%D1%96%D0%B4%D0%B0_%D0%91%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.JPG/1280px-%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%9B%D0%B5%D0%BE%D0%BD%D1%96%D0%B4%D0%B0_%D0%91%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.JPG",
+        author: "Константинъ",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%9B%D0%B5%D0%BE%D0%BD%D1%96%D0%B4%D0%B0_%D0%91%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0.JPG"
+      }
+    ],
     sources: [
       {
         title: "vue.gov.ua",
@@ -5651,6 +6027,14 @@ const monuments = [
     description: "Один із найстаріших історичних музеїв України. Його колекції охоплюють історію Львова, Галичини та українських земель від найдавніших часів до сучасності.",
     history: "Історія музею почалася 22 грудня 1892 року, коли львівський магістрат оголосив про створення Історичного музею міста Львова. У 1908 році для музейних потреб придбали кам'яницю Корнякта на площі Ринок, 6. Ця будівля стала однією з найвідоміших музейних локацій Львова. У фондах музею зберігаються археологічні матеріали, зброя, монети, документи, предмети побуту та мистецтва.",
     significance: "Музей зберігає значну частину історичної спадщини Львова та регіону. Його колекція налічує близько 380 тисяч музейних предметів.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/2017-05-25_Lviv_Historical_Museum.jpg/1280px-2017-05-25_Lviv_Historical_Museum.jpg",
+        author: "Maksym Kozlenko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:2017-05-25_Lviv_Historical_Museum.jpg"
+      }
+    ],
     sources: [
       {
         title: "lhm.lviv.ua",
@@ -6076,6 +6460,14 @@ const monuments = [
     eraYearEnd: 1963,
     openingDate: "17 листопада 2010 року",
     description: "Пам'ятник поетові-шістдесятнику на вулиці Верхній Горовій, у сквері за будинком Щербини (палацом одружень).",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B5%D0%B2%D1%96_%D0%A1%D0%B8%D0%BC%D0%BE%D0%BD%D0%B5%D0%BD%D0%BA%D1%83_%28%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8%29.jpg/1280px-%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B5%D0%B2%D1%96_%D0%A1%D0%B8%D0%BC%D0%BE%D0%BD%D0%B5%D0%BD%D0%BA%D1%83_%28%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8%29.jpg",
+        author: "Bohdan Yaresko",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D0%BC%27%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B5%D0%B2%D1%96_%D0%A1%D0%B8%D0%BC%D0%BE%D0%BD%D0%B5%D0%BD%D0%BA%D1%83_(%D0%A7%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D0%B8).jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Пам'ятник Василеві Симоненку (Черкаси)",
@@ -6109,6 +6501,14 @@ const monuments = [
     eraYearEnd: 1984,
     eventDate: "19 листопада 1989 року — перепоховання",
     description: "Могила на Байковому кладовищі (ділянка 33), поруч із могилами Василя Стуса та Юрія Литвина. Координати — ділянка, спільна з могилою Стуса.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/6/64/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B8_%D0%A2%D0%B8%D1%85%D0%BE%D0%B3%D0%BE.JPG",
+        author: "Константинъ",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D0%B0_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B8_%D0%A2%D0%B8%D1%85%D0%BE%D0%B3%D0%BE.JPG"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Тихий Олексій Іванович",
@@ -6402,6 +6802,14 @@ const monuments = [
     eraYearEnd: 2015,
     eventDate: "2014–2015 роки, 242 дні оборони",
     description: "Українські військові 242 дні обороняли Донецький аеропорт; їх назвали «кіборгами». Зараз це тимчасово окупована територія.",
+    images: [
+      {
+        url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Donetsk_Airport.jpg/1280px-Donetsk_Airport.jpg",
+        author: "Michael1238",
+        license: "CC BY-SA 3.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Donetsk_Airport.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Кіборги (захисники Донецького аеропорту)",
@@ -6429,6 +6837,14 @@ const monuments = [
     eraYear: 2022,
     eventDate: "2022 рік",
     description: "Острів у Чорному морі, за який точилися бої в перші місяці повномасштабного вторгнення 2022 року.",
+    images: [
+      {
+        url: "https://upload.wikimedia.org/wikipedia/commons/f/ff/%D0%9E%D1%81%D1%82%D1%80%D1%96%D0%B2_%D0%97%D0%BC%D1%96%D1%97%D0%BD%D0%B8%D0%B9.jpg",
+        author: "QovaPhotographer",
+        license: "CC BY-SA 4.0",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%D0%9E%D1%81%D1%82%D1%80%D1%96%D0%B2_%D0%97%D0%BC%D1%96%D1%97%D0%BD%D0%B8%D0%B9.jpg"
+      }
+    ],
     sources: [
       {
         title: "Вікіпедія: Бої за острів Зміїний",
